@@ -109,7 +109,7 @@ nav button {
   line-height: 20px;
 }
 .hero-content button{
-  padding: 16px 27px 16px;
+  padding: 10px 27px;
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
   border: none;
