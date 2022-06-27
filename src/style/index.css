@@ -33,7 +33,7 @@ nav {
   box-shadow: 0px 1px 20px rgb(0 0 0 / 0.1);
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 nav .nav-child-wrapper {
   display: flex;
@@ -104,7 +104,7 @@ nav button {
 .hero-content p{
   color: var(--white-primary-text);
   padding: 5px 0 10px;
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 16px;
   line-height: 20px;
 }
@@ -193,32 +193,54 @@ nav button {
 /* ---- ABOUT-HOMEPAGE ----*/
 #about-homepage{
   margin: auto;
-  border-radius: 8px;
+  border-radius: 40px;
+  background-image: url('/src/images/about-bg.png');
   background-color: var(--blue-secondary);
+  background-size: 100%;
   max-width: 800px;
   color: var(--white-primary-text);
-  padding: 40px 30px;
+  padding: 50px 60px;
 }
 .about-content h1{
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   color: var(--white-primary-text);
+  padding-bottom: 15px;
 }
 .about-content p{
+  max-width: 350px;
   color: var(--gray-rarely-used);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .about-content p span{
   color: var(--white-primary-text);
 }
-.about-content .profile{
-  background-color: #0066FF;
+.about-content .profile {
+  margin: 0px auto;
+  padding: 15px;
+  max-width: 290px;
+  border-radius: 13px;
+  background-color: var(--white-primary-text);
 }
 .about-content .profile img{
-  width: 280px;
+  width: 260px;
+}
+.about-content .profile .text-card {
+  padding-top: 12px;
+}
+.about-content .profile h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--gray-primary-text-icons);
+}
+.about-content .profile .text-card span{
+  display: block;
+  color: var(--gray-rarely-used);
 }
 
 /* card */
