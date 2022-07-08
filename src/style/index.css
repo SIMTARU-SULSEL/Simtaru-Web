@@ -494,6 +494,57 @@ main{
   border-radius: 16px;
 }
 
+/* --- Pendaftaran Page --- */
+main{
+  background-color: var(--gray-primary-bg);
+}
+
+#header{
+  background-color: var(--blue-secondary);
+  background-image: url(/src/images/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  padding: 0px 243px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header h1{
+  font-weight: 700;
+  font-size: 88px;
+  color: var(--white-primary-text);
+}
+
+#pendaftaran-box{
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+}
+
+#pendaftaran-box #input-pendaftaran{
+  padding-bottom: 16px;
+  height: 60px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#pendaftaran-box #input-pendaftaran-alamat{
+  padding-bottom: 16px;
+  height: 264px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#pendaftaran-box #tomboldaftar{
+  border-radius: 8px;
+  height: 60px;
+}
+
+
+
 @media only screen and (max-width: 1440px){
 
   #mobile-apps .card{
