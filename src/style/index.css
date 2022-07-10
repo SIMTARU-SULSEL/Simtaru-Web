@@ -354,7 +354,7 @@ nav button {
 #footer{
   font-size: 24px;
   padding: 124px;
-  margin-top: -300px;
+  /* margin-top: -300px; */
   background-color: var(--blue-secondary);
   /* height: 512px; */
   color: var(--gray-rarely-used);
@@ -390,6 +390,160 @@ nav button {
   font-size:24px;
   color: var(--white-primary-text);
 }
+
+/* --- MAPS --- */
+#iframe{
+  height: 721px;
+  /* background-color: #D12828; */
+  background-image: url(/src/images/maps.svg);
+  width: 100%;
+  /* height: 100%; */
+}
+
+#filter{
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 40px 0px 40px 0px;
+}
+
+#filter .row .button{
+  width: 10%;
+  /* margin: auto 12px; */
+  border-color: transparent;
+  background-color: var(--gray-secondary);
+  color: white;
+}
+
+#filter .row .dropdown{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#filter .row .dropdown button{
+  background-color: var(--white-primary-text);
+  color: var(--gray-secondary);
+  border-color: var(--gray-secondary);
+}
+
+
+/* --- Comment Page --- */
+
+main{
+  background-color: var(--gray-primary-bg);
+}
+
+#header{
+  background-color: var(--blue-secondary);
+  background-image: url(/src/images/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  padding: 0px 243px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header h1{
+  font-weight: 700;
+  font-size: 88px;
+  color: var(--white-primary-text);
+}
+
+#tanggapan-box{
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+}
+
+#tanggapan-box form{
+  display: inline-block;
+  width: 100%;
+}
+
+#tanggapan-box .tanggapan-block{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#tanggapan-box #tanggapan-bio{
+  float: left;
+  padding-right: 16px;
+}
+
+#tanggapan-box #tanggapan-field{
+  height: 342px;
+}
+
+#tanggapan-box #tanggapan-field #input-field{
+  height: inherit;
+  padding-bottom: 16px;
+}
+
+#tanggapan-box #tanggapan-bio #input-field{
+  padding-bottom: 16px;
+  height: 98px;
+  border-radius: 16px;
+}
+
+/* --- Pendaftaran Page --- */
+main{
+  background-color: var(--gray-primary-bg);
+}
+
+#header{
+  background-color: var(--blue-secondary);
+  background-image: url(/src/images/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  padding: 0px 243px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header h1{
+  font-weight: 700;
+  font-size: 88px;
+  color: var(--white-primary-text);
+}
+
+#pendaftaran-box{
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+}
+
+#pendaftaran-box #input-pendaftaran{
+  padding-bottom: 16px;
+  height: 60px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#pendaftaran-box #input-pendaftaran-alamat{
+  padding-bottom: 16px;
+  height: 264px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#pendaftaran-box #tomboldaftar{
+  border-radius: 8px;
+  height: 60px;
+}
+
+
 
 @media only screen and (max-width: 1440px){
 
@@ -556,6 +710,23 @@ nav button {
 
   #footer .footer-information h4{
       font-size: 18px;
+  }
+
+  #filter{
+    height: auto;
+    width: 50%;
+    padding: 40px 0px 40px 0px;
+  }
+  
+  #filter .row .dropdown{
+    /* display: block; */
+    /* flex-direction: row; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #filter .row .button{
+    width: 100%;
   }
 }
 
