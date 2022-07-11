@@ -53,7 +53,7 @@
             <!--Column 1-->
             <div class="col-6 pt-3">
               <div class="col pb-3">
-                <label for="inputEmail4" class="form-label">Nomor KTP</label>
+                <label for="inputEmail4" class="form-label" id="label-pendaftaran">Nomor KTP</label>
                 <input
                   type="text"
                   class="form-control"
@@ -63,7 +63,7 @@
               </div>
 
               <div class="col pb-3">
-                <label for="inputAddress" class="form-label"
+                <label for="inputAddress" class="form-label" id="label-pendaftaran"
                   >Nama Lengkap</label
                 >
                 <input
@@ -74,7 +74,7 @@
                 />
               </div>
 
-              <label for="inputAddress" class="form-label">Jenis Kelamin</label>
+              <label for="inputAddress" class="form-label" id="label-pendaftaran">Jenis Kelamin</label>
               <div class="col pb-3">
                 <div class="form-check form-check-inline">
                   <input
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="col pt-3">
-                  <label for="inputAddress" class="form-label">Alamat</label>
+                  <label for="inputAddress" class="form-label" id="label-pendaftaran">Alamat</label>
                   <input
                     type="text"
                     class="form-control"
@@ -112,7 +112,7 @@
                   />
                 </div>
 
-                <label for="inputEmail4" class="form-label pt-3"
+                <label for="inputEmail4" class="form-label pt-3" id="label-pendaftaran"
                   >Asal Provinsi</label
                 >
                 <div class="input-group">
@@ -121,14 +121,49 @@
                     id="input-pendaftaran"
                     aria-label="Example select with button addon"
                   >
-                    <option selected>Pilih Provinsi</option>
-                    <option value="1">Nanggroe Aceh Darussalam</option>
-                    <option value="2">Sumatera Utara</option>
-                    <option value="3">Suatera Selatan</option>
+                  <option selected>Pilih Provinsi</option>
+                  <option value="1">Nanggroe Aceh Darussalam</option>
+                  <option value="2">Sumatera Utara</option>
+                  <option value="3">Sumatera Selatan</option>
+                  <option value="4">Sumatera Barat</option>
+                  <option value="5">Bengkulu</option>
+                  <option value="6">Riau</option>
+                  <option value="7">Kepulauan Riau</option>
+                  <option value="8">Jambi</option>
+                  <option value="9">Lampung</option>
+                  <option value="10">Bangka Belitung</option>
+                  <!-- Pulau Kalimantan -->
+                  <option value="11">Kalimantan Barat</option>
+                  <option value="12">Kalimantan Timur</option>
+                  <option value="13">Kalimantan Selatan</option>
+                  <option value="14">Kalimantan Tengah</option>
+                  <option value="15">Kalimantan Utara</option>
+                  <!-- Pulau Jawa -->
+                  <option value="16">Banten</option>
+                  <option value="17">DKI Jakarta</option>
+                  <option value="18">Jawa Barat</option>
+                  <option value="19">Jawa Tengah</option>
+                  <option value="20">DI Yogyakarta</option>
+                  <option value="21">Jawa Timur</option>
+                  <!-- Pulau Nusa Tenggara & Bali -->
+                  <option value="22">Bali</option>
+                  <option value="23">Nusa Tenggara Timur (NTT)</option>
+                  <option value="24">Nusa Tenggara Barat (NTB)</option>
+                  <!-- Pulau Sulawesi -->
+                  <option value="25">Gorontalo</option>
+                  <option value="26">Sulawesi Barat</option>
+                  <option value="27">Sulawesi Tengah</option>
+                  <option value="28">Sulawesi Utara</option>
+                  <option value="29">Sulawesi Tenggara</option>
+                  <option value="30">Sulawesi Selatan</option>
+                  <option value="31">Maluku Utara</option>
+                  <option value="32">Maluku</option>
+                  <option value="33">Papua Barat</option>
+                  <option value="34">Papua (Daerah Khusus)</option>
                   </select>
                 </div>
 
-                <label for="inputEmail4" class="form-label pt-3"
+                <label for="inputEmail4" class="form-label pt-3" id="label-pendaftaran"
                   >Asal Kota/Kabupaten</label
                 >
                 <div class="input-group">
@@ -137,14 +172,23 @@
                     id="input-pendaftaran"
                     aria-label="Example select with button addon"
                   >
+                    <!-- Aceh -->
                     <option selected>Pilih Kabupaten</option>
-                    <option value="1">Nanggroe Aceh Darussalam</option>
-                    <option value="2">Sumatera Utara</option>
-                    <option value="3">Suatera Selatan</option>
+                    <option value="1">Banda Aceh</option>
+                    <option value="2">Langsa</option>
+                    <option value="3">Lhokseumawe</option>
+                    <option value="4">Sabang</option>
+                    <option value="5">Subulussalam</option>
+                    <!-- Bali -->
+                    <option value="6">Denpasar</option>
+                    <!-- Bangka Belitung -->
+                    <option value="7">Pangkalpinang</option>
+                    <!-- Banten -->
+                    <option value="8">Cilegon</option>
                   </select>
                 </div>
 
-                <label for="inputEmail4" class="form-label pt-3"
+                <label for="inputEmail4" class="form-label pt-3" id="label-pendaftaran"
                   >Asal Kecamatan</label
                 >
                 <div class="input-group">
@@ -153,15 +197,15 @@
                     id="input-pendaftaran"
                     aria-label="Example select with button addon"
                   >
-                    <option selected>Pilih Kabupaten</option>
-                    <option value="1">Nanggroe Aceh Darussalam</option>
-                    <option value="2">Sumatera Utara</option>
-                    <option value="3">Suatera Selatan</option>
+                    <option selected>Pilih Kecamatan</option>
+                    <option value="1">Kec 1</option>
+                    <option value="2">Kec 2</option>
+                    <option value="3">Kec 3</option>
                   </select>
                 </div>
 
                 <div class="col pt-3">
-                  <label for="inputAddress" class="form-label">Kode Pos</label>
+                  <label for="inputAddress" class="form-label" id="label-pendaftaran">Kode Pos</label>
                   <input
                     type="text"
                     class="form-control"
@@ -171,7 +215,7 @@
                 </div>
 
                 <div class="col pt-3">
-                  <label for="inputAddress" class="form-label">Pekerjaan</label>
+                  <label for="inputAddress" class="form-label" id="label-pendaftaran">Pekerjaan</label>
                   <input
                     type="text"
                     class="form-control"
@@ -180,7 +224,7 @@
                   />
                 </div>
 
-                <label for="inputAddress" class="form-label pt-3">Status</label>
+                <label for="inputAddress" class="form-label pt-3" id="label-pendaftaran">Status</label>
                 <div class="col">
                   <div class="form-check form-check-inline">
                     <input
@@ -215,7 +259,7 @@
             <!--Column 2-->
             <div class="col-6 pt-3">
               <div class="col pb-3">
-                <label for="inputAddress" class="form-label">Email</label>
+                <label for="inputAddress" class="form-label" id="label-pendaftaran">Email</label>
                 <input
                   type="Email"
                   class="form-control"
@@ -225,7 +269,7 @@
               </div>
 
               <div class="col pb-3">
-                <label for="inputAddress" class="form-label"
+                <label for="inputAddress" class="form-label" id="label-pendaftaran"
                   >Nomor Handphone</label
                 >
                 <input
@@ -237,7 +281,7 @@
               </div>
 
               <div class="col pb-3">
-                  <label for="formFile" class="form-label">Upload SHP (rar)</label>
+                  <label for="formFile" class="form-label" id="label-pendaftaran">Upload SHP (rar)</label>
                   <input class="form-control" type="file" id="formFile">
               </div>
 

@@ -527,7 +527,7 @@ main {
 
 #pendaftaran-box #input-pendaftaran {
   padding-bottom: 16px;
-  height: 60px;
+  height: 50px;
   border-radius: 8px;
   width: 100%;
 }
@@ -545,7 +545,13 @@ main {
 
 #pendaftaran-box #tomboldaftar {
   border-radius: 8px;
-  height: 60px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+
+#pendaftaran-box #label-pendaftaran {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1440px) {
