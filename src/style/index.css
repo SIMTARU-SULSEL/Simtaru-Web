@@ -77,15 +77,16 @@ nav button {
 /* ---- HERO ---- */
 #hero {
   display: flex;
-  background: url('../images/hero-bg.png');
+  background: url(../images/hero-bg.png);
   justify-content: center;
-  background-size: 100%;
   background-repeat: no-repeat;
-  height: fit-content;
-  padding-bottom: 70px;
+  background-size: cover;
+  height: 196vh;
+  /* padding-bottom: 70px; */
+  margin-bottom: 450px;
 }
 .hero-logo{
-  padding: 160px 0 300px;
+  padding: 160px 0;
 }
 .hero-logo img{
   width: 60%;
@@ -94,7 +95,7 @@ nav button {
   display: grid;
   max-width: 520px;
   padding: 0 51px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .hero-content h1 {
   font-size: 48px;
@@ -245,20 +246,25 @@ nav button {
 }
 
 /* card */
-.container-card{
+/* .container-card{
   margin: 128px;
-}
+} */
 
 /* --- CARD --- */
 #card{
+  background-color: #D12828;
   margin: 128px; 
 
 }
-
+#card .container-card {
+  max-width: 900px;
+  margin: auto;
+}
 #card .card{
-  width: 518px;
+  width: 390px;
+  height: 500px;
   border-radius: 24px;
-  padding: 24px;
+  padding: 15px;
 }
 
 #card .card img{
