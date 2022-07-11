@@ -4,15 +4,18 @@
   <nav>
     <div class="col-md-9 nav-child-wrapper">
       <ul class="nav-menu">
-        <li class="links"><a href="#">Home</a></li>
-        <li class="links"><a class="active" href="#">Tata Ruang</a></li>
-        <li class="links"><a href="#">Regulasi</a></li>
+        <li class="links"><a href="{{url('/')}}">Home</a></li>
+        <li class="links"><a href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
+        <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
         <li class="links"><a href="#">Publikasi</a></li>
-        <li class="links"><a href="#">Tanggapan</a></li>
+        <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
       </ul>
     </div>
     <div class="col-md-3 button">
-      <button>Pendaftaran</button>
+      <form action="/pendaftaran" method="GET" >
+        @csrf
+        <button>Pendaftaran</button>
+      </form>
     </div>
   </nav>
   <main>
@@ -21,7 +24,7 @@
     </div>
 
     <div class="container">
-      <form action="/pendaftaran" method="POST">
+      <form action="/pendaftaran" method="POST" enctype="multipart/form-data">
         @csrf
         <div id="pendaftaran-box">
           <div class="row justify-content-evenly">
@@ -79,7 +82,7 @@
                 <label for="inputEmail4" class="form-label pt-3">Asal Provinsi</label>
                 <div class="input-group">
                   <select class="form-select" name="Provinsi" id="input-pendaftaran" aria-label="Example select with button addon" required >
-                    <option selected value="">Pilih Provinsi</option>
+                    <option disabled selected value="">Pilih Provinsi</option>
                     <option value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
                     <option value="Sumatera Utara">Sumatera Utara</option>
                     <option value="Sumatera Selatan">Sumatera Selatan</option>
@@ -94,7 +97,7 @@
                 <label for="inputEmail4" class="form-label pt-3">Asal Kota/Kabupaten</label>
                 <div class="input-group">
                   <select class="form-select" name="KotaKabupaten" id="input-pendaftaran" aria-label="Example select with button addon" required >
-                    <option selected value="">Pilih Kota/Kabupaten</option>
+                    <option disabled selected value="">Pilih Kota/Kabupaten</option>
                     <option value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
                     <option value="Sumatera Utara">Sumatera Utara</option>
                     <option value="Sumatera Selatan">Sumatera Selatan</option>
@@ -109,7 +112,7 @@
                 <label for="inputEmail4" class="form-label pt-3">Asal Kecamatan</label>
                 <div class="input-group">
                   <select class="form-select" name="Kecamatan" id="input-pendaftaran" aria-label="Example select with button addon" required >
-                    <option selected value="">Pilih Kecamatan</option>
+                    <option disabled selected value="">Pilih Kecamatan</option>
                     <option value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
                     <option value="Sumatera Utara">Sumatera Utara</option>
                     <option value="Sumatera Selatan">Sumatera Selatan</option>
@@ -184,6 +187,16 @@
                 @enderror
               </div>
 
+              <div class="col pb-3">
+                <label for="formFile" class="form-label">Upload SHP (rar)</label>
+                <input class="form-control" name="SHP" type="file" id="formFile">
+                @error('SHP')
+                  <div class="invalid-feedback">
+                    {{$message}}
+                  </div>
+                @enderror
+              </div>
+
               <div class="d-grid gap-2">
                 <button class="btn btn-primary" type="submit" id="tomboldaftar">
                   Daftar
@@ -195,47 +208,6 @@
       </form>
     </div>
 
-    <div class="footer" id="footer">
-      <!-- <div class="row "> -->
-      <div class="col d-flex justify-content-center footer-information">
-        <div class="footer-title">
-          <div class="footer-title-img">
-            <img src="src/images/Logo-Sulsel.png" alt="" />
-            <img src="src/images/Logo-PLN.png" alt="" />
-          </div>
-          <h1>SIMTARU</h1>
-          <h3>
-            Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata
-            Ruang Provinsi Sulawesi Selatan
-          </h3>
-        </div>
-        <div class="footer-contact">
-          <div class="alamat">
-            <i class="uil uil-comments"></i>
-            <h4><b>Alamat</b></h4>
-            <p>Jalan A. Pangerang Pettarani <br />
-              No. 88-90 Makassar
-            </p>
-          </div>
-          <div class="kontak">
-            <i class="uil uil-comments"></i>
-            <h4><b>Hubungi Kami</b></h4>
-            <p>Jalan A. Pangerang Pettarani <br />
-              No. 88-90 Makassar
-            </p>
-          </div>
-        </div>
-        <div class="footer-license">
-          <h4><b>Made Possible by</b></h4>
-          <p>ABRIADR 2022</p>
-          <h4>
-            <b>Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan
-              Tata Ruang Provinsi Sulawesi Selatan
-            </b>
-          </h4>
-        </div>
-        <!-- </div> -->
-      </div>
-    </div>
+
   </main>
 @endsection

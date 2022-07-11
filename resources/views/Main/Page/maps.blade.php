@@ -6,13 +6,16 @@
       <ul class="nav-menu ">
         <li class="links"><a href="#">Home</a></li>
         <li class="links"><a class="active" href="#">Tata Ruang</a></li>
-        <li class="links"><a href="#">Regulasi</a></li>
+        <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
         <li class="links"><a href="#">Publikasi</a></li>
-        <li class="links"><a href="#">Tanggapan</a></li>
+        <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
       </ul>
     </div>
     <div class="col-md-3 button">
-      <button>Pendaftaran</button>
+      <form action="/pendaftaran" method="GET">
+        @csrf
+        <button>Pendaftaran</button>
+      </form>
     </div>
   </nav>
   <div class="main">

@@ -29,18 +29,18 @@ class pendaftaranController extends Controller
         ]);
         $newDatas = app('firebase.firestore')->database()->collection('DaftarPerizinan')->newDocument();
         $newDatas->set([
-            'KTP' => $validatedData['KTP'],
-            'Nama' => $request->Nama,
-            'Gender' => $request->Gender,
-            'Alamat' => $request->Alamat,
-            'Provinsi' => $request->Provinsi,
-            'KotaKabupaten' => $request->KotaKabupaten,
-            'Kecamatan' => $request->Kecamatan,
-            'KodePos' => $request->KodePos,
-            'Pekerjaan' => $request->Pekerjaan,
-            'StatusKewarganegaraan' => $request->StatusKewarganegaraan,
-            'Email' => $request->Email,
-            'NomorHandphone' => $request->NomorHandphone,
+            'nik' => $validatedData['KTP'],
+            'nama' => $request->Nama,
+            'jeniskelamin' => $request->Gender,
+            'alamat' => $request->Alamat,
+            'provinsi' => $request->Provinsi,
+            'kabKota' => $request->KotaKabupaten,
+            'kecamatan' => $request->Kecamatan,
+            'kodePos' => $request->KodePos,
+            'pekerjaan' => $request->Pekerjaan,
+            'kewarganegaraan' => $request->StatusKewarganegaraan,
+            'email' => $request->Email,
+            'noTlp' => $request->NomorHandphone,
         ]);
         return view('Main.Page.pendaftaran');
     }

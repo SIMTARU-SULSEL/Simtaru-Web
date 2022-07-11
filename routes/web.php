@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\mapsController;
 use App\Http\Controllers\pendaftaranController;
+use App\Http\Controllers\simtaruController;
+use App\Http\Controllers\tanggapanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,10 +22,14 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // Route::resource('/crud', App\Http\Controllers\CrudController::class);
-Route::get('/tata-ruang', [mapsController::class, 'index']);
-Route::get('/tata-ruang/detail', [mapsController::class, 'show']);
-Route::get('/pendaftaran', [pendaftaranController::class, 'index']);
-Route::post('/pendaftaran', [pendaftaranController::class, 'store']);
+Route::get('/', [simtaruController::class, 'index']);
+Route::get('/regulasi', [simtaruController::class, 'regulasiIndex']);
+Route::get('/tata-ruang', [simtaruController::class, 'mapsIndex']);
+Route::get('/tata-ruang/detail', [simtaruController::class, 'mapsDetail']);
+Route::get('/pendaftaran', [simtaruController::class, 'pendaftaranIndex']);
+Route::post('/pendaftaran', [simtaruController::class, 'pendaftaranStore']);
+Route::get('/tanggapan', [simtaruController::class, 'tanggapanIndex']);
+Route::post('/tanggapan', [simtaruController::class, 'pendaftaranStore']);
 // Access Admin Page
 // Route::get('/', function () {
 //     return view('CMS.Page.index');

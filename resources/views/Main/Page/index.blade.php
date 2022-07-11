@@ -1,0 +1,172 @@
+@extends('Main.Layout.MainWebLayout')
+
+@section('Main')
+<nav>
+  <div class="col-md-9 nav-child-wrapper">
+    <ul class="nav-menu ">
+      <li class="links"><a class="active" href="{{url('/')}}">Home</a></li>
+      <li class="links"><a href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
+      <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
+      <li class="links"><a href="#">Publikasi</a></li>
+      <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3 button">
+    <form action="/pendaftaran" method="GET">
+      @csrf
+      <button>Pendaftaran</button>
+    </form>
+  </div>
+</nav>
+
+
+<section id="hero">
+  <div class="text-center">
+    <div class="hero-logo">
+      <img src="{{URL::asset('/assets/Main/images/logo-simtaru.svg')}}" alt="">
+    </div>
+    <div class="hero-content">
+      <h1>Jelajahi Tata Ruang Sulawesi Selatan</h1>
+      <p>
+        Semuanya lebih mudah dengan adanya aplikasi SIMTARU oleh Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Sulawesi Selatan.
+      </p>
+      <button>Download</button>
+    </div>
+    <div class="hero-map">
+      <img src="{{URL::asset('/assets/Main/images/hero-map.png')}}" alt="">
+    </div>
+    <div class="hero-content-map">
+      <h1>Penasaran? Silahkan coba di web kami!</h1>
+      <button>Penelusuran Tata Ruang</button>
+    </div>
+  </div>
+</section>
+
+
+<section id="overview">
+  <div class="text-center">
+    <h1>Overview</h1>
+    <div class="row overwiew-wrapper">
+      <div class="col bordered">
+        <span>2</span>
+        Pengaduan Tata Ruang
+      </div>
+      <div class="col bordered">
+        <span>1</span>
+        Pertek Diterbitkan
+      </div>
+      <div class="col bordered">
+        <span>1</span>
+        Perda RTRW
+      </div>
+      <div class="col">
+        <span>1</span>
+        Perda RDTR
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-homepage">
+  <div class="about-content">
+    <div class="row">
+      <div class="col-7">
+        <h1>Mengenai SIMTARU</h1>
+        <p>
+          Perkembangan kota yang pesat membutuhkan perencanaan yang tepat, antisipatif, prospektif, dan didukung oleh semua pihak. 
+        </p>
+        <p>
+          Perkembangan kota dan daerah saat ini semakin dinamis, cepat dan membawa dampak yang besar bagi lingkungan, kuaitas pelayanan, kesehatan dan kesejah-teraan warga kota.
+        </p>
+        <p>
+          Perencanaan tata ruang wilayah baik di tingkat nasional, provinsi, kabupaten, kota maupun kawasan <span>sangat penting untuk mengarahkan pembangunan, baik fisik maupun sosial dan ekonomi.</span>
+        </p>
+      </div>
+      <div class="col-5 profile">
+        <div class="image-card text-center">
+          <img src="{{URL::asset("/assets/Main/images/profile.png")}}" alt="">
+        </div>
+        <div class="text-card">
+          <h5>Ir. Hj. Astina Abbas, MT.</h5>
+          <p>Kepala Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi <span>Selatan</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- card -->
+<div class="container-card" id="card">
+  <div class="container" >
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="scroll-wrapper">
+      <div class="col d-flex justify-content-center" id="horizontal">
+        <div class="card">
+          <img src="{{URL::asset('/assets/Main/images/image 36(1).png')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Penataan tata ruang</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is...</p>
+            <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center" id="horizontal">
+        <div class="card">
+          <img src="{{URL::asset('/assets/Main/images/image 35.png')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Penataan tata ruang</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is...</p>
+            <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center" id="horizontal">
+        <div class="card">
+          <img src="{{URL::asset('/assets/Main/images/image 24.png')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Penataan tata ruang</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center" id="horizontal">
+        <div class="card">
+          <img src="{{URL::asset('/assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Penataan tata ruang</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is..</p>
+            <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Apps Ads -->
+<div class="mobile-apps" id="mobile-apps">
+  <div class="container ">
+    <div class="card" >
+      <div class="card-information">
+        
+        <div class="card-body">
+          <h1 class="card-title"><b>Ayo <i>download</i> aplikasinya!</b></h1>
+          <p class="card-text">Sistem Informasi Perencanaan, Pemanfaatan, dan Pengendalian Tata Ruang Sulawesi Selatan</p>
+        </div>
+        
+        <div class="card-image" >
+          <div class="card-phone">
+            <img src="{{URL::asset('/assets/Main/images/Front 1.png')}}" alt="">
+          </div>
+          <div class="card-badge">
+            <img src="{{URL::asset('/assets/Main/images/google-play-badge 1.svg')}}" alt="">
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
+
