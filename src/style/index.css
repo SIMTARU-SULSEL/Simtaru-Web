@@ -23,7 +23,7 @@ body {
 
 /* ---- NAVBAR ---- */
 nav {
-  height: 75px;
+  height: 70px;
   width: 100%;
   top: 0px;
   border-radius: 0px;
@@ -41,16 +41,17 @@ nav .nav-child-wrapper {
 }
 nav ul {
   display: flex;
-  padding: 10px 100px;
+  padding: 10px 130px;
   margin-top: revert;
   list-style: none;
+  /* background-color: #8F8E8E; */
 }
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  padding: 10px 20px 24px;
+  padding: 10px 20px 17px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
@@ -62,15 +63,15 @@ nav ul li a:hover{
   color: var(--blue-primary);
 }
 nav button {
-  padding: 10px 27px 16px;
+  padding: 0 27px;
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
   border: none;
   border-radius: 8px;
   width: 165px;
-  height: 45px;
+  height: 42px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ---- HERO ---- */
@@ -352,42 +353,42 @@ nav button {
 
 /* --- FOOTER --- */
 #footer{
-  font-size: 24px;
-  padding: 124px;
-  /* margin-top: -300px; */
+  font-size: 20px;
   background-color: var(--blue-secondary);
-  /* height: 512px; */
   color: var(--gray-rarely-used);
 }
-
-#footer .footer-title, .footer-license, .footer-contact{
-  width: 75%;
+#footer .footer-container {
+  padding: 60px 100px;
 }
-
-#footer .footer-information .footer-title img{
-  width: 10%;
+#footer .footer-title img{
+  width: 40px;
 }
-
-#footer .footer-title, .footer-contact{
-  margin-right: 50px;
-}
-
-#footer h1, .footer-title-img, .footer-title h3{
-  padding-bottom: 16px;
-} 
-
 #footer .footer-title h1{
-  font-size: 88px;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 88px;
   color: var(--white-primary-text);
 } 
-
-#footer .footer-title h3{
-  font-size: 24px;
-  color: var(--white-primary-text);
+#footer.intro-web{
+  margin-top: -10px;
 } 
-
-#footer .footer-information h4{
-  font-size:24px;
+#footer p{
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--gray-rarely-used);
+  padding-right: 100px;
+} 
+#footer .title{
+  font-size:19px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--white-primary-text);
+}
+#footer .copyright{
+  font-size:19px;
+  padding-right: 140px;
+  font-weight: 700;
+  line-height: 36px;
   color: var(--white-primary-text);
 }
 
