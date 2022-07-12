@@ -10,6 +10,7 @@
         <li class="links"><a class="active" href="{{url('/regulasi')}}">Regulasi</a></li>
         <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
         <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
+      
       </ul>
     </div>
     <div class="col-md-3 button">
@@ -31,8 +32,8 @@
     <div class="wrapper-pagination">
       <ul>
         <li><a href="{{url('regulasi-uu')}}">UU</a></li>
-        <li><a href="{{url('regulasi-perpes')}}">PERPRES</a></li>
-        <li><a href="{{url('regulasi-kepres')}}" class="active">KEPRES</a></li>
+        <li><a href="{{url('regulasi-perpes')}}" class="active">PERPRES</a></li>
+        <li><a href="{{url('regulasi-kepres')}}" >KEPRES</a></li>
         <li><a href="{{url('regulasi-pp')}}">PP</a></li>
         <li><a href="{{url('regulasi-permen')}}">PERMEN</a></li>
         <li><a href="{{url('regulasi-perda')}}">PERDA</a></li>
@@ -77,26 +78,13 @@
         </div>
       </div>
     </div>
-      <!-- <ul>
-        <li>
-          <div class="wrapper-element">
-            <ul>
-              <li class="file-logo">
-                <img src="../images/pdf.png" alt="">
-              </li>
-              <li class="file-element">
-                
-              </li>
-            </ul>
-          </div>
-        </li>
 
-        <li></li>
-      </ul> -->
   </section>
 </div>
 @endsection
 
+
 @push('addonStyle')
 <link rel="stylesheet" href="{{URL::asset('assets/Main/style/index.css')}}">
 @endpush
+

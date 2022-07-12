@@ -19,9 +19,11 @@
   </div>
 </nav>
 <main>
-  <div id="header">
-      <h1>Tanggapan</h1>
-  </div>
+  <section id="hero2">
+    <div class="text-center hero-content2">
+      <h1>TANGGAPAN</h1>
+    </div>
+  </section>
 
   <div class="container">
       <div id="tanggapan-box">
@@ -30,24 +32,24 @@
               <div id="tanggapan-bio" class="tanggapan-block">
                   <div class="input-group mb-3" id="input-field">
                       <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                      <input type="text" class="form-control" placeholder="Nama" name="nama" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      <input type="text" class="form-control" placeholder="Nama" required name="nama" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
                   <div class="input-group mb-3" id="input-field">
                       <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                      <input type="text" class="form-control" placeholder="Email" name="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      <input type="email" class="form-control" placeholder="Email" required name="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
                   <div class="input-group mb-3" id="input-field">
                       <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                      <input type="text" class="form-control" placeholder="Judul tanggapan kamu" name="judul" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      <input type="text" class="form-control" placeholder="Judul tanggapan kamu" required name="judul" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
               </div>
               <div id="tanggapan-field" class="tanggapan-block">
                   <div class="input-group mb-3" id="input-field">
-                      <input type="text" class="form-control" placeholder="Tanggapan" name="pesan" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      <input type="text" class="form-control" placeholder="Tanggapan" required name="pesan" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
               </div>
-              <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Submit</button>
+              <div class="d-grid gap-2" id="tombolsubmit">
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div><br>
           </form>
       </div>
@@ -56,3 +58,6 @@
 
 @endsection
 
+@push('addonStyle')
+<link rel="stylesheet" href="{{URL::asset('assets/Main/style/index.css')}}">
+@endpush

@@ -50,3 +50,7 @@
 
   </div>
 @endsection
+
+@push('addonStyle')
+<link rel="stylesheet" href="{{URL::asset('assets/Main/style/index.css')}}">
+@endpush

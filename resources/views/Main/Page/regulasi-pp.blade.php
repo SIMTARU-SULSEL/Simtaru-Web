@@ -32,8 +32,8 @@
       <ul>
         <li><a href="{{url('regulasi-uu')}}">UU</a></li>
         <li><a href="{{url('regulasi-perpes')}}">PERPRES</a></li>
-        <li><a href="{{url('regulasi-kepres')}}" class="active">KEPRES</a></li>
-        <li><a href="{{url('regulasi-pp')}}">PP</a></li>
+        <li><a href="{{url('regulasi-kepres')}}" >KEPRES</a></li>
+        <li><a href="{{url('regulasi-pp')}}" class="active">PP</a></li>
         <li><a href="{{url('regulasi-permen')}}">PERMEN</a></li>
         <li><a href="{{url('regulasi-perda')}}">PERDA</a></li>
         <li><a href="{{url('regulasi-pergub')}}">PERGUB</a></li>
@@ -77,22 +77,7 @@
         </div>
       </div>
     </div>
-      <!-- <ul>
-        <li>
-          <div class="wrapper-element">
-            <ul>
-              <li class="file-logo">
-                <img src="../images/pdf.png" alt="">
-              </li>
-              <li class="file-element">
-                
-              </li>
-            </ul>
-          </div>
-        </li>
 
-        <li></li>
-      </ul> -->
   </section>
 </div>
 @endsection

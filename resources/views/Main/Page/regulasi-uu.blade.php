@@ -5,8 +5,8 @@
   <nav>
     <div class="col-md-9 nav-child-wrapper">
       <ul class="nav-menu ">
-        <li class="links"><a  href="{{url('/')}}">Home</a></li>
-        <li class="links"><a  href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
+        <li class="links"><a href="{{url('/')}}">Home</a></li>
+        <li class="links"><a href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
         <li class="links"><a class="active" href="{{url('/regulasi')}}">Regulasi</a></li>
         <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
         <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
@@ -30,9 +30,9 @@
   <section id="pagination">
     <div class="wrapper-pagination">
       <ul>
-        <li><a href="{{url('regulasi-uu')}}">UU</a></li>
+        <li><a href="{{url('regulasi-uu')}}" class="active">UU</a></li>
         <li><a href="{{url('regulasi-perpes')}}">PERPRES</a></li>
-        <li><a href="{{url('regulasi-kepres')}}" class="active">KEPRES</a></li>
+        <li><a href="{{url('regulasi-kepres')}}" >KEPRES</a></li>
         <li><a href="{{url('regulasi-pp')}}">PP</a></li>
         <li><a href="{{url('regulasi-permen')}}">PERMEN</a></li>
         <li><a href="{{url('regulasi-perda')}}">PERDA</a></li>
@@ -77,26 +77,11 @@
         </div>
       </div>
     </div>
-      <!-- <ul>
-        <li>
-          <div class="wrapper-element">
-            <ul>
-              <li class="file-logo">
-                <img src="../images/pdf.png" alt="">
-              </li>
-              <li class="file-element">
-                
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li></li>
-      </ul> -->
   </section>
+
 </div>
 @endsection
 
 @push('addonStyle')
-<link rel="stylesheet" href="{{URL::asset('assets/Main/style/index.css')}}">
+<link rel="stylesheet" href="{{URL::asset('assets/Main/style/regulasi.css')}}">
 @endpush

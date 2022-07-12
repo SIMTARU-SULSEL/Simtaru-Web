@@ -1,4 +1,5 @@
 @extends('Main.Layout.MainWebLayout')
+{{-- <link rel="stylesheet" href="../style/publikasi.css"> --}}
 
 @section('Main')
 <div class="wrapper-regulasi">
@@ -7,36 +8,28 @@
       <ul class="nav-menu ">
         <li class="links"><a  href="{{url('/')}}">Home</a></li>
         <li class="links"><a  href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
-        <li class="links"><a class="active" href="{{url('/regulasi')}}">Regulasi</a></li>
-        <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
+        <li class="links"><a  href="{{url('/regulasi')}}">Regulasi</a></li>
+        <li class="links"><a class="active" href="{{url('/publikasi')}}">Publikasi</a></li>
         <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
       </ul>
     </div>
     <div class="col-md-3 button">
-      <form action="/pendaftaran" method="GET">
-        @csrf
-        <button>Pendaftaran</button>
-      </form>
+      <button>Pendaftaran</button>
     </div>
   </nav>
 
 
   <section id="hero">
     <div class="text-center hero-content">
-      <h1>REGULASI</h1>
+      <h1>PUBLIKASI</h1>
     </div>
   </section>
 
   <section id="pagination">
     <div class="wrapper-pagination">
       <ul>
-        <li><a href="{{url('regulasi-uu')}}">UU</a></li>
-        <li><a href="{{url('regulasi-perpes')}}">PERPRES</a></li>
-        <li><a href="{{url('regulasi-kepres')}}" class="active">KEPRES</a></li>
-        <li><a href="{{url('regulasi-pp')}}">PP</a></li>
-        <li><a href="{{url('regulasi-permen')}}">PERMEN</a></li>
-        <li><a href="{{url('regulasi-perda')}}">PERDA</a></li>
-        <li><a href="{{url('regulasi-pergub')}}">PERGUB</a></li>
+        <li><a href="{{url('/regulasi-uu')}}">2020</a></li>
+        <li><a href="{{url('/regulasi-kepres')}}" class="active">2021</a></li>
       </ul>
     </div>
   </section>
@@ -77,26 +70,10 @@
         </div>
       </div>
     </div>
-      <!-- <ul>
-        <li>
-          <div class="wrapper-element">
-            <ul>
-              <li class="file-logo">
-                <img src="../images/pdf.png" alt="">
-              </li>
-              <li class="file-element">
-                
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li></li>
-      </ul> -->
   </section>
-</div>
+</div>    
 @endsection
 
 @push('addonStyle')
-<link rel="stylesheet" href="{{URL::asset('assets/Main/style/index.css')}}">
+<link rel="stylesheet" href="{{URL::asset('assets/Main/style/publikasi.css')}}">
 @endpush

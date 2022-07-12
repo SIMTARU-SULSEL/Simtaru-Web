@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin: 0;
@@ -536,6 +536,26 @@ main{
   background-color: var(--gray-primary-bg);
 }
 
+#hero2 {
+  /* background-image: url(/public/assets/Main/images/hero-logo.png); */
+  background: url('../images/hero-logo.png');
+  height: 45vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0  50px;
+}
+
+.hero-content2 h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--white-primary-text);
+}
+
+
 #header{
   background-color: var(--blue-secondary);
   background-image: url(/src/images/header-bg.svg);
@@ -592,6 +612,10 @@ main{
   border-radius: 16px;
 }
 
+#tanggapan-box #tombolsubmit {
+  height: 50px;
+}
+
 /* --- Pendaftaran Page --- */
 main{
   background-color: var(--gray-primary-bg);
@@ -638,7 +662,13 @@ main{
 
 #pendaftaran-box #tomboldaftar{
   border-radius: 8px;
-  height: 60px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+
+#pendaftaran-box #label-pendaftaran {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1440px){

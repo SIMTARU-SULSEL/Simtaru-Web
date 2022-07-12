@@ -24,12 +24,23 @@ use Illuminate\Support\Facades\Route;
 // Route::resource('/crud', App\Http\Controllers\CrudController::class);
 Route::get('/', [simtaruController::class, 'index']);
 Route::get('/regulasi', [simtaruController::class, 'regulasiIndex']);
+Route::get('/publikasi', [simtaruController::class, 'publikasiIndex']);
+
+Route::get('/regulasi-uu', [simtaruController::class, 'regulasiUU']);
+Route::get('/regulasi-kepres', [simtaruController::class, 'regulasiKepres']);
+
+Route::get('/regulasi-perda', [simtaruController::class, 'regulasiPerda']);
+Route::get('/regulasi-pergub', [simtaruController::class, 'regulasiPergub']);
+Route::get('/regulasi-permen', [simtaruController::class, 'regulasiPermen']);
+Route::get('/regulasi-perpes', [simtaruController::class, 'regulasiPerpes']);
+Route::get('/regulasi-pp', [simtaruController::class, 'regulasiPP']);
+
 Route::get('/tata-ruang', [simtaruController::class, 'mapsIndex']);
 Route::get('/tata-ruang/detail', [simtaruController::class, 'mapsDetail']);
 Route::get('/pendaftaran', [simtaruController::class, 'pendaftaranIndex']);
 Route::post('/pendaftaran', [simtaruController::class, 'pendaftaranStore']);
 Route::get('/tanggapan', [simtaruController::class, 'tanggapanIndex']);
-Route::post('/tanggapan', [simtaruController::class, 'pendaftaranStore']);
+Route::post('/tanggapan', [simtaruController::class, 'tanggapanStore']);
 // Access Admin Page
 // Route::get('/', function () {
 //     return view('CMS.Page.index');

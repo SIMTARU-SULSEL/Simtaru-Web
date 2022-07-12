@@ -24,6 +24,7 @@ body {
 .wrapper-regulasi{
   background-color: var(--gray-primary-bg);
 }
+
 /* ---- NAVBAR ---- */
 nav {
   height: 70px;
@@ -80,7 +81,6 @@ nav button {
 
 /* ---- HERO ---- */
 #hero {
-  /* background-image: url(/public/assets/Main/images/hero-logo.png); */
   background: url('../images/hero-logo.png');
   height: 45vh;
   background-size: 100%;
@@ -88,7 +88,7 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px 0  50px;
+  margin: 70px 0 50px;
 }
 .hero-content h1 {
   font-size: 60px;

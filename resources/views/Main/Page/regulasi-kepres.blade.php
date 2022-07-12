@@ -1,5 +1,6 @@
 @extends('Main.Layout.MainWebLayout')
 
+
 @section('Main')
 <div class="wrapper-regulasi">
   <nav>
@@ -10,6 +11,7 @@
         <li class="links"><a class="active" href="{{url('/regulasi')}}">Regulasi</a></li>
         <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
         <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
+      
       </ul>
     </div>
     <div class="col-md-3 button">
@@ -77,23 +79,9 @@
         </div>
       </div>
     </div>
-      <!-- <ul>
-        <li>
-          <div class="wrapper-element">
-            <ul>
-              <li class="file-logo">
-                <img src="../images/pdf.png" alt="">
-              </li>
-              <li class="file-element">
-                
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li></li>
-      </ul> -->
   </section>
+
+
 </div>
 @endsection
 
