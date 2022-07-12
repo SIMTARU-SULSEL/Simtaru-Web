@@ -107,13 +107,13 @@ nav button {
 #pagination .wrapper-pagination{
   background-color: var(--white-primary-text);
   border-radius: 24px;
-  max-width: 1200px;
+  max-width: 950px;
   margin: auto;
 }
 #pagination ul li{
   float: left;
   list-style: none;
-  padding: 25px 40px;
+  padding: 25px 35px;
 }
 #pagination ul li a {
   text-decoration: none;
@@ -122,6 +122,9 @@ nav button {
   line-height: 32px;
   color: var(--gray-secondary);
   cursor: pointer;
+}
+#pagination ul li a:hover{
+  color: var(--blue-primary);
 }
 #pagination ul li a.active{
   padding-bottom: 23px;
@@ -135,7 +138,7 @@ nav button {
 }
 .wrapper-content {
   background-color: var(--white-primary-text);
-  max-width: 1200px;
+  max-width: 950px;
   border-radius: 24px;
   display: flex;
   justify-content: center;
@@ -144,9 +147,9 @@ nav button {
   padding:30px;
 } 
 .wrapper-undang2{
-  max-width: 1100px;
+  max-width: 900px;
   /* margin: 30px 0; */
-  padding: 25px;
+  padding: 15px;
   border: solid var(--gray-secondary) 3px;
   border-radius: 24px;
 }
@@ -156,18 +159,18 @@ nav button {
   justify-content: center;
 }
 .file-logo img {
-  width: 120px;
+  width: 100px;
 }
 .file-element h5 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 28px;
 }
 .file-element p {
   color: var(--gray-secondary);
+  font-size: 20px;
   font-weight: 400; 
-  font-size: 22px;
-  line-height: 36px;
+  line-height: 28px;
 }
 .file-element button {
   padding: 10px 27px;
