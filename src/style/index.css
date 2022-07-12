@@ -574,13 +574,13 @@ main{
     padding: 90px;
   }
 
-  #footer{
+  /* #footer{
     font-size: 20px;
   }
 
   #footer .footer-title h3, #footer .footer-information h4{
     font-size: 20px;
-  } 
+  }  */
 }
 
 @media only screen and (max-width: 1210px){
@@ -638,11 +638,9 @@ main{
     clear: none;
   }
 
-  #footer{
+  /* #footer{
     font-size: 24px;
-    /* padding: 50px; */
     margin-top: auto;
-    /* height: 512px; */
   }
 
   #footer .footer-title, .footer-license, .footer-contact{
@@ -662,7 +660,7 @@ main{
 
   #footer .footer-information h4{
       font-size: 24px;
-  }
+  } */
 }
 
 @media only screen and (max-width:1000px){
@@ -712,11 +710,10 @@ main{
     width: 200px;
   }
 
-  #footer{
+  /* #footer{
     font-size: 18px;
     padding: 50px;
     margin-top: 0px;
-    /* height: 512px; */
   }
 
   #footer .footer-title h1{
@@ -729,7 +726,7 @@ main{
 
   #footer .footer-information h4{
       font-size: 18px;
-  }
+  } */
 
   #filter{
     height: auto;
@@ -785,11 +782,10 @@ main{
     width: 200px;
   }
 
-  #footer{
+  /* #footer{
     font-size: 20px;
     padding: 50px;
     margin-top: 0px;
-    /* height: 512px; */
   }
 
   #footer .footer-information{
@@ -808,7 +804,7 @@ main{
 
   #footer .footer-information h4{
       font-size: 20px;
-  }
+  } */
 
 }
 
@@ -925,11 +921,10 @@ main{
       }
       
       /* --- FOOTER --- */
-    #footer{
+    /* #footer{
         font-size: 12px;
         padding: 50px;
         margin-top: auto;
-        /* height: 512px; */
     }
     #footer .footer-information{
         display: flex;
@@ -959,5 +954,5 @@ main{
 
     #footer .footer-information h4{
         font-size: 12px;
-    }
+    } */
 }
