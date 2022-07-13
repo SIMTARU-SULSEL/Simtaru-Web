@@ -49,21 +49,35 @@
       <section id="pagination">
         <div class="wrapper-pagination">
           <ul>
-            <li><a href="../page/regulasi-uu.html" class="active">UU</a></li>
-            <li><a href="../page/regulasi-perpres.html">PERPRES</a></li>
-            <li><a href="../page/regulasi-kepres.html" >KEPRES</a></li>
-            <li><a href="../page/regulasi-pp.html">PP</a></li>
-            <li><a href="../page/regulasi-permen.html">PERMEN</a></li>
-            <li><a href="../page/regulasi-perda.html">PERDA</a></li>
-            <li><a href="../page/regulasi-pergub.html">PERGUB</a></li>
+            <p>
+              <li>
+                <a data-bs-toggle="collapse" href="#uu-collapse" role="button" aria-expanded="true" aria-controls="uu-collapse">UU</a></li>
+              <li>
+                <a data-bs-toggle="collapse" href="#perpres-collapse" role="button" aria-expanded="false" aria-controls="perpres-collapse">PERPRES</a>
+              </li>
+              <li>
+                <a href="../page/regulasi-kepres.html" >KEPRES</a>
+              </li>
+              <li>
+                <a href="../page/regulasi-pp.html">PP</a>
+              </li>
+              <li>
+                <a href="../page/regulasi-permen.html">PERMEN</a>
+              </li>
+              <li>
+                <a href="../page/regulasi-perda.html">PERDA</a>
+              </li>
+              <li>
+                <a href="../page/regulasi-pergub.html">PERGUB</a>
+              </li>
+            </p>
           </ul>
         </div>
       </section>
-
+ 
       <section id="content">
-        <div class="wrapper-content">
+        <div id="uu-collapse" class="wrapper-content collapse">
           <div class="cards">
-            
             <div class="wrapper-undang2 row">
               <div class="col-lg-2 file-logo">
                 <img src="../images/pdf.png" alt="">
@@ -77,10 +91,8 @@
                 </div>
               </div>
             </div>
-
             <!-- divider between two cards-->
             <br>
-
             <div class="wrapper-undang2 row">
               <div class="col-lg-2 file-logo">
                 <img src="../images/pdf.png" alt="">
@@ -94,6 +106,42 @@
                 </div>
               </div>
             </div>
+                    
+          </div>
+        </div>
+
+        <!-- PERPRES -->
+        <div id="perpres-collapse" class="wrapper-content collapse">
+          <div class="cards">
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-2 file-logo">
+                <img src="../images/pdf.png" alt="">
+                
+              </div>
+              <div class="col-lg-10 file-element">
+                <h5>UU PEreNomor 45 Tahun 2009</h5>
+                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
+                <div class="button">
+                  <button type="button">Download</button>
+                </div>
+              </div>
+            </div>
+            <!-- divider between two cards-->
+            <br>
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-2 file-logo">
+                <img src="../images/pdf.png" alt="">
+                
+              </div>
+              <div class="col-lg-10 file-element">
+                <h5>UU Nomor 45 Tahun 2009</h5>
+                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
+                <div class="button">
+                  <button type="button">Download</button>
+                </div>
+              </div>
+            </div>
+                    
           </div>
         </div>
       </section>
