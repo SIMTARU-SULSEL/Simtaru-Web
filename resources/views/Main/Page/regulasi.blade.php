@@ -57,11 +57,36 @@
       </div>
     </section>
 
+   
+
     <section id="content">
       <div id="uu-collapse" class="collapse show" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards">
-            <div class="wrapper-undang2 row">
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Undang-Undang')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
+                </div>
+              </div>
+              <!-- divider between two cards-->
+              <br>
+              @else
+                <?php $empty = True ?>
+              @endif
+            @empty
+                Maaf, sepertinya data yang anda cari tidak ada
+            @endforelse
+
+            {{-- <div class="wrapper-undang2 row">
               <div class="col-lg-2 file-logo">
                 <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 
@@ -73,22 +98,7 @@
                   <button type="button">Download</button>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
-                </div>
-              </div>
-            </div>
+            </div> --}}
                     
           </div>
         </div>
@@ -98,34 +108,31 @@
       <div id="perpres-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Peraturan Presiden')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>
@@ -135,34 +142,30 @@
       <div id="kepres-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Keputusan Presiden')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>
@@ -172,34 +175,30 @@
       <div id="pp-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Peraturan Pemerintah')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>
@@ -209,34 +208,30 @@
       <div id="permen-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Peraturan Menteri')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>
@@ -246,34 +241,30 @@
       <div id="perda-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Peraturan Daerah')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>
@@ -283,34 +274,30 @@
       <div id="pergub-collapse" class="collapse" data-bs-parent="#collapse-parent">
         <div class="wrapper-content">
           <div class="cards"> 
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+            @forelse ($datas as $item)
+              @if ($item->data()['kategori'] == 'Peraturan Bupati')
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-2 file-logo">
+                  <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
+                </div>
+                <div class="col-lg-10 file-element">
+                  <h5>{{$item->data()['judul']}}</h5>
+                  {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
+                  <div class="button">
+                    <a href="{{$item->data()['link']}}"><button type="button">Download</button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- divider between two cards-->
-            <br>
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
-              </div>
-              <div class="col-lg-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
+              <!-- divider between two cards-->
+              <br>
+              @endif
+            @empty
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            </div>
+            @endforelse
                     
           </div>
         </div>

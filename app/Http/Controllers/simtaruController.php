@@ -15,7 +15,8 @@ class simtaruController extends Controller
 
     public function regulasiIndex()
     {
-        return view('Main.Page.regulasi');
+        $datas = app('firebase.firestore')->database()->collection('Regulasi')->documents();
+        return view('Main.Page.regulasi', ['datas' => $datas]);
     }
 
     public function publikasiIndex()
@@ -23,40 +24,40 @@ class simtaruController extends Controller
         return view('Main.Page.publikasi');
     }
 
-    public function regulasiUU()
-    {
-        return view('Main.Page.regulasi-uu');
-    }
+    // public function regulasiUU()
+    // {
+    //     return view('Main.Page.regulasi-uu');
+    // }
 
-    public function regulasiKepres()
-    {
-        return view('Main.Page.regulasi-kepres');
-    }
+    // public function regulasiKepres()
+    // {
+    //     return view('Main.Page.regulasi-kepres');
+    // }
 
-    public function regulasiPerda()
-    {
-        return view('Main.Page.regulasi-perda');
-    }
+    // public function regulasiPerda()
+    // {
+    //     return view('Main.Page.regulasi-perda');
+    // }
 
-    public function regulasiPergub()
-    {
-        return view('Main.Page.regulasi-pergub');
-    }
+    // public function regulasiPergub()
+    // {
+    //     return view('Main.Page.regulasi-pergub');
+    // }
 
-    public function regulasiPermen()
-    {
-        return view('Main.Page.regulasi-permen');
-    }
+    // public function regulasiPermen()
+    // {
+    //     return view('Main.Page.regulasi-permen');
+    // }
 
-    public function regulasiPerpes()
-    {
-        return view('Main.Page.regulasi-perpres');
-    }
+    // public function regulasiPerpes()
+    // {
+    //     return view('Main.Page.regulasi-perpres');
+    // }
 
-    public function regulasiPP()
-    {
-        return view('Main.Page.regulasi-pp');
-    }
+    // public function regulasiPP()
+    // {
+    //     return view('Main.Page.regulasi-pp');
+    // }
 
     public function mapsIndex()
     {
@@ -113,14 +114,10 @@ class simtaruController extends Controller
         // $extension = $SHP->getClientOriginalExtension();
         $file = $SHP->getClientOriginalName();
         $firebase_storage_path = 'SHP/';
-        $localfolder = public_path('firebase-temp-uploads') . '/';
-        if ($SHP->move($localfolder, $file)) {
-            $uploadedfile = fopen($localfolder . $file, 'r');
-            app('firebase.storage')->getBucket()->upload($uploadedfile, ['name' => $firebase_storage_path . $file]);
-
-            //will remove from local laravel folder  
-            // $unlink = unlink($localfolder . $file);
-        }
+        // $localfolder = public_path('firebase-temp-uploads') . '/';
+        // if ($SHP->move($localfolder, $file)) {
+        // $uploadedfile = fopen($SHP, 'r');
+        app('firebase.storage')->getBucket()->upload($SHP, ['name' => $firebase_storage_path . $file, 'public' => true]);
         $newDatas = app('firebase.firestore')->database()->collection('DaftarPerizinan')->newDocument();
         $newDatas->set([
             'createdAt' => $current_time,

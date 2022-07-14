@@ -135,6 +135,7 @@ nav button {
 /* --- CONTENT PERUNDANG-UNDANGAN --- */
 #content {
   margin-bottom: 60px;
+  background-color: var(--white-primary-text);
 }
 .wrapper-content {
   background-color: var(--white-primary-text);
