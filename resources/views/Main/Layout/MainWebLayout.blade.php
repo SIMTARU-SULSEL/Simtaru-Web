@@ -15,5 +15,6 @@
     @yield('Main')
     @include('Main.Include.Footer')
     @include('Main.Include.Script')
+    @stack('addonScript')
 </body>
 </html>

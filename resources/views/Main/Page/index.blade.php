@@ -7,7 +7,7 @@
       <li class="links"><a class="active" href="{{url('/')}}">Home</a></li>
       <li class="links"><a href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
       <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
-      <li class="links"><a href="#">Publikasi</a></li>
+      <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
       <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
     </ul>
   </div>
