@@ -374,7 +374,7 @@ nav button {
 } */
 #mobile-apps .card-image .card-phone img{
   margin-top: -250px;
-  width: 300px;
+  width: 270px;
 }
 #mobile-apps .card-image .card-badge a {
   text-decoration: none;
@@ -596,8 +596,9 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 965px;
+    width: 870px;
     padding: 70px;
+    height: 350px;
   }
 
   /* #footer{
