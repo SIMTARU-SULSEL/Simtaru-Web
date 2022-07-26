@@ -83,7 +83,7 @@ nav button {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 196vh;
+  height: 1200px;
   /* padding-bottom: 70px; */
   margin-bottom: 500px;
 }
@@ -97,7 +97,7 @@ nav button {
   display: grid;
   max-width: 520px;
   padding: 0 51px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
 .hero-content h1 {
   font-size: 48px;
