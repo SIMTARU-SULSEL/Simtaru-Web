@@ -139,6 +139,8 @@ nav .menu-toggle input:checked ~ span:last-child {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100vw;
   height: 1200px;
   /* padding-bottom: 70px; */
   margin-bottom: 500px;
@@ -560,9 +562,21 @@ nav .menu-toggle input:checked ~ span:last-child {
     opacity: 1;
     transform: translateX(0);
   }
+  #mobile-apps {
+    width: 100vw;
+    height: 600px;
+  }
+  #mobile-apps .card{
+    top: 200px;
+    width: 650px;
+  }
 }
 
 @media (min-width: 1220px){
+  #hero {
+    background-position: initial;
+    width: 100vw;
+  }
   #mobile-apps .card{
     display: block;
     margin-left: auto;
@@ -586,7 +600,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   #mobile-apps .card-image .card-phone img {
     margin-top: -170px;
     width: 200px;
-
+  }
   /* #footer{
     font-size: 20px;
   }
@@ -749,5 +763,4 @@ main{
 #pendaftaran-box #tomboldaftar{
   border-radius: 8px;
   height: 60px;
-}
 }
