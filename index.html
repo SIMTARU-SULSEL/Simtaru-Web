@@ -24,17 +24,26 @@
     <div id="app"></div> -->
 
     <nav>
-      <div class="col-md-9 nav-child-wrapper">
+      <div class="active-page">
+        <a class="active"href="#">Home</a>
+      </div>
+      <div class="nav-wrapper">
+
         <ul class="nav-menu ">
           <li class="links"><a class="active" href="#">Home</a></li>
           <li class="links"><a  href="#">Tata Ruang</a></li>
           <li class="links"><a href="src/page/regulasi.html">Regulasi</a></li>
           <li class="links"><a href="src/page/publikasi.html">Publikasi</a></li>
           <li class="links"><a href="#">Tanggapan</a></li>
+          <li class="button-pendaftaran"><a class="button" href="">Pendaftaran</a></li>
         </ul>
-      </div>
-      <div class="col-md-3 button">
-        <button>Pendaftaran</button>
+
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
@@ -242,5 +251,7 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="nav.js"></script>
   </body>
 </html>
