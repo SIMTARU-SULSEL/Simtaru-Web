@@ -48,7 +48,6 @@ nav ul {
   padding: 10px 130px;
   margin-top: revert;
   list-style: none;
-  background-color: #8F8E8E;
 }
 nav ul li a {
   text-decoration: none;
@@ -384,7 +383,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 190vh;
+  height: 170vh;
   /* padding-bottom: 70px; */
 }
 
@@ -569,6 +568,52 @@ nav .menu-toggle input:checked ~ span:last-child {
   #mobile-apps .card{
     top: 200px;
     width: 650px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .hero-content h1{
+    font-size: 45px;
+  }
+  .hero-content-map h1{
+    font-size: 45px;
+  }
+  #overview {
+    max-width: 530px;
+  }
+  #overview h1{
+    font-size: 45px; 
+  }
+  .overwiew-wrapper {
+    font-size: 11px;
+  }
+  .overwiew-wrapper span{
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #about-homepage {
+    max-width: 555px;
+  }
+  .about-content h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .about-content p {
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .about-content .profile img{
+    width: 170px;
+  }
+  .about-content .profile .text-card span{
+    display: contents;
+  }
+  .about-content .profile .text-card{
+    padding-top: 25px;
+  }
+  #card h1{
+    font-size: 45px;
   }
 }
 
@@ -763,4 +808,46 @@ main{
 #pendaftaran-box #tomboldaftar{
   border-radius: 8px;
   height: 60px;
+}
+
+/* --- MAPS --- */
+/* --- MAPS --- */
+#iframe {
+  height: 721px;
+  /* background-color: #D12828; */
+  background-image: url(/src/images/maps.svg);
+  width: 100%;
+  /* height: 100%; */
+}
+
+#filter {
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 40px 0px 40px 0px;
+}
+
+#filter .row .button {
+  width: 10%;
+  /* margin: auto 12px; */
+  border-color:  transparent;
+  background-color: var(--gray-secondary);
+  color: white;
+}
+
+#filter .row .dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#filter .row .dropdown button {
+  /* background-color: var(--white-primary-text); */
+  background-color: #1E1E1E;
+  color: var(--gray-secondary);
+  border-color: var(--gray-secondary);
 }
