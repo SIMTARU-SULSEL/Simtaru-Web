@@ -469,14 +469,13 @@ main {
   width: 100%;
 }
 
-#tanggapan-box .tanggapan-block {
-  width: 50%;
+/* #tanggapan-box .tanggapan-block {
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 #tanggapan-box #tanggapan-bio {
-  float: left;
   padding-right: 16px;
 }
 
@@ -524,7 +523,7 @@ main {
 }
 
 #pendaftaran-box {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   margin-top: 60px;
 }
@@ -775,6 +774,22 @@ main {
     width: 200px;
   }
 
+  .container #pendaftaran-box #pendaftaran-box-responsive {
+    flex-direction: column-reverse;
+  }
+
+  .container #tanggapan-box {
+    flex-direction: column;
+  }
+
+  .container #tanggapan-box .tanggapan-block {
+    width: 100%;
+  }
+
+  .container #pendaftaran-box #pendaftaran-box-responsive #form {
+    width: 100%;
+  }
+
   #footer {
     font-size: 20px;
     padding: 50px;
@@ -802,6 +817,13 @@ main {
 }
 
 /* ---RESPONSIVE--- */
+@media only screen and (max-width: 550px) {
+  #pendaftaran-box-responsive {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   #card {
     margin: 5%;
