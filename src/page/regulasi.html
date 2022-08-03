@@ -25,17 +25,25 @@
 
     <div class="wrapper-regulasi">
       <nav>
-        <div class="col-md-9 nav-child-wrapper">
+        <div class="active-page">
+          <a class="active" href="#hero">Publikasi</a>
+        </div>
+
+        <div class="nav-wrapper">
           <ul class="nav-menu ">
             <li class="links"><a  href="../../index.html">Home</a></li>
             <li class="links"><a  href="#">Tata Ruang</a></li>
             <li class="links"><a class="active" href="#">Regulasi</a></li>
             <li class="links"><a href="publikasi.html">Publikasi</a></li>
             <li class="links"><a href="#">Tanggapan</a></li>
+            <li class="button-pendaftaran"><a class="button" href="">Pendaftaran</a></li>
           </ul>
-        </div>
-        <div class="col-md-3 button">
-          <button>Pendaftaran</button>
+       </div>
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
   
@@ -47,12 +55,45 @@
       </section>
       
       <div id="collapse-parent">
+        <!-- <section id="pagination">
+          <div class=" row wrapper-pagination">
+            <p>
+              <div class="col">
+                <a data-bs-toggle="collapse" href="#uu-collapse" role="button" aria-expanded="true" aria-controls="uu-collapse" >UU</a></li>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="collapse" href="#perpres-collapse" role="button" aria-expanded="false" aria-controls="perpres-collapse">PERPRES</a>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="collapse" href="#kepres-collapse" role="button" aria-expanded="true" aria-controls="kepres-collapse" >KEPRES</a>
+  
+              </div>
+              <div class="col">
+  
+                <a data-bs-toggle="collapse" href="#pp-collapse" role="button" aria-expanded="true" aria-controls="pp-collapse" >PP</a>
+              </div>
+              <div class="col">
+  
+                <a data-bs-toggle="collapse" href="#permen-collapse" role="button" aria-expanded="true" aria-controls="permen-collapse">PERMEN</a>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="collapse" href="#perda-collapse" role="button" aria-expanded="true" aria-controls="perda-collapse">PERDA</a>
+  
+              </div>
+              <div class="col">
+  
+                <a data-bs-toggle="collapse" href="#pergub-collapse" role="button" aria-expanded="true" aria-controls="pergub-collapse">PERGUB</a>
+              </div>
+            </p>
+          </div>
+        </section> -->
+
         <section id="pagination">
           <div class="wrapper-pagination">
             <ul>
               <p>
                 <li>
-                  <a data-bs-toggle="collapse" href="#uu-collapse" role="button" aria-expanded="true" aria-controls="uu-collapse" >UU</a></li>
+                  <a  data-bs-toggle="collapse" href="#uu-collapse" role="button" aria-expanded="true" aria-controls="uu-collapse" >UU</a></li>
                 <li>
                   <a data-bs-toggle="collapse" href="#perpres-collapse" role="button" aria-expanded="false" aria-controls="perpres-collapse">PERPRES</a>
                 </li>
@@ -74,6 +115,37 @@
               </p>
             </ul>
           </div>
+
+          <div class="wrapper-pagination-mobile">
+            <ul>
+              <p>
+                <li>
+                  <a  data-bs-toggle="collapse" href="#uu-collapse" role="button" aria-expanded="true" aria-controls="uu-collapse" >UU</a></li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#perpres-collapse" role="button" aria-expanded="false" aria-controls="perpres-collapse">PERPRES</a>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#kepres-collapse" role="button" aria-expanded="true" aria-controls="kepres-collapse" >KEPRES</a>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#pp-collapse" role="button" aria-expanded="true" aria-controls="pp-collapse" >PP</a>
+                </li>
+              </p>
+            </ul>
+            <ul>
+              <p>
+                <li>
+                  <a data-bs-toggle="collapse" href="#permen-collapse" role="button" aria-expanded="true" aria-controls="permen-collapse">PERMEN</a>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#perda-collapse" role="button" aria-expanded="true" aria-controls="perda-collapse">PERDA</a>
+                </li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#pergub-collapse" role="button" aria-expanded="true" aria-controls="pergub-collapse">PERGUB</a>
+                </li>
+              </p>
+            </ul>
+          </div>
         </section>
    
         <section id="content">
@@ -81,11 +153,11 @@
             <div class="wrapper-content">
               <div class="cards">
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -96,11 +168,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -118,11 +190,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -133,11 +205,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -155,11 +227,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -170,11 +242,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -192,11 +264,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -207,11 +279,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -229,11 +301,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -244,11 +316,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -266,11 +338,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -281,11 +353,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -303,11 +375,11 @@
             <div class="wrapper-content">
               <div class="cards"> 
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -318,11 +390,11 @@
                 <!-- divider between two cards-->
                 <br>
                 <div class="wrapper-undang2 row">
-                  <div class="col-lg-2 file-logo">
+                  <div class="col-lg-2 col-md-2 file-logo">
                     <img src="../images/pdf.png" alt="">
                     
                   </div>
-                  <div class="col-lg-10 file-element">
+                  <div class="col-lg-10 col-md-10 file-element">
                     <h5>UU Nomor 45 Tahun 2009</h5>
                     <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                     <div class="button">
@@ -389,5 +461,6 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
+    <script src="../../nav.js"></script>
   </body>
 </html>

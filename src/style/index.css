@@ -544,7 +544,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
-@media screen and (max-width:945px) {
+@media screen and (max-width:800px) {
   nav {
     justify-content: space-between;
     padding: 0 100px;
@@ -767,7 +767,6 @@ nav .menu-toggle input:checked ~ span:last-child {
     text-align: center;
     font-size: 35px;
     line-height: 38px;
-    margin-bottom: 15px;
   }
   .about-content .wrapper-content {
     padding-top: 15px;
