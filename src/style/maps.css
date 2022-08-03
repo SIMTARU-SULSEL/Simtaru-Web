@@ -93,6 +93,49 @@ nav .active-page a.active{
   padding: 17px;
   border-bottom: 4px solid var(--blue-primary);
 }
+nav .menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+nav .menu-toggle input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -4px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+nav .menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: var(--blue-primary);
+  transition: all 0.5s;
+}
+nav .menu-toggle span:nth-child(2){
+  transform-origin: 0 0 ;
+}
+nav .menu-toggle span:last-child{
+  transform-origin: 0 0 ;
+}
+nav .menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(1px, -1px);
+}
+nav .menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+nav .menu-toggle input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(-3px, 0px);
+}
+
+
 /* --- FOOTER --- */
 #footer{
   font-size: 20px;
@@ -232,7 +275,40 @@ nav .active-page a.active{
     padding: 0 100px;
   }
   nav ul{
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    flex-direction: column;
+    background-color: var(--white-primary-text);
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -100;
+    transform: translateX(100%);
+    transition: all 0.8s;
+    opacity: 0;
+  }
+  nav ul li a{
+    /* padding: 10px 0 18px; */
+    margin: auto;
+    display: flex;
+    width: 150px;
+    font-size: 13px;
+  }
+  nav ul li a.active {
+    border-bottom: 4px solid var(--blue-primary);
+  }
+  nav ul li a.buton {
+    margin-left: 0;
+  }
+  nav .menu-toggle {
+    display: flex;
+  }
+  nav ul.slide{
+    padding-top: 30px;
+    opacity: 1;
+    transform: translateX(0);
   }
   .menu-maps {
     display: none;
@@ -253,6 +329,9 @@ nav .active-page a.active{
   nav .active-page a.active{
     padding: 17px;
     border-bottom: 4px solid var(--blue-primary);
+  }
+  .menu-maps{
+    display: none;
   }
   .menu-maps-mobile{
     display: block;
@@ -288,14 +367,27 @@ nav .active-page a.active{
     padding-right: 0px;
   }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:560px){
   nav {
     justify-content: space-between;
     padding: 0 60px;
   }
 }
+@media screen and (max-width:500px){
+  nav {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width:450px){
+  nav {
+    padding: 0 5px;
+  }
+  .menu-maps-mobile .button-maps {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width:380px){
   nav {
-    padding: 0 40px;
+    padding: 0 5px;
   }
 }
