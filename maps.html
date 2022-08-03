@@ -26,7 +26,10 @@
     <div class="active-page">
       <a class="active"href="#">Tata Ruang</a>
     </div>
-    <div class="nav-wrapper">
+    <div class="menu-maps">
+      <button class="btn button-maps" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-circle-chevron-left"></i>Pilih Peta</button>
+    </div>
+    <!-- <div class="nav-wrapper">
 
       <ul class="nav-menu ">
         <li class="links"><a class="" href="#">Home</a></li>
@@ -43,113 +46,83 @@
         <span></span>
         <span></span>
       </div>
-    </div>
+    </div> -->
   </nav>
   
-  <div class="nav-maps">
-    <div class="sidebar">
-      <!-- <div class="logo">
-        <img src="src/images/Logo-Sulsel.png" alt="">
-        <h1>
-          SIMTARU <span>Sulawesi Selatan</span>
-        </h1>
-      </div> -->
-    </div>
-  
-    <!-- <div class="menu-toggle">
-      <input type="checkbox">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div> -->
-  </div>
+
 
   <div class="main">
-    <div class="row">
-      <div class="col-3">
-        <div class="nav-maps">
-          <div class="sidebar">
-            <div id="filter">
-              <ul>
-                <li>
-                  <h1>
-                    TATA <span>RUANG</span>
-                  </h1>
-                </li>
-                <li>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="button-send">
-                    <button> lihat </button>
-                  </div>
-                </li>
-        
-              </ul>
-              <!-- <div class="row">
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-                <button class="button">Lihat</button>
-              </div> -->
+    <div class="menu-maps">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Pilih Peta</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="nav-maps">
+            <div class="sidebar">
+              <div id="filter">
+                <ul>
+                  <li>
+                    <h1>
+                      TATA <span>RUANG</span>
+                    </h1>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="button-send">
+                      <button> lihat </button>
+                    </div>
+                  </li>
+          
+                </ul>
+              
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-9">
-        <iframe src="" frameborder="0" id="iframe"></iframe>
-      </div>
     </div>
+    <div class="maps">
+      <iframe src="" frameborder="0" id="iframe"></iframe>
+
+    </div>
+
 
     <!-- <div id="filter">
       <div class="dropdown">
