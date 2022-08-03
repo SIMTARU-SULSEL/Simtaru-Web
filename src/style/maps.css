@@ -288,3 +288,9 @@ nav .active-page a.active{
     padding-right: 0px;
   }
 }
+@media screen and (max-width:400px){
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+}
+}

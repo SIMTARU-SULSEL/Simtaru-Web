@@ -548,6 +548,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:800px) {
+  #hero {
+    margin-bottom: 400px;
+  }
   nav {
     justify-content: space-between;
     padding: 0 100px;
@@ -574,7 +577,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     right: 0;
     top: 0;
     height: 100vh;
-    width: 200px;
+    width: 300px;
     flex-direction: column;
     background-color: var(--white-primary-text);
     justify-content: space-evenly;
@@ -651,6 +654,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:768px){
+  .hero-content {
+    margin-bottom: 105px;
+  }
   #footer p span{
     display: inline;
   }
@@ -816,6 +822,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   #hero {
     margin-bottom: 450px;
   }
+  .hero-content {
+    margin-bottom: 110px;
+  }
 }
 @media screen and (max-width:410px){
   #overview-mobile .overwiew-wrapper span{
@@ -826,9 +835,6 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 @media screen and (max-width:400px){
-  .hero-content {
-    margin-bottom: 170px;
-  }
   .hero-content h1 {
     font-size: 37px;
     line-height: 42px;
@@ -844,9 +850,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 @media screen and (max-width:350px){
   #hero{
     margin-bottom: 330px;
-  }
-  .hero-content {
-    margin-bottom: 130px;
   }
   .hero-content h1{
     font-size: 32px;
@@ -873,6 +876,11 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 13px;
     line-height: 17px;
   }
+}
+@media screen and (max-width:310px) {
+  .hero-map img {
+    width: 230px;
+}
 }
 @media screen and (max-width:290px) {
   #overview-mobile .overwiew-wrapper .col {
