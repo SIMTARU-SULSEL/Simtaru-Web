@@ -508,6 +508,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   line-height: 24px;
   color: var(--white-primary-text);
 }
+#footer p span{
+  display: block;
+}
 
 
 @media (max-width:1000px) {
@@ -647,6 +650,25 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
+@media screen and (max-width:768px){
+  #footer p span{
+    display: inline;
+  }
+  #footer .footer-container {
+    padding: 60px 50px;
+  }
+  #footer p{
+    font-size: 14px;
+    padding-right: 0px;
+  } 
+  #footer .title{
+    font-size:14px;
+  }
+  #footer .copyright{
+    font-size:14px;
+    padding-right: 0px;
+  }
+}
 @media screen and (max-width:600px){
   #hero {
     max-height: 1100px;
