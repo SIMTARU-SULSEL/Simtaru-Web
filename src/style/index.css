@@ -516,7 +516,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 @media (max-width:1000px) {
   nav ul {
     display: flex;
-    padding: 10px 130px;
+    padding: 10px 50px;
     margin-top: revert;
     list-style: none;
   }
@@ -655,7 +655,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     display: inline;
   }
   #footer .footer-container {
-    padding: 60px 50px;
+    padding: 60px 100px;
   }
   #footer p{
     font-size: 14px;
@@ -808,9 +808,90 @@ nav .menu-toggle input:checked ~ span:last-child {
   .about-content .profile img {
     width: 100%;
   }
-
+  #footer .footer-container {
+    padding: 60px;
+  } 
+}
+@media screen and (max-width:480px){
+  #hero {
+    margin-bottom: 450px;
+  }
+}
+@media screen and (max-width:410px){
+  #overview-mobile .overwiew-wrapper span{
+    font-size: 30px;
+  }
+  #overview-mobile .overwiew-wrapper{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:400px){
+  .hero-content {
+    margin-bottom: 170px;
+  }
+  .hero-content h1 {
+    font-size: 37px;
+    line-height: 42px;
+  }
+  .hero-map img{
+    width: 300px;
+  }
+  #overview-mobile .overwiew-wrapper .col {
+    padding: 5px 24px;
+  }
 }
 
+@media screen and (max-width:350px){
+  #hero{
+    margin-bottom: 330px;
+  }
+  .hero-content {
+    margin-bottom: 130px;
+  }
+  .hero-content h1{
+    font-size: 32px;
+  }
+  .hero-content-map h1{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #overview h1{
+    font-size: 32px; 
+  }
+  #overview-mobile h1{
+    font-size: 32px; 
+  }
+  .overwiew-wrapper {
+    font-size: 11px;
+  }
+  .about-content h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .about-content p {
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+@media screen and (max-width:290px) {
+  #overview-mobile .overwiew-wrapper .col {
+    padding: 5px 15px;
+  }
+  .hero-map img{
+    width: 200px;
+  }
+  .hero-content {
+    margin-bottom: 160px;
+  }
+  .hero-content-map button {
+    padding: 4px 18px;
+    font-size: 12px;
+  }
+  #hero{
+    margin-bottom: 400px;
+  }
+}
 @media (min-width: 1220px){
   #hero {
     background-position: initial;
