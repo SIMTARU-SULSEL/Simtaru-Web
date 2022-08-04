@@ -343,8 +343,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 85%;
-  /* height: 350px; */
+  width: 260px;
+  background-size: cover;
+  height: 160px;
 }
 
 #card h5{
@@ -809,7 +810,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   .about-content .profile{
     max-width: 100%;
-    max-height: 395px;
+    max-height: 450px;
   }
   .about-content .profile img {
     width: 100%;
@@ -817,6 +818,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   #footer .footer-container {
     padding: 60px;
   } 
+
 }
 @media screen and (max-width:480px){
   #hero {
