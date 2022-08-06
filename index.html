@@ -35,7 +35,13 @@
           <li class="links"><a href="./src/page/regulasi.html">Regulasi</a></li>
           <li class="links"><a href="./src/page/publikasi.html">Publikasi</a></li>
           <li class="links"><a href="#">Tanggapan</a></li>
-          <li class="button-pendaftaran"><a class="button" href="">Pendaftaran</a></li>
+          <!-- <li class="button-pendaftaran"><a class="button" href="">Pendaftaran</a></li> -->
+          <li class="button-pendaftaran">
+            <form action="/pendaftaran" method="GET">
+              <!-- @csrf -->
+              <button class="button">Pendaftaran</button>
+            </form>
+          </li>
         </ul>
 
         <div class="menu-toggle">
