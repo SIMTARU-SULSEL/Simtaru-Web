@@ -55,7 +55,7 @@ nav ul li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
-  padding: 10px 20px 22px;
+  padding: 10px 20px 24px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
@@ -66,7 +66,7 @@ nav ul li a.button {
   border-radius: 8px;
   padding: 11px 30px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 25px;
 } 
 nav ul li form .button {
@@ -259,7 +259,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   nav ul li a {
     font-size: 14px;
-    padding: 10px 20px 22px;
+    padding: 10px 20px 24px;
   }
   nav ul li a.button {
     background-color: var(--blue-primary);
@@ -271,15 +271,8 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 14px;
     margin-left: 25px;
   }
-  nav ul li form.button {
-    background-color: var(--blue-primary);
-    color: var(--white-primary-text);
-    border: none;
-    border-radius: 8px;
-    padding: 11px 30px;
-    font-weight: 700;
+  nav ul li form .button {
     font-size: 14px;
-    margin-left: 25px;
   }
   nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
