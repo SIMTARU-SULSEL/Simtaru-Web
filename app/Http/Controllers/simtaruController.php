@@ -4,13 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
+use Kreait\Laravel\Firebase\Facades\Firebase;
+
+use App\Models\Province;
+use App\Models\Regency;
+use App\Models\District;
 
 class simtaruController extends Controller
 {
     public function index()
     {
-        return view('Main.Page.index');
+        $datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
+        return view('Main.Page.index', ['datas' => $datas]);
+        // $datas = explode('<h2>', $datas->data()['deskripsiWeb']);
+        // return $datas;
     }
 
     public function regulasiIndex()
@@ -21,69 +32,60 @@ class simtaruController extends Controller
 
     public function publikasiIndex()
     {
-        return view('Main.Page.publikasi');
+        $datas = app('firebase.firestore')->database()->collection('Publikasi')->documents();
+        return view('Main.Page.publikasi', ['datas' => $datas]);
     }
-
-    // public function regulasiUU()
-    // {
-    //     return view('Main.Page.regulasi-uu');
-    // }
-
-    // public function regulasiKepres()
-    // {
-    //     return view('Main.Page.regulasi-kepres');
-    // }
-
-    // public function regulasiPerda()
-    // {
-    //     return view('Main.Page.regulasi-perda');
-    // }
-
-    // public function regulasiPergub()
-    // {
-    //     return view('Main.Page.regulasi-pergub');
-    // }
-
-    // public function regulasiPermen()
-    // {
-    //     return view('Main.Page.regulasi-permen');
-    // }
-
-    // public function regulasiPerpes()
-    // {
-    //     return view('Main.Page.regulasi-perpres');
-    // }
-
-    // public function regulasiPP()
-    // {
-    //     return view('Main.Page.regulasi-pp');
-    // }
 
     public function mapsIndex()
     {
-        $datas = app('firebase.firestore')->database()->collection('Peta')->document('0LP7G6affsbKc99sh5gD')->snapshot();
-        return view('Main.Page.maps', ['datas' => $datas]);
+        $datas = app('firebase.firestore')->database()->collection('Peta')->documents();
+        $maps = app('firebase.firestore')->database()->collection('Peta')->documents();
+        return view('Main.Page.maps', ['datas' => $datas, 'maps' => $maps]);
     }
 
     public function mapsDetail(Request $request)
     {
-        if ($request->Kota == 'Makassar' && $request->RTR == 'RTRW Kab/Kota') {
-            $datas = app('firebase.firestore')->database()->collection('Peta')->document('EC4sTg1OI0EMyNqKlJxv')->snapshot();
-        } elseif ($request->Kota == 'Gowa' && $request->RTR == 'RTDTR Kab/Kota') {
-            $datas = app('firebase.firestore')->database()->collection('Peta')->document('aMm5oKrJaeCMESgpPqjK')->snapshot();
-        } elseif ($request->Kota == 'Maros' && $request->RTR == 'RTDTR Kab/Kota') {
-            $datas = app('firebase.firestore')->database()->collection('Peta')->document('dhqNLJ8DlIuwUDD4IpBk')->snapshot();
-        } elseif ($request->Kota == 'Makassar' && $request->RTR == 'RTR Maminasata') {
-            $datas = app('firebase.firestore')->database()->collection('Peta')->document('0LP7G6affsbKc99sh5gD')->snapshot();
-        } else {
-            $datas = null;
+        $maps = app('firebase.firestore')->database()->collection('Peta')->documents();
+        $datas = app('firebase.firestore')->database()->collection('Peta')->documents();
+        foreach ($datas as $item) {
+            if ($request->Kota == $item->data()['lokasi'] && $request->RTR == $item->data()['rtr']  && $request->jenis_peta == $item->data()['jenis_peta']) {
+                $maps = app('firebase.firestore')->database()->collection('Peta')->where('mapUrl', '=', $item->data()['mapUrl'])->documents();
+                break;
+            } else {
+                $maps = null;
+            }
         }
-        return view('Main.Page.maps', ['datas' => $datas]);
+        return view('Main.Page.maps', ['datas' => $datas, 'maps' => $maps]);
     }
 
     public function pendaftaranIndex()
     {
-        return view('Main.Page.pendaftaran');
+        // Get semua data
+        $provinces = Province::all();
+        return view('Main.Page.pendaftaran', compact('provinces'));
+    }
+
+    public function getKabupaten(request $request)
+    {
+        $id_provinsi = $request->id_provinsi;
+        $KotaKabupatens = Regency::where('province_id', $id_provinsi)->get();
+        $option = "<option disabled selected value=''>Pilih Kota/Kabupaten</option>";
+        foreach ($KotaKabupatens as $Kabupaten) {
+            $option .= "<option value='$Kabupaten->id'>$Kabupaten->name</option>";
+        }
+        echo $option;
+    }
+
+    public function getKecamatan(request $request)
+    {
+        $id_kabupaten = $request->id_kabupaten;
+        $Kecamatans = District::where('regency_id', $id_kabupaten)->get();
+
+        $option = "<option disabled selected value=''>Pilih Kecamatan</option>";
+        foreach ($Kecamatans as $Kecamatan) {
+            $option .= "<option value='$Kecamatan->id'>$Kecamatan->name</option>";
+        }
+        echo $option;
     }
 
     public function pendaftaranStore(Request $request)
@@ -101,7 +103,7 @@ class simtaruController extends Controller
             'StatusKewarganegaraan' => 'required',
             'Email' => 'required|email',
             'NomorHandphone' => 'required',
-            'SHP' => 'required|file|mimes:rar',
+            'SHP' => 'required|file|mimes:zip',
             'koordinat' => 'required'
         ]);
 
@@ -109,15 +111,46 @@ class simtaruController extends Controller
         $current_time->timezone('GMT+8');
         $current_time = $current_time->toDateTimeString();
 
-        $SHP = $request->file('SHP');
-        // $name = $SHP->getClientOriginalName();
-        // $extension = $SHP->getClientOriginalExtension();
-        $file = $SHP->getClientOriginalName();
+
+        $provinsi = Province::where('id', $request->Provinsi)->get();
+        $KotaKabupaten = Regency::where('id', $request->KotaKabupaten)->get();
+        $Kecamatan = District::where('id', $request->Kecamatan)->get();
+        $request->Provinsi = $provinsi[0]['name'];
+        $request->KotaKabupaten = $KotaKabupaten[0]['name'];
+        $request->Kecamatan = $Kecamatan[0]['name'];
+
+        $image = $request->file('SHP'); //image file from frontend  
         $firebase_storage_path = 'SHP/';
-        // $localfolder = public_path('firebase-temp-uploads') . '/';
-        // if ($SHP->move($localfolder, $file)) {
-        // $uploadedfile = fopen($SHP, 'r');
-        app('firebase.storage')->getBucket()->upload($SHP, ['name' => $firebase_storage_path . $file, 'public' => true]);
+        $name = $image->getClientOriginalName();
+        $localfolder = public_path('firebase-temp-uploads') . '/';
+        $extension = $image->getClientOriginalExtension();
+        $file      = $name . '.' . $extension;
+        $FileName = $request->Nama . '_' . $current_time . '.' . $extension;
+        $bucket = app('firebase.storage')->getBucket();
+        $uuid = Uuid::uuid4()->toString();
+        if ($image->move($localfolder, $file)) {
+            $uploadedfile = fopen($localfolder . $file, 'r');
+            $object = $bucket->upload(
+                $uploadedfile,
+                ['name' => $firebase_storage_path . $FileName],
+                ['acl' => []],
+                ['predefinedAcl' => 'publicRead'],
+                ['metadata' => [
+                    'firebaseStorageDownloadTokens' => $uuid
+                ]],
+                ['firebaseStorageDownloadTokens' => $uuid]
+            );
+            //will remove from local laravel folder  
+            unlink($localfolder . $file);
+        }
+
+
+        // $publicUrl = "https://{$bucket->name()}.storage.googleapis.com/{$object->name()}";
+
+        // **************************************
+
+
+
         $newDatas = app('firebase.firestore')->database()->collection('DaftarPerizinan')->newDocument();
         $newDatas->set([
             'createdAt' => $current_time,
@@ -134,9 +167,10 @@ class simtaruController extends Controller
             'email' => $request->Email,
             'noTlp' => $request->NomorHandphone,
             'koordinat' => $request->koordinat,
-            'fileUrl' => $file,
+            'namaFile' => $FileName
         ]);
-        return view('Main.Page.pendaftaran');
+        // return view('Main.Page.pendaftaran')->with('alert', 'Data berhasil di upload');
+        return redirect()->back()->with('success', 'Pendaftaran berhasil dilakukan');
     }
 
     public function tanggapanIndex()
@@ -159,6 +193,6 @@ class simtaruController extends Controller
             'judul' => $validatedData['judul'],
             'pesan' => $validatedData['pesan'],
         ]);
-        return view('Main.Page.comment');
+        return redirect()->back()->with('success', 'Tanggapan berhasil disimpan');
     }
 }
