@@ -137,8 +137,6 @@ nav .menu-toggle input:checked ~ span:last-child {
   background-position: center;
   width: 100vw;
   height: 1200px;
-  /* padding-bottom: 70px; */
-  margin-bottom: 500px;
 }
 .hero-logo{
   padding: 170px 0;
@@ -172,6 +170,56 @@ nav .menu-toggle input:checked ~ span:last-child {
   width: 310px;
   border-radius: 14px;
 }
+
+/* --- CARD --- */
+#card{
+  background-color: #D12828;
+  margin: 100px 0 130px;
+}
+#card .container-card {
+  max-width: 900px;
+  margin: auto;
+}
+#card .card{
+  width: 300px;
+  /* height: 450px; */
+  border-radius: 24px;
+  padding: 15px 0 5px;
+}
+#card h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--gray-primary-text-icons);
+  margin-bottom: 40px;
+}
+#card .card img{
+  margin: auto;
+  border-radius: 24px;
+  width: 250px;
+  height: 260px;
+  object-fit: cover;
+}
+#card .card-body {
+  padding: 11px;
+}
+#card .card-title{
+  margin-bottom: 3px;
+}
+#card h5{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--gray-primary-text-icons);
+}
+#card .card-body p{
+  font-size: 19px;
+  padding-top: 4px;
+  font-weight: 450;
+  line-height: 23px;
+  color: var(--gray-secondary);
+}
+ 
 
 /* --- FOOTER --- */
 #footer{
@@ -217,8 +265,25 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 
+@media screen and (max-width:1100px) {
+  #card .container-card {
+    max-width: 800px;
+  }
+  #card .card img{
+    width: 217px;
+    height: 245px;
+  }
+  #card h5{
+    font-size: 17px;
+  }
+  #card .card-body p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+}
 
-@media (max-width:1000px) {
+@media screen and (max-width:1000px) {
   nav ul {
     display: flex;
     padding: 10px 50px;
@@ -247,10 +312,24 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
-@media screen and (max-width:800px) {
-  #hero {
-    margin-bottom: 400px;
+@media screen and (max-width:900px) {
+  #card .container-card {
+    max-width: 740px;
   }
+  #card .card img{
+    width: 200px;
+    height: 245px;
+  }
+  #card h5{
+    font-size: 15px;
+  }
+  #card .card-body p{
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width:800px) {
   nav {
     justify-content: space-between;
     padding: 0 100px;
@@ -314,14 +393,28 @@ nav .menu-toggle input:checked ~ span:last-child {
   .hero-content-map h1{
     font-size: 45px;
   }
+  #card .container-card {
+    max-width: 680px;
+  }
+  #card .card img{
+    width: 184px;
+    height: 230px;
+  }
 }
 
 @media screen and (max-width:768px){
-  .hero-content {
-    margin-bottom: 105px;
-  }
   .hero-map .img{
     width: 285px;
+  }
+  #card .container-card {
+    max-width: 520px;
+  }
+  #card .card{
+    width: 235px;
+  }
+  #card .card img{
+    width: 200px;
+    height: 245px;
   }
   #footer p span{
     display: inline;
@@ -341,11 +434,25 @@ nav .menu-toggle input:checked ~ span:last-child {
     padding-right: 0px;
   }
 }
+@media screen and (max-width:650px){
+  #card .container-card {
+    max-width: 460px;
+  }
+  #card .card{
+    width: 200px;
+  }
+  #card .card img{
+    width: 174px;
+    height: 200px;
+  }
+  #card p {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width:600px){
   #hero {
     max-height: 1150px;
     margin-top: 25px;
-    margin-bottom: 400px;
   }
   .hero-logo img{
     width: 50%;
@@ -367,14 +474,52 @@ nav .menu-toggle input:checked ~ span:last-child {
   } 
 
 }
-@media screen and (max-width:480px){
-  #hero {
-    margin-bottom: 450px;
+
+@media screen and (max-width:520px){
+  #card .container-card {
+    max-width: 380px;
   }
+  #card .card{
+    width: 170px;
+  }
+  #card .card img{
+    width: 148px;
+    height: 155px;
+  }
+  #card h5 {
+    font-size: 12px;
+  }
+  #card .card-body p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width:480px){
   .hero-content {
     margin-bottom: 110px;
   }
 }
+
+@media screen and (max-width:420px){
+  #card .container-card {
+    max-width: 325px;
+  }
+  #card .card{
+    width: 150px;
+  }
+  #card .card img{
+    width: 125px;
+    height: 134px;
+  }
+  #card h5 {
+    font-size: 11px;
+  }
+  #card .card-body p {
+    font-size: 11px;
+  }
+}
+
 @media screen and (max-width:400px){
   .hero-content h1 {
     font-size: 34px;
@@ -386,9 +531,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:350px){
-  #hero{
-    margin-bottom: 330px;
-  }
   .hero-content h1{
     font-size: 32px;
     padding: 0 50px 10px;
@@ -396,6 +538,25 @@ nav .menu-toggle input:checked ~ span:last-child {
   .hero-content-map h1{
     font-size: 32px;
     line-height: 40px;
+  }
+  #card .container-card {
+    max-width: 325px;
+  }
+  #card .card{
+    width: 120px;
+    border-radius: 13px;
+    padding: 10px 0 5px;
+  }
+  #card .card img{
+    border-radius: 13px;
+    width: 103px;
+    height: 123px;
+  }
+  #card h5 {
+    font-size: 11px;
+  }
+  #card .card-body p {
+    font-size: 11px;
   }
 }
 @media screen and (max-width:310px) {
@@ -407,15 +568,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   .hero-map img{
     width: 200px;
   }
-  .hero-content {
-    margin-bottom: 160px;
-  }
   .hero-content-map button {
     padding: 4px 18px;
     font-size: 12px;
-  }
-  #hero{
-    margin-bottom: 400px;
   }
 }
 @media (min-width: 1220px){
