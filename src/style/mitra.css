@@ -173,7 +173,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* --- CARD --- */
 #card{
-  background-color: #D12828;
   margin: 100px 0 130px;
 }
 #card .container-card {
