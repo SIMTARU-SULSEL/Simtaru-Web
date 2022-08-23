@@ -358,13 +358,39 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* Berita Terkini */
 #card{
-  /* background-color: #D12828; */
   margin: 128px 0; 
   /* padding-bottom: 30px; */
 }
 #card .container-card {
   max-width: 900px;
   margin: auto;
+}
+#card .card-wrapper{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 0 0 30px;
+  overscroll-behavior-inline: contain;
+}
+#card .snaps-inline{
+  scroll-snap-type: inline mandatory;
+}
+#card .snaps-inline > *{
+  scroll-snap-align: start;
+}
+#card .card-wrapper::-webkit-scrollbar{
+  width: 5px;
+  height: 10px;
+}
+#card .card-wrapper::-webkit-scrollbar-track{
+  background-color: var(--gray-primary-bg);
+  border-radius: 10px;
+  margin-block: 10px;
+}
+#card .card-wrapper::-webkit-scrollbar-thumb{
+  background-color: var(--gray-rarely-used);
+  border-radius: 10px;
 }
 #card h1 {
   font-size: 48px;
@@ -387,23 +413,23 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin: auto;
   border-radius: 24px;
   width: 260px;
-  background-size: cover;
   height: 160px;
+  object-fit: cover;
 }
 
-#card h5{
-  font-size: 16px;
+#card .card-wrapper .card-body h5{
+  font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   color: var(--gray-primary-text-icons);
 }
-#card .card-body {
-  padding: 25px;
-}
-#card .card-body p{
+#card .card-wrapper .card-body p{
   font-size: 15px;
-  padding-top: 4px;
+  margin-top: -5px;
   font-weight: 400;
+  color: var(--gray-primary-text-icons);
+}
+#card .card-wrapper .card-body p span{
   color: var(--gray-secondary);
 }
 
