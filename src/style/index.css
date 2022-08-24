@@ -314,6 +314,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   color: var(--white-primary-text);
   padding: 25px 35px;
 }
+.about-content .row{
+  margin-bottom: 20px;
+}
 .about-content h1{
   font-size: 50px;
   font-weight: 700;
@@ -324,16 +327,21 @@ nav .menu-toggle input:checked ~ span:last-child {
 .about-content h1 span{
   display: block;
 }
+.about-content .col-7{
+  padding-top: 15px;
+}
 .about-content p{
-  max-width: 270px;
+  max-width: 340px;
   color: var(--gray-rarely-used);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 32px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  word-spacing: 0.1em;
 }
 .about-content p span{
   color: var(--white-primary-text);
+  font-weight: 500;
 }
 .about-content .profile {
   margin: 10px auto;
@@ -363,7 +371,8 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 #about-homepage .about-content a{
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   padding: 10px 27px;
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
