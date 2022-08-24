@@ -471,6 +471,18 @@ nav .menu-toggle input:checked ~ span:last-child {
   nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
   }
+  .title{
+    max-width: 800px;
+  }
+  .info{
+    max-width: 800px;
+  }
+  .image-news img{
+    width: 800px;
+  }
+  .content{
+    max-width: 800px;
+  }
   #berita .card{
     width: 260px;
     border-radius: 24px;
@@ -565,7 +577,51 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
+@media screen and (max-width:850px){
+  .title{
+    max-width: 700px;
+  }
+  .info{
+    max-width: 700px;
+  }
+  .info ul li{
+    font-size: 14px;
+  }
+  .image-news img{
+    width:700px;
+  }
+  .content{
+    max-width: 700px;
+  }
+}
+
 @media screen and (max-width:768px) {
+  .title{
+    max-width: 500px;
+  }
+  .title h1{
+    font-size: 30px;
+  }
+  .info{
+    max-width: 500px;
+  }
+  .info ul{
+    flex-direction: column;
+  }
+  .info ul .bordered{
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .info ul li{
+    font-size: 14px;
+  }
+  .image-news img{
+    width:500px;
+  }
+  .content{
+    max-width: 500px;
+  }
   #berita .container-card .title a{
     padding: 8px 30px;
     font-size: 14px;
@@ -619,6 +675,21 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:550px){
+  .title{
+    max-width: 400px;
+  }
+  .info{
+    max-width: 400px;
+  }
+  .info ul li{
+    font-size: 13px;
+  }
+  .image-news img{
+    width:400px;
+  }
+  .content{
+    max-width: 400px;
+  }
   #mobile-apps .card-information{
     display: flex;
     flex-direction: column-reverse;
@@ -660,6 +731,24 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 14px;
     color: var(--gray-secondary);
   } 
+}
+
+@media screen and (max-width: 440px) {
+  .title{
+    max-width: 300px;
+  }
+  .info{
+    max-width: 300px;
+  }
+  .info ul li{
+    font-size: 13px;
+  }
+  .image-news img{
+    width:300px;
+  }
+  .content{
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 1220px){
