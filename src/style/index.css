@@ -319,9 +319,10 @@ nav .menu-toggle input:checked ~ span:last-child {
   border-radius: 40px;
   background-image: url('/src/images/about-bg.png');
   background-color: var(--blue-secondary);
-  background-size: 100%;
+  background-size: contain;
+  background-position: bottom;
   max-width: 650px;
-  max-height: 400px;
+  max-height: 500px;
   color: var(--white-primary-text);
   padding: 25px 35px;
 }
@@ -369,6 +370,18 @@ nav .menu-toggle input:checked ~ span:last-child {
 .about-content .profile .text-card span{
   display: block;
   color: var(--gray-rarely-used);
+}
+.about-content button{
+  margin-top: 10px;
+  padding: 10px 27px;
+  background-color: var(--blue-primary);
+  color: var(--white-primary-text);
+  border: none;
+  border-radius: 8px;
+  height: 45px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 /* Berita Terkini */
