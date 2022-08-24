@@ -142,7 +142,10 @@ nav .menu-toggle input:checked ~ span:last-child {
   border-radius: 50% !important;
   margin-right: 14px !important;
   margin-left: 14px !important;
-  
+}
+.carousel .carousel-inner img{
+  object-fit: cover;
+  height: 100vh;
 }
 #hero {
   display: flex;
