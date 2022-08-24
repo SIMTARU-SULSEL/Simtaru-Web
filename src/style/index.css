@@ -581,11 +581,12 @@ nav .menu-toggle input:checked ~ span:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   height: 170vh;
+  align-items: center;
   /* padding-bottom: 70px; */
 }
 
 #mobile-apps .card{
-  top: 500px;
+  /* top: 500px; */
   background-color: var(--blue-secondary);
   color: var(--white-primary-text);
   background-image: url('../images/download-here-bg.png');
@@ -632,7 +633,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 } 
 #mobile-apps .card-image .card-phone img{
   margin-top: -190px;
-  width: 225px;
+  width: 200px;
 }
 #mobile-apps .card-image .card-badge a {
   text-decoration: none;
@@ -751,7 +752,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     height: 600px;
   }
   #mobile-apps .card{
-    top: 200px;
+    top: 70px;
     width: 650px;
   }
 }
@@ -901,7 +902,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   } 
 
   #mobile-apps .card-image .card-phone img{
-    margin-top: -70%;
+    margin-top: -50%;
     /* width: 340px; */
   }
   
@@ -1077,7 +1078,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 
   #mobile-apps .card{
-    top: 250px;
+    top: 50px;
     width: 100%;
     border-radius: 30px;
     padding: 24px;
@@ -1096,12 +1097,12 @@ nav .menu-toggle input:checked ~ span:last-child {
   }  
 
   #mobile-apps .card-body h1{
-    font-size: 30px;
+    font-size: 27px;
   }
 
   #mobile-apps .card-body p{
     margin: auto;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--gray-secondary);
   } 
   #footer .footer-container {
