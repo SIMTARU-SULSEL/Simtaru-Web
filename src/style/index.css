@@ -668,7 +668,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 170vh;
+  height: 1200px;
   /* padding-bottom: 70px; */
 }
 
