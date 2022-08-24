@@ -206,7 +206,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin: 100px 0;
 }
 #berita .container-card{
-  margin-left: 260px;
+  margin-left: 100px;
 }
 #berita .container-card .title{
   max-width: 100vw;
@@ -622,6 +622,16 @@ nav .menu-toggle input:checked ~ span:last-child {
   .content{
     max-width: 500px;
   }
+  #berita .title h1{
+    text-align: center;
+  }
+  #berita .container-card {
+    margin-left: 10px;
+  }
+  #berita .container-card .title{
+    max-width: none;
+    margin-bottom: 60px;
+  }
   #berita .container-card .title a{
     padding: 8px 30px;
     font-size: 14px;
@@ -665,13 +675,6 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size:14px;
     padding-right: 0px;
   }
-}
-
-@media screen and (max-width:680px){
-  #berita .title h1{
-    text-align: center;
-  }
-
 }
 
 @media screen and (max-width:550px){
