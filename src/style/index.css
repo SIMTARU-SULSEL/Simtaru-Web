@@ -385,6 +385,109 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 /* Berita Terkini */
+#berita{
+  margin-top: 40px;
+}
+#berita .container-card .title{
+  max-width: 1000px;
+}
+#berita .container-card .title ul{
+  margin-left: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#berita .container-card .title ul li{
+  list-style: none;
+}
+#berita .card-wrapper{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 0 30px;
+  overscroll-behavior-inline: contain;
+}
+#berita .snaps-inline{
+  scroll-snap-type: inline mandatory;
+}
+#berita .snaps-inline > *{
+  scroll-snap-align: start;
+}
+#berita .card-wrapper::-webkit-scrollbar{
+  width: 5px;
+  height: 10px;
+}
+#berita .card-wrapper::-webkit-scrollbar-track{
+  background-color: var(--gray-primary-bg);
+  border-radius: 10px;
+  margin-block: 10px;
+}
+#berita .card-wrapper::-webkit-scrollbar-thumb{
+  background-color: var(--gray-rarely-used);
+  border-radius: 10px;
+}
+#berita h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gray-primary-text-icons);
+}
+#berita button{
+  background-color: none;
+  color: var(--blue-primary);
+  border: var(--blue-primary) solid;
+  border-radius: 8px;
+  padding: 8px 45px;
+  font-weight: 700;
+  font-size: 16px;
+}
+#berita .card{
+  width: 300px;
+  /* height: 450px; */
+  border-radius: 24px;
+  padding: 15px 0 5px;
+}
+
+#berita .card img{
+  margin: auto;
+  border-radius: 24px;
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+}
+
+#berita .card-wrapper .card-body h5{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--gray-primary-text-icons);
+}
+#berita .card-wrapper .card-body p{
+  font-size: 15px;
+  margin-top: -5px;
+  font-weight: 400;
+  color: var(--gray-primary-text-icons);
+}
+#berita .card-wrapper .card-body p span{
+  color: var(--gray-secondary);
+}
+
+#berita .card-body .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-primary);
+  color: var(--white-primary-text);
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 42px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+}
+
+
 #card{
   margin: 128px 0; 
   /* padding-bottom: 30px; */
