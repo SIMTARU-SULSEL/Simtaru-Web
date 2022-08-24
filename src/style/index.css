@@ -310,33 +310,33 @@ nav .menu-toggle input:checked ~ span:last-child {
   background-repeat: no-repeat;
   background-position: bottom;
   max-width: 650px;
-  max-height: 500px;
+  max-height: max-content;
   color: var(--white-primary-text);
   padding: 25px 35px;
 }
 .about-content h1{
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 58px;
   color: var(--white-primary-text);
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .about-content h1 span{
   display: block;
 }
 .about-content p{
-  max-width: 300px;
+  max-width: 270px;
   color: var(--gray-rarely-used);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  margin-bottom: 6px;
+  line-height: 28px;
+  margin-bottom: 32px;
 }
 .about-content p span{
   color: var(--white-primary-text);
 }
 .about-content .profile {
-  margin: 0px auto;
+  margin: 10px auto;
   padding: 15px;
   max-width: 240px;
   max-height: 350px;
@@ -350,14 +350,16 @@ nav .menu-toggle input:checked ~ span:last-child {
   padding-top: 12px;
 }
 .about-content .profile h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 20px;
   color: var(--gray-primary-text-icons);
 }
-.about-content .profile .text-card span{
-  display: block;
+.about-content .profile p {
   color: var(--gray-rarely-used);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
 }
 #about-homepage .about-content a{
   text-decoration: none;
@@ -831,23 +833,17 @@ nav .menu-toggle input:checked ~ span:last-child {
   #about-homepage {
     max-width: 555px;
   }
-  .about-content h1 {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .about-content p {
-    max-width: 280px;
-    font-size: 13px;
-    line-height: 17px;
-  }
   .about-content .profile img{
-    width: 170px;
+    width: 160px;
+  }
+  .about-content .profile h5 {
+    font-size: 13px;
+  }
+  .about-content .profile p {
+    font-size: 13px;
   }
   .about-content .profile .text-card span{
     display: contents;
-  }
-  .about-content .profile .text-card{
-    padding-top: 25px;
   }
   #card h1{
     font-size: 45px;
@@ -902,6 +898,78 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 @media screen and (max-width:680px) {
+  #about-homepage {
+    display: none;
+  }
+  #about-homepage-mobile {
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+    background-image: url('/src/images/about-bg-mobile.png');
+    background-color: var(--blue-secondary);
+    max-width: 80%;
+    max-height: max-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white-primary-text);
+    padding: 25px 35px;
+  }
+  #about-homepage-mobile .wrapper-content {
+    max-width: 75%;
+    margin: auto;
+  }
+  #about-homepage-mobile .about-content a{
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 27px;
+    background-color: var(--blue-primary);
+    color: var(--white-primary-text);
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  #about-homepage-mobile .about-content h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58px;
+  }
+  #about-homepage-mobile.about-content .wrapper-content {
+    padding-top: 15px;
+  }
+  #about-homepage-mobile .about-content .wrapper-content p {
+    margin: auto;
+    text-align: center;
+    max-width: 310px;
+    font-size: 13px;
+    line-height: 17px;
+    padding-top: 10px;
+  }
+  #about-homepage-mobile .about-content .profile{
+    max-width: 75%;
+    max-height: 450px;
+  }
+  #about-homepage-mobile .about-content .profile img {
+    width: 100%;
+  }
+  #about-homepage-mobile .about-content .profile h5{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--gray-primary-text-icons);
+  }
+  #about-homepage-mobile .about-content .profile p {
+    color: var(--gray-rarely-used);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    max-width: 330px;
+  }
   #berita .title{
     display: none;
   }
@@ -955,7 +1023,6 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 10px;
   }
   #about-homepage {
-    background-size: cover;
     max-width: 500px;
   }
   .about-content h1 {
@@ -982,58 +1049,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:550px){
-  #about-homepage {
-    display: none;
-  }
-  #about-homepage-mobile {
-    display: block;
-    margin: auto;
-    border-radius: 40px;
-    background-image: url('/src/images/about-bg-mobile.png');
-    background-color: var(--blue-secondary);
-    background-size: 100%;
-    max-width: 80%;
-    max-height: 1000px;
-    color: var(--white-primary-text);
-    padding: 25px 35px;
-  }
-  #about-homepage-mobile .about-content a{
-    text-decoration: none;
-    margin-top: 10px;
-    padding: 10px 27px;
-    background-color: var(--blue-primary);
-    color: var(--white-primary-text);
-    border: none;
-    border-radius: 8px;
-    height: 45px;
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  .about-content h1 {
-    text-align: center;
-    font-size: 35px;
-    line-height: 38px;
-  }
-  .about-content .wrapper-content {
-    padding-top: 15px;
-  }
-  .about-content .wrapper-content p {
-    margin: auto;
-    text-align: center;
-    max-width: 310px;
-    font-size: 13px;
-    line-height: 17px;
-    padding-top: 10px;
-  }
-  .about-content .profile{
-    max-width: 100%;
-    max-height: 450px;
-  }
-  .about-content .profile img {
-    width: 100%;
-  }
   #mobile-apps .card-information{
     display: flex;
     flex-direction: column-reverse;
@@ -1049,7 +1064,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 
   #mobile-apps .card{
     top: 250px;
-    /* height: 625px; */
     width: 100%;
     border-radius: 30px;
     padding: 24px;
