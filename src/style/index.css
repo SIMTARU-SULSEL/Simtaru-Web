@@ -126,19 +126,6 @@ nav .menu-toggle input:checked ~ span:nth-child(3) {
 nav .menu-toggle input:checked ~ span:last-child {
   transform: rotate(-45deg) translate(-3px, 0px);
 }
-/* nav button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--blue-primary);
-  color: var(--white-primary-text);
-  border: none;
-  border-radius: 8px;
-  width: 165px;
-  height: 42px;
-  font-weight: 700;
-  font-size: 16px;
-} */
 
 /* ---- HERO ---- */
 .carousel{
@@ -397,6 +384,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 #berita .container-card .title{
   max-width: 80vw;
 }
+/* #berita .container-card .title-mobile{
+  display: none;
+} */
 #berita .container-card .title ul{
   margin-left: -30px;
   display: flex;
@@ -488,98 +478,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 #berita .card-body .button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--blue-primary);
-  color: var(--white-primary-text);
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  height: 42px;
-  font-weight: 700;
-  font-size: 16px;
-  display: flex;
-}
-
-
-#card{
-  margin: 128px 0; 
-  /* padding-bottom: 30px; */
-}
-#card .container-card {
-  max-width: 900px;
-  margin: auto;
-}
-#card .card-wrapper{
-  display: grid;
-  grid-auto-flow: column;
-  gap: 30px;
-  overflow-x: auto;
-  padding: 0 0 30px;
-  overscroll-behavior-inline: contain;
-}
-#card .snaps-inline{
-  scroll-snap-type: inline mandatory;
-}
-#card .snaps-inline > *{
-  scroll-snap-align: start;
-}
-#card .card-wrapper::-webkit-scrollbar{
-  width: 5px;
-  height: 10px;
-}
-#card .card-wrapper::-webkit-scrollbar-track{
-  background-color: var(--gray-primary-bg);
-  border-radius: 10px;
-  margin-block: 10px;
-}
-#card .card-wrapper::-webkit-scrollbar-thumb{
-  background-color: var(--gray-rarely-used);
-  border-radius: 10px;
-}
-#card h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--gray-primary-text-icons);
-  margin-bottom: 40px;
-}
-#card h1 span {
-  display: block;
-}
-#card .card{
-  width: 300px;
-  /* height: 450px; */
-  border-radius: 24px;
-  padding: 15px 0 5px;
-}
-
-#card .card img{
-  margin: auto;
-  border-radius: 24px;
-  width: 260px;
-  height: 160px;
-  object-fit: cover;
-}
-
-#card .card-wrapper .card-body h5{
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  color: var(--gray-primary-text-icons);
-}
-#card .card-wrapper .card-body p{
-  font-size: 15px;
-  margin-top: -5px;
-  font-weight: 400;
-  color: var(--gray-primary-text-icons);
-}
-#card .card-wrapper .card-body p span{
-  color: var(--gray-secondary);
-}
-
-#card .card-body .button{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -786,6 +684,9 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 14px;
     padding: 10px 20px 24px;
   }
+  #hero{
+    background-size: contain;
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -811,6 +712,25 @@ nav .menu-toggle input:checked ~ span:last-child {
   nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
   }
+  #berita .card{
+    width: 260px;
+    border-radius: 24px;
+    padding: 15px 0 5px;
+  }
+  #berita .card img{
+    margin: auto;
+    border-radius: 24px;
+    width: 229px;
+    height: 139px;
+    object-fit: cover;
+  }
+  #berita .card-wrapper .card-body h5{
+    font-size: 16px;
+  }
+  #berita .card-wrapper .card-body p{
+    font-size: 14px;
+    margin: -5px 0 7px;
+  }
   #mobile-apps {
     width: 100vw;
     height: 600px;
@@ -828,7 +748,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 @media screen and (max-width:800px) {
   #hero {
-    margin-bottom: 400px;
+    background-size: auto;
   }
   nav {
     justify-content: space-between;
@@ -938,6 +858,11 @@ nav .menu-toggle input:checked ~ span:last-child {
   .hero-content {
     margin-bottom: 105px;
   }
+  #berita .container-card .title a{
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+  
   #footer p span{
     display: inline;
   }
@@ -975,6 +900,33 @@ nav .menu-toggle input:checked ~ span:last-child {
     padding: 0;
     /* width: 200px; */
   }
+}
+@media screen and (max-width:680px) {
+  #berita .title{
+    display: none;
+  }
+  #berita .container-card .title-mobile ul{
+    margin-left: -30px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+  #berita .container-card .title-mobile ul li{
+    list-style: none;
+  }
+  #berita .container-card .title-mobile h1 span{
+    display: block;
+  }
+  #berita .container-card .title-mobile .lihat{
+    /* background-color: #EC8C56; */
+    margin-right: 25px;
+    padding-bottom: 12px;
+  }
+  #berita .container-card .title-mobile .lihat a{
+    text-decoration: none;
+    padding-right: 10px;
+  }
+
 }
 @media screen and (max-width:600px){
   #hero {
@@ -1080,6 +1032,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-weight: 700;
     line-height: 56px;
   }
+  
   #about-homepage {
     display: none;
   }
@@ -1094,6 +1047,20 @@ nav .menu-toggle input:checked ~ span:last-child {
     max-height: 1000px;
     color: var(--white-primary-text);
     padding: 25px 35px;
+  }
+  #about-homepage-mobile .about-content a{
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 27px;
+    background-color: var(--blue-primary);
+    color: var(--white-primary-text);
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
   }
   .about-content h1 {
     text-align: center;
