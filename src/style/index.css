@@ -175,7 +175,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: grid;
   max-width: 520px;
   padding: 0 51px;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
   margin-top: -40px;
 }
 .hero-content h1 {
@@ -243,7 +243,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   font-size: 50px;
   font-weight: 700;
   line-height: 56px;
-  margin-top: -100px;
+  margin-top: -240px;
   color: var(--gray-primary-text-icons);
   padding-bottom: 30px;
 }
@@ -320,6 +320,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   background-image: url('/src/images/about-bg.png');
   background-color: var(--blue-secondary);
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: bottom;
   max-width: 650px;
   max-height: 500px;
@@ -388,7 +389,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* Berita Terkini */
 #berita{
-  margin-top: 40px;
+  margin-top: 100px;
 }
 #berita .container-card{
   margin-left: 100px;
@@ -597,7 +598,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 /* --- CARD --- */
 #card{
   /* background-color: #D12828; */
-  margin: 128px 0; 
+  margin: 70px 0 128px; 
   /* padding-bottom: 30px; */
 }
 #card .container-card {
