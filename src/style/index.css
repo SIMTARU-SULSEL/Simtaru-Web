@@ -141,6 +141,22 @@ nav .menu-toggle input:checked ~ span:last-child {
 } */
 
 /* ---- HERO ---- */
+.carousel{
+  background-color: #D12828;
+  margin-top: 70px;
+  /* height: 500px; */
+}
+.carousel .carousel-control i{
+  font-size: 35px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  margin-right: 14px !important;
+  margin-left: 14px !important;
+  
+}
 #hero {
   display: flex;
   background: url(../images/hero-bg.png);
@@ -148,32 +164,29 @@ nav .menu-toggle input:checked ~ span:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 100px;
   width: 100vw;
-  height: 1200px;
-  /* padding-bottom: 70px; */
-  margin-bottom: 500px;
+  height: 1310px;
 }
 .hero-logo{
   padding: 160px 0;
-}
-.hero-logo img{
-  width: 50%;
 }
 .hero-content {
   display: grid;
   max-width: 520px;
   padding: 0 51px;
   margin-bottom: 120px;
+  margin-top: -40px;
 }
 .hero-content h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: var(--white-primary-text);
+  color: var(--gray-primary-text-icons);
 }
 .hero-content p{
-  color: var(--white-primary-text);
-  padding: 5px 0 10px;
+  color: var(--gray-primary-text-icons);
+  padding: 10px 0 10px;
   font-weight: 400; 
   font-size: 16px;
   line-height: 20px;
@@ -220,6 +233,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: none;
 }
 #overview {
+  margin-top: -20px;
   max-width: 625px;
   display: grid;
   margin: auto;
@@ -229,11 +243,12 @@ nav .menu-toggle input:checked ~ span:last-child {
   font-size: 50px;
   font-weight: 700;
   line-height: 56px;
+  margin-top: -100px;
   color: var(--gray-primary-text-icons);
   padding-bottom: 30px;
 }
 .overwiew-wrapper{
-  border: var(--gray-primary-bg) 3px solid;
+  border: var(--blue-primary) 3px solid;
   border-radius: 8px;
   padding: 15px 10px;
   margin: auto;
@@ -254,7 +269,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   position: absolute;
   right: 0;
   top: 21px;
-  background-color: var(--gray-primary-bg);
+  background-color: var(--blue-primary);
 }
 .overwiew-wrapper span {
   display: block;
@@ -280,7 +295,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   padding-bottom: 30px;
 }
 .statistics-wrapper{
-  border: var(--gray-primary-bg) 3px solid;
+  border: var(--blue-primary) 3px solid;
   width: 240px;
   border-radius: 8px;
   padding: 15px 10px;
