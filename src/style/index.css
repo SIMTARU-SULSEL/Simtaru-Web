@@ -371,7 +371,8 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
   color: var(--gray-rarely-used);
 }
-.about-content button{
+#about-homepage .about-content a{
+  text-decoration: none;
   margin-top: 10px;
   padding: 10px 27px;
   background-color: var(--blue-primary);
@@ -379,7 +380,8 @@ nav .menu-toggle input:checked ~ span:last-child {
   border: none;
   border-radius: 8px;
   height: 45px;
-  width: 100%;
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
 }
@@ -388,8 +390,11 @@ nav .menu-toggle input:checked ~ span:last-child {
 #berita{
   margin-top: 40px;
 }
+#berita .container-card{
+  margin-left: 100px;
+}
 #berita .container-card .title{
-  max-width: 1000px;
+  max-width: 80vw;
 }
 #berita .container-card .title ul{
   margin-left: -30px;
@@ -432,7 +437,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   font-weight: 700;
   color: var(--gray-primary-text-icons);
 }
-#berita button{
+#berita .container-card .title a{
   background-color: none;
   color: var(--blue-primary);
   border: var(--blue-primary) solid;
@@ -440,6 +445,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   padding: 8px 45px;
   font-weight: 700;
   font-size: 16px;
+  text-decoration: none;
 }
 #berita .card{
   width: 300px;
@@ -461,6 +467,15 @@ nav .menu-toggle input:checked ~ span:last-child {
   font-weight: 700;
   line-height: 20px;
   color: var(--gray-primary-text-icons);
+}
+#berita .card-wrapper .card-body .min-content{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height:65px;
+  margin-bottom: 15px;
 }
 #berita .card-wrapper .card-body p{
   font-size: 15px;
