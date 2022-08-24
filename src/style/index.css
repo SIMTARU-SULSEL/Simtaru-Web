@@ -384,9 +384,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 #berita .container-card .title{
   max-width: 80vw;
 }
-/* #berita .container-card .title-mobile{
+#berita .container-card .title-mobile{
   display: none;
-} */
+}
 #berita .container-card .title ul{
   margin-left: -30px;
   display: flex;
@@ -905,6 +905,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   #berita .title{
     display: none;
   }
+  #berita .container-card .title-mobile{
+    display: block;
+  }
   #berita .container-card .title-mobile ul{
     margin-left: -30px;
     display: flex;
@@ -918,7 +921,6 @@ nav .menu-toggle input:checked ~ span:last-child {
     display: block;
   }
   #berita .container-card .title-mobile .lihat{
-    /* background-color: #EC8C56; */
     margin-right: 25px;
     padding-bottom: 12px;
   }
@@ -932,7 +934,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   #hero {
     max-height: 1100px;
     margin-top: 25px;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
   }
   .hero-map img{
     width: 355px;
@@ -980,59 +982,6 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 
 @media screen and (max-width:550px){
-  /* #overview {
-    max-width: 75%;
-  }
-  .overwiew-wrapper {
-    font-size: 13px;
-  } */
-  #overview {
-    display: none;
-  }
-  #overview-mobile {
-    max-width: 75%;
-    display: grid;
-    margin: auto;
-    padding-bottom: 70px;
-  }
-  #overview-mobile h1{
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 56px;
-    color: var(--gray-primary-text-icons);
-    padding-bottom: 30px;
-  }
-  #overview-mobile .overwiew-wrapper{
-    border: var(--gray-primary-bg) 3px solid;
-    border-radius: 8px;
-    padding: 15px 10px;
-    margin: auto;
-    font-weight: 400;
-    font-size: 12px;
-  }
-  #overview-mobile .overwiew-wrapper .col{
-    justify-content: center;
-    padding: 5px 41px;
-  }
-  #overview-mobile .overwiew-wrapper .bordered{
-    position: relative;
-  }
-  #overview-mobile .overwiew-wrapper .bordered::after{
-    content: '';
-    height: 45px;
-    width: 3px;
-    position: absolute;
-    right: 0;
-    top: 21px;
-    background-color: var(--gray-primary-bg);
-  }
-  #overview-mobile .overwiew-wrapper span {
-    display: block;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 56px;
-  }
-  
   #about-homepage {
     display: none;
   }
