@@ -57,7 +57,7 @@ nav ul li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
-  padding: 10px 20px 22px;
+  padding: 10px 20px 24px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
@@ -135,7 +135,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* ---- HERO ---- */
 #hero {
-  background: url('../images/hero-logo.png') var(--blue-secondary);
+  background: url(../images/hero-logo.png) var(--blue-secondary);
   height: 325px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,7 +190,8 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* --- CONTENT PERUNDANG-UNDANGAN --- */
 #content {
-  margin-bottom: 60px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 .wrapper-content {
   background-color: var(--white-primary-text);
@@ -283,26 +284,19 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 
+@media screen and (max-width:1050px) {
+  nav ul li a {
+    font-size: 14px;
+    padding: 10px 15px 24px;
+  }
+}
+
 @media (max-width:1000px) {
   nav ul {
     display: flex;
     padding: 10px 130px;
     margin-top: revert;
     list-style: none;
-  }
-  nav ul li a {
-    font-size: 14px;
-    padding: 10px 20px 22px;
-  }
-  nav ul li a.button {
-    background-color: var(--blue-primary);
-    color: var(--white-primary-text);
-    border: none;
-    border-radius: 8px;
-    padding: 11px 30px;
-    font-weight: 700;
-    font-size: 14px;
-    margin-left: 25px;
   }
 
   nav ul li form.button {
@@ -374,7 +368,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     opacity: 0;
   }
   nav ul li a{
-    /* padding: 10px 0 18px; */
+    padding: 10px 0 8px;
     margin: auto;
     display: flex;
     width: 150px;
@@ -389,6 +383,13 @@ nav .menu-toggle input:checked ~ span:last-child {
   nav .menu-toggle {
     display: flex;
   }
+
+  nav ul li form .button {
+    margin-left: 0;
+    display: block;
+    padding: 8px 35px;
+  }
+
   nav ul.slide{
     padding-top: 30px;
     opacity: 1;

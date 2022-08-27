@@ -25,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [simtaruController::class, 'index']);
 Route::get('/regulasi', [simtaruController::class, 'regulasiIndex']);
 Route::get('/publikasi', [simtaruController::class, 'publikasiIndex']);
+Route::get('/detail/{berita}', [simtaruController::class, 'detailBerita']);
+Route::get('/berita', [simtaruController::class, 'beritaIndex']);
 
 Route::get('/regulasi-uu', [simtaruController::class, 'regulasiUU']);
 Route::get('/regulasi-kepres', [simtaruController::class, 'regulasiKepres']);
@@ -46,3 +48,6 @@ Route::post('/getKecamatan', [simtaruController::class, 'getKecamatan'])->name('
 
 Route::get('/tanggapan', [simtaruController::class, 'tanggapanIndex']);
 Route::post('/tanggapan', [simtaruController::class, 'tanggapanStore']);
+
+
+Route::get('/mitra', [simtaruController::class, 'mitraIndex']);

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Views extends Model
+{
+    use HasFactory;
+
+    protected $table = 'indexs';
+    protected $hidden = [
+        'id',
+    ];
+
+    public function incrementReadCount()
+    {
+        $this->reads++;
+        return $this->save();
+    }
+}

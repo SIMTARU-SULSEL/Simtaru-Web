@@ -11,10 +11,12 @@
 
     <ul class="nav-menu ">
       <li class="links"><a href="{{url('/')}}">Home</a></li>
-      <li class="links"><a href="{{url('/tata-ruang')}}" target="_blank">Tata Ruang</a></li>
+      <li class="links"><a href="{{url('/tata-ruang')}}">Tata Ruang</a></li>
       <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
       <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
       <li class="links"><a class="active" href="{{url('/tanggapan')}}">Tanggapan</a></li>
+      <li class="links"><a href="{{url('/mitra')}}">Mitra</a></li>
+      <li class="links"><a href="{{url('/berita')}}">Berita</a></li>
       <li class="button-pendaftaran">
         <form action="/pendaftaran" method="GET">
           @csrf

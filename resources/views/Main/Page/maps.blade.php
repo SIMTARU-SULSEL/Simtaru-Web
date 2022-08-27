@@ -1,14 +1,6 @@
 @extends('Main.Layout.MainWebLayout')
 
 @section('Main')
-{{-- <nav>
-  <div class="active-page">
-    <a class="active"href="#">Tata Ruang</a>
-  </div>
-  <div class="menu-maps">
-    <button class="btn button-maps" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-circle-chevron-left"></i>Pilih Peta</button>
-  </div>
-</nav> --}}
 
 <nav>
   <div class="menu-maps">
@@ -28,6 +20,8 @@
       <li class="links"><a href="{{url('/regulasi')}}">Regulasi</a></li>
       <li class="links"><a href="{{url('/publikasi')}}">Publikasi</a></li>
       <li class="links"><a href="{{url('/tanggapan')}}">Tanggapan</a></li>
+      <li class="links"><a href="{{url('/mitra')}}">Mitra</a></li>
+      <li class="links"><a href="{{url('/berita')}}">Berita</a></li>
       <li class="button-pendaftaran">
         <form action="/pendaftaran" method="GET">
           @csrf

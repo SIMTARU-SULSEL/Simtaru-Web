@@ -7,21 +7,68 @@ use Carbon\Carbon;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use Kreait\Laravel\Firebase\Facades\Firebase;
-
 use App\Models\Province;
 use App\Models\Regency;
 use App\Models\District;
+use App\Models\Views;
 
 class simtaruController extends Controller
 {
-    public function index()
+
+    public function index(Request $request, Views $incviews)
     {
+
         $datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
-        return view('Main.Page.index', ['datas' => $datas]);
-        // $datas = explode('<h2>', $datas->data()['deskripsiWeb']);
-        // return $datas;
+        $datas2 = app('firebase.firestore')->database()->collection('InfoWeb')->document('v20AuOSihWKqv1KCZE9s')->snapshot();
+        $news_datas = app('firebase.firestore')->database()->collection('Berita');
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(9);
+        $news_datas = $news_datas->documents();
+
+        if (Cookie::get($incviews->id) != '') {
+            $cookie = cookie($incviews->id, '1', 3);
+            $incviews->incrementReadCount();
+            return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
+        } else {
+            return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
+        }
+    }
+
+    public function detailBerita(Request $request, $berita)
+    {
+        $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
+        foreach ($datas as $item) {
+            if ($berita == $item->data()['judul'] && $request->date == $item->data()['tanggal']) {
+                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
+                break;
+            } else {
+                $news_detail = null;
+            }
+        }
+
+        $other_news_datas = app('firebase.firestore')->database()->collection('Berita');
+        $other_news_datas = $other_news_datas->limit(3);
+        $other_news_datas = $other_news_datas->documents();
+
+        return view('Main.Page.detailBerita', ['datas' => $news_detail, 'news_datas' => $other_news_datas]);
+        // return dd($news_detail);
+    }
+
+    public function beritaIndex()
+    {
+        // $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
+        $news_datas = app('firebase.firestore')->database()->collection('Berita');
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC');
+        $news_datas = $news_datas->documents();
+        return view('Main.Page.berita', ['datas' => $news_datas]);
+    }
+
+    public function mitraIndex()
+    {
+        $datas = app('firebase.firestore')->database()->collection('Mitra')->documents();
+        return view('Main.Page.mitra', ['datas' => $datas]);
     }
 
     public function regulasiIndex()

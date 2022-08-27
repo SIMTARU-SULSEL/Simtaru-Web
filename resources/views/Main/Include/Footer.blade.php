@@ -7,7 +7,7 @@
             <div class="footer-title">
               <div class="footer-title-img">
                 <img src="{{URL::asset('assets/Main/images/Logo-Sulsel.png')}}" alt="">
-                <img src="{{URL::asset('assets/Main/images/Logo-PLN.png')}}" alt="">
+                <img src="{{URL::asset('assets/Main/images/Logo-PUPR2.png')}}" alt="">
               </div>
               <h1>SIMTARU</h1>
               <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
@@ -32,7 +32,7 @@
           <div class="col-lg-4">
             <div class="footer-license">
               <h4 class="title">Made Possible by</h4>
-              <p>ABRIADR 2022</p>
+              <p>ABRIADYR 2022</p>
               <h4 class="copyright" >Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan Tata Ruang Provinsi Sulawesi Selatan </h4>
             </div>
           </div>

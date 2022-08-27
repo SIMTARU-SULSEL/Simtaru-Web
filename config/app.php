@@ -185,6 +185,7 @@ return [
         Kreait\Laravel\Firebase\ServiceProvider::class,
         // Provider Lain
         AzisHapidin\IndoRegion\IndoRegionServiceProvider::class,
+        CyrildeWit\EloquentViewable\EloquentViewableServiceProvider::class,
 
         /*
          * Package Service Providers...
