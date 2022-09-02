@@ -14,9 +14,9 @@ class Views extends Model
         'id',
     ];
 
-    // public function incrementReadCount()
-    // {
-    //     $this->reads++;
-    //     return $this->save();
-    // }
+    public function incrementReadCount()
+    {
+        $this->reads++;
+        return $this->save();
+    }
 }
