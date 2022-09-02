@@ -90,7 +90,7 @@
 </section>
 
 
-{{-- <section id="overview">
+<section id="overview">
   <div class="text-center">
     <h1>Overview</h1>
     <div class="statistics-wrapper">
@@ -98,7 +98,7 @@
       Total<br>Kunjungan
     </div>
   </div>
-</section> --}}
+</section>
 
 <section id="about-homepage">
   <div class="about-content">
