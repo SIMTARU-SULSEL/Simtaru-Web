@@ -241,11 +241,6 @@ nav .menu-toggle input:checked ~ span:last-child {
   font-size: 16px;
 }
 
-
-#filter ul li button{
-  margin-bottom: 15px;
-}
-
 @media (max-width:1140px) {
   nav {
     justify-content: space-between;
