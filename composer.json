@@ -9,7 +9,7 @@
         "azishapidin/indoregion": "^3.0",
         "cyrildewit/eloquent-viewable": "^6.1",
         "google/cloud-firestore": "^1.24.0",
-        "grpc/grpc": "*",
+        "grpc/grpc": "^1.38",
         "guzzlehttp/guzzle": "^7.2",
         "kreait/firebase-php": "6.7.0",
         "kreait/laravel-firebase": "^4.1",
