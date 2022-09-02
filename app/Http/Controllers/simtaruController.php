@@ -26,14 +26,15 @@ class simtaruController extends Controller
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
         $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(9);
         $news_datas = $news_datas->documents();
+        return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas]);
 
-        if (Cookie::get($incviews->id) != '') {
-            $cookie = cookie($incviews->id, '1', 3);
-            $incviews->incrementReadCount();
-            return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
-        } else {
-            return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
-        }
+        // if (Cookie::get($incviews->id) != '') {
+        //     $cookie = cookie($incviews->id, '1', 3);
+        //     $incviews->incrementReadCount();
+        //     return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
+        // } else {
+        //     return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas, 'incviews' => $incviews]);
+        // }
     }
 
     public function detailBerita(Request $request, $berita)
