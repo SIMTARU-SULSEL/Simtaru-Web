@@ -155,7 +155,10 @@
         <p>{{$datas->data()['jabatan'] }}</p>
       </div>
     </div>
-    {!!$datas->data()['deskripsiWeb']!!}
+    <div class="wrapper-content">
+      {!!$datas->data()['deskripsiWeb']!!}
+
+    </div>
     <div class="profile">
       <div class="image-card text-center">
         <img src="{{$datas2->data()['imageUrl'] }}" alt="">
@@ -165,7 +168,14 @@
         <p>{{$datas2->data()['jabatan'] }}</p>
       </div>
     </div>
-    {!!$datas2->data()['deskripsiWeb']!!}
+    <div class="wrapper-content">
+      {!!$datas2->data()['deskripsiWeb']!!}
+    </div>
+    <div class="btn-about">
+      <form action="/mitra" method="GET">
+        <button class="button">Ketahui Lebih Lanjut</button>
+      </form>
+    </div>
   </div>
 </section>
 
