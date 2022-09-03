@@ -311,9 +311,8 @@ main{
       margin-top: revert;
       list-style: none;
     }
-    nav ul li a {
-      font-size: 14px;
-      padding: 10px 20px 22px;
+    nav ul li a{
+      padding: 10px 15px 26px;
     }
     nav ul li a.button {
       background-color: var(--blue-primary);

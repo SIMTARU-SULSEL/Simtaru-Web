@@ -325,6 +325,12 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
+@media screen and (max-width:100px){
+  nav ul li a{
+    padding: 10px 15px 26px;
+  }
+}
+
 @media screen and (max-width:945px) {
   nav {
     justify-content: space-between;
