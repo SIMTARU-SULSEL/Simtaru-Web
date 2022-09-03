@@ -827,7 +827,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 @media screen and (max-width:840px){
   nav ul li a {
-    padding: 10px 13px 27x;
+    padding: 10px 13px 27px;
   }
 }
 @media screen and (max-width:800px) {
