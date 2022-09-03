@@ -43,7 +43,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <a href="./berita-detail.html">
-        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
       <div class="carousel-caption title-berita">
         <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
@@ -51,7 +51,7 @@
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="./../images/image 24.png" class="d-block w-100" alt="...">
+        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
       <div class="carousel-caption title-berita">
         <h1>Pengembangan Jembatan Gowa-Malino</h1>
@@ -59,7 +59,7 @@
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
       <div class="carousel-caption title-berita">
         <h1>Pengembangan Jembatan Gowa-Malino</h1>
@@ -67,7 +67,7 @@
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
       <div class="carousel-caption title-berita">
         <h1>Pengembangan Jembatan Gowa-Malino</h1>
@@ -75,7 +75,7 @@
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="./../images/hero-bg-mitra.png" class="d-block w-100" alt="...">
+        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
       <div class="carousel-caption title-berita">
       <h1>Pengembangan Jembatan Gowa-Malino</h1>
@@ -114,9 +114,9 @@
                   {{-- <div class="min-content">
                     <p class="card-text">{!! Str::limit($item->data()['isi'], 50, '...') !!}</p>
                   </div> --}}
-                  <form class="btn btn-primary button" action="{{url("/detail/{$item->data()['judul']}")}}">
+                  <form  action="{{url("/detail/{$item->data()['judul']}")}}">
                     <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
-                    <button class="btn btn-primary button">Baca</button>
+                    <button class="button">Baca</button>
                   </form>
                 </div>
               </div>
