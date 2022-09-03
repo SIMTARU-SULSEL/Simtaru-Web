@@ -221,6 +221,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 #card .card{
   width: 300px;
+  height: 350px;
   margin: auto;
   text-align: center;
   /* height: 450px; */
@@ -237,7 +238,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 200px;
+  width: 250px;
   height: 200px;
   padding: 10px;
   object-fit: contain;
@@ -324,10 +325,10 @@ nav .menu-toggle input:checked ~ span:last-child {
     line-height: 17px;
   }
 }
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1160px){
   nav ul li a {
     font-size: 14px;
-    padding: 10px 17px 24px;
+    padding: 10px 15px 24px;
   }
 }
 @media screen and (max-width: 1084px){
@@ -369,6 +370,28 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
+  }
+}
+@media screen and (max-width:1100px) {
+  #card .container-card {
+    max-width: 800px;
+    background-color: #0066FF;
+  }
+  #card .card{
+    height: 290px;
+  }
+  #card .card img{
+    width: 228px;
+    height: 160px;
+  }
+  #card h5{
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  #card .card-body p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
   }
 }
 
@@ -579,10 +602,11 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   #card .card{
     width: 170px;
+    height: 240px;
   }
   #card .card img{
-    width: 148px;
-    height: 155px;
+    width: 155px;
+    height: 110px;
   }
   #card h5 {
     font-size: 12px;

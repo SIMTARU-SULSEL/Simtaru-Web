@@ -63,10 +63,10 @@
                 {{-- nyalakan kalau sudah ada kategori di publikasi --}}
                     
                     <div class="wrapper-undang2 row">
-                        <div class="col-lg-2 file-logo">
+                        <div class="col-lg-2 col-md-2 file-logo">
                             <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="" />
                         </div>
-                        <div class="col-lg-10 file-element">
+                        <div class="col-lg-10 col-lg-10 file-element">
                             {{-- nama dan deskripsi perlu diganti setelah publikasi sudah ada --}}
                           <h5>{{$item->data()['judul']}}</h5>
                           <p>{{$item->data()['penerbit']}}</p>
