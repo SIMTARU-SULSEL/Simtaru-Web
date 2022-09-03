@@ -328,7 +328,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 @media screen and (max-width:1000px){
   nav ul li a{
-    padding: 10px 12px 26px;
+    padding: 10px 12px 28px;
     font-size: 11px;
   }
   nav ul li a.active{
