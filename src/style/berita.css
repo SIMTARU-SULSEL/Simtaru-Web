@@ -225,7 +225,6 @@ nav .menu-toggle input:checked ~ span:last-child {
   color: var(--gray-primary-text-icons);
 }
 #card .card-body p{
-  padding-top: 10px;
   font-size: 15px;
   font-weight: 400;
   color: var(--gray-primary-text-icons);
