@@ -453,6 +453,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 @media screen and (max-width:768px) {
+  .wrapper-undang2 .file-element{
+    text-align: center;
+  }
   .file-logo img {
     margin: 10px auto 0;
   }
