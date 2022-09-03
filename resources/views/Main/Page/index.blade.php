@@ -143,6 +143,31 @@
   </div>
 </section>
 
+<section id="about-homepage-mobile">
+  <div class="about-content">
+    <h1>Mengenai <span>SIMTARU</span></h1>
+    {!!$datas->data()['deskripsiWeb']!!}
+    <div class="profile">
+      <div class="image-card text-center">
+        <img src="{{$datas->data()['imageUrl'] }}" alt="">
+      </div>
+      <div class="text-card">
+        <h5>{{$datas->data()['nama'] }}</h5>
+        <p>{{$datas->data()['jabatan'] }}</p>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="image-card text-center">
+        <img src="{{$datas2->data()['imageUrl'] }}" alt="">
+      </div>
+      <div class="text-card">
+        <h5>{{$datas2->data()['nama'] }}</h5>
+        <p>{{$datas2->data()['jabatan'] }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Berita Terkini -->
     <div id="berita">
       <div class="container-card">
@@ -191,31 +216,6 @@
         </div>
       </div>
     </div>
-
-<section id="about-homepage-mobile">
-  <div class="about-content">
-    <h1>Mengenai <span>SIMTARU</span></h1>
-    {!!$datas->data()['deskripsiWeb']!!}
-    <div class="profile">
-      <div class="image-card text-center">
-        <img src="{{$datas->data()['imageUrl'] }}" alt="">
-      </div>
-      <div class="text-card">
-        <h5>{{$datas->data()['nama'] }}</h5>
-        <p>{{$datas->data()['jabatan'] }}</p>
-      </div>
-    </div>
-    <div class="profile">
-      <div class="image-card text-center">
-        <img src="{{$datas2->data()['imageUrl'] }}" alt="">
-      </div>
-      <div class="text-card">
-        <h5>{{$datas2->data()['nama'] }}</h5>
-        <p>{{$datas2->data()['jabatan'] }}</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- card -->
 <div class="container-card" id="card">
