@@ -313,6 +313,10 @@ nav .menu-toggle input:checked ~ span:last-child {
     margin-top: revert;
     list-style: none;
   }
+  nav ul li a{
+    padding: 10px 12px 28px;
+    font-size: 11px;
+  }
   nav ul li a.button {
     background-color: var(--blue-primary);
     color: var(--white-primary-text);

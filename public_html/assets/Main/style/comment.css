@@ -312,7 +312,8 @@ main{
       list-style: none;
     }
     nav ul li a{
-      padding: 10px 15px 26px;
+      padding: 10px 12px 28px;
+      font-size: 11px;
     }
     nav ul li a.button {
       background-color: var(--blue-primary);
