@@ -220,6 +220,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin: auto;
 }
 #card .card{
+  background-color: #031D44;
   width: 300px;
   /* height: 450px; */
   border-radius: 24px;
@@ -235,8 +236,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 250px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
   object-fit: contain;
 }
 #card .card-body {
