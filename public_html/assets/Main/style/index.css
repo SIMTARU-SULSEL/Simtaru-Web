@@ -991,7 +991,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     display: block;
     margin: auto;
     border-radius: 40px;
-    background-image: url('/src/images/about-bg-mobile.png');
+    background-image: url('../images/about-bg-mobile.png');
     background-color: var(--blue-secondary);
     max-width: 80%;
     max-height: max-content;
@@ -1005,7 +1005,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     max-width: 75%;
     margin: auto;
   }
-  #about-homepage-mobile .about-content a{
+  #about-homepage-mobile .about-content form .button{
     text-decoration: none;
     margin-top: 30px;
     margin-bottom: 50px;
