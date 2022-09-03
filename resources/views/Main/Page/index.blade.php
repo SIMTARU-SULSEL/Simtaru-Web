@@ -146,7 +146,6 @@
 <section id="about-homepage-mobile">
   <div class="about-content">
     <h1>Mengenai <span>SIMTARU</span></h1>
-    {!!$datas->data()['deskripsiWeb']!!}
     <div class="profile">
       <div class="image-card text-center">
         <img src="{{$datas->data()['imageUrl'] }}" alt="">
@@ -156,6 +155,7 @@
         <p>{{$datas->data()['jabatan'] }}</p>
       </div>
     </div>
+    {!!$datas->data()['deskripsiWeb']!!}
     <div class="profile">
       <div class="image-card text-center">
         <img src="{{$datas2->data()['imageUrl'] }}" alt="">
@@ -165,6 +165,7 @@
         <p>{{$datas2->data()['jabatan'] }}</p>
       </div>
     </div>
+    {!!$datas2->data()['deskripsiWeb']!!}
   </div>
 </section>
 

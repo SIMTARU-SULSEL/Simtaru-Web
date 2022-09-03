@@ -356,6 +356,8 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 .about-content .profile img{
   width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 .about-content .profile .text-card {
   padding-top: 12px;
