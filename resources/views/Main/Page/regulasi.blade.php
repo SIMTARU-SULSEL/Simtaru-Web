@@ -109,10 +109,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Undang-Undang')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -130,11 +130,11 @@
             @endforelse
 
             {{-- <div class="wrapper-undang2 row">
-              <div class="col-lg-2 file-logo">
+              <div class="col-lg-2 col-md-2 file-logo">
                 <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 
               </div>
-              <div class="col-lg-10 file-element">
+              <div class="col-lg-10 col-md-10 file-element">
                 <h5>UU Nomor 45 Tahun 2009</h5>
                 <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
                 <div class="button">
@@ -154,10 +154,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Peraturan Presiden')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -188,10 +188,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Keputusan Presiden')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -221,10 +221,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Peraturan Pemerintah')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -254,10 +254,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Peraturan Menteri')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -287,10 +287,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Peraturan Daerah')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
@@ -320,10 +320,10 @@
             @forelse ($datas as $item)
               @if ($item->data()['kategori'] == 'Peraturan Bupati')
               <div class="wrapper-undang2 row">
-                <div class="col-lg-2 file-logo">
+                <div class="col-lg-2 col-md-2 file-logo">
                   <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
                 </div>
-                <div class="col-lg-10 file-element">
+                <div class="col-lg-10 col-md-10 file-element">
                   <h5>{{$item->data()['judul']}}</h5>
                   {{-- <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p> --}}
                   <div class="button">
