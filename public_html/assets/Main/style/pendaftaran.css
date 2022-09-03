@@ -53,7 +53,7 @@ nav ul li a {
   font-size: 15px;
   font-weight: 700;
   line-height: 32px;
-  padding: 10px 20px 18px;
+  padding: 10px 20px 24px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
@@ -264,6 +264,24 @@ main{
     display: block;
   }
   
+  @media screen and (max-width: 1160px){
+    nav ul li a {
+      font-size: 14px;
+      padding: 10px 15px 24px;
+    }
+  }
+  @media screen and (max-width: 1084px){
+    nav ul li a {
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width:1030px){
+    nav ul li a {
+      font-size: 12px;
+      padding: 10px 15px 26px;
+    }
+  }
+  
   @media (max-width:1000px) {
     nav ul {
       display: flex;
@@ -302,22 +320,6 @@ main{
     }
     .file-element p {
       font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 1110px){
-    nav ul li a {
-      font-size: 14px;
-      padding: 10px 17px 24px;
-    }
-  }
-  @media screen and (max-width: 1084px){
-    nav ul li a {
-      font-size: 13px;
-    }
-  }
-  @media screen and (max-width:1030px){
-    nav ul li a {
-      font-size: 13px;
     }
   }
   @media screen and (max-width:945px) {
@@ -393,7 +395,7 @@ main{
   }
   @media screen and (max-width:840px){
     nav ul li a {
-      padding: 10px 15px 24px;
+      padding: 10px 15px 27px;
     }
   }
   @media screen and (max-width:768px) {
