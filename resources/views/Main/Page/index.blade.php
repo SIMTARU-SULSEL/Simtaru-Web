@@ -222,15 +222,27 @@
   <h1 class="text-center">Kebijakan <span>Tata Ruang</span></h1>
   <div class="container" >
     <div class="row row-cols-1 row-cols-md-2 g-4" id="scroll-wrapper">
+    <div class="col d-flex justify-content-center" >
+        <div class="col" id="horizontal">
+          <div class="card">
+            <img src="{{URL::asset('/assets/Main/images/artikel-4.png')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengendalian Tata Ruang</h5>
+              <p class="card-text" >Pengendalian pemanfaatan ruang adalah upaya untuk mewujudkan tertib tata ruang. Pengendalian bisa dilakukan dengan cara menerapkan zonasi, perizinan, pemberian insentif dan disinsentif serta sanksi.</p>
+              <!-- {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}} -->
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col d-flex justify-content-center">
         <div class="col" id="horizontal">
           <div class="card">
             <img src="{{URL::asset('/assets/Main/images/artikel-1.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Penataan tata ruang</h5>
-              <p class="card-text" style="color: black">Berdasarkan pada UU No. 26 Tahun 2007, Penataan ruang adalah suatu sistem proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
-              <p class="card-text" style="color: black">Pelaksanaan penataan ruang meliputi perencanaan tata ruang, pemanfaatan ruang serta pengendalian pemanfaatan ruang.</p>
-              {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}}
+              <p class="card-text" >Berdasarkan pada UU No. 26 Tahun 2007, Penataan ruang adalah suatu sistem proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
+              <p class="card-text" >Pelaksanaan penataan ruang meliputi perencanaan tata ruang, pemanfaatan ruang serta pengendalian pemanfaatan ruang.</p>
+              <!-- {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}} -->
             </div>
           </div>
         </div>
@@ -239,15 +251,17 @@
         <div class="col" id="horizontal">
         <div class="card">
           <img src="{{URL::asset('/assets/Main/images/artikel-2.png')}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Perencanaan Tata Ruang</h5>
-              <p class="card-text"style="color: black">Perencanaan tata ruang adalah suatu proses untuk menentukan struktur dan pola ruang yang meliputi penyusunan dan penetapan rencana tata ruang.</p>
-              <p class="card-text" style="color: black">Rencana umum tata ruang dibedakan berdasarkan wilayah administrasi pemerintah, sebab kewenangan dalam mengatur pemanfaatan ruang dibagi menjadi:</p>
-              <p class="card-text" style="color: black">1. Rencana Tata Ruang Wilayah Nasional</p>
-              <p class="card-text" style="color: black">2. Rencana Tata Ruang Provinsi</p>
-              <p class="card-text" style="color: black">3. Rencana Tata Ruang Wilayah Kabupaten/Kota</p>
-              {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}}
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">Perencanaan Tata Ruang</h5>
+            <p class="card-text">Perencanaan tata ruang adalah suatu proses untuk menentukan struktur dan pola ruang yang meliputi penyusunan dan penetapan rencana tata ruang.</p>
+            <p class="card-text" >Rencana umum tata ruang dibedakan berdasarkan wilayah administrasi pemerintah, sebab kewenangan dalam mengatur pemanfaatan ruang dibagi menjadi:</p>
+            <ol>
+              <li>Rencana Tata Ruang Wilayah Nasional</li>
+              <li>Rencana Tata Ruang Provinsi</li>
+              <li>Rencana Tata Ruang Wilayah Kabupaten/Kota</li>
+            </ol>
+            <!-- {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}} -->
+          </div>
           </div>
         </div>
       </div>
@@ -255,25 +269,13 @@
         <div class="col" id="horizontal">
         <div class="card">
           <img src="{{URL::asset('/assets/Main/images/artikel-3.png')}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pemanfaatan Tata Ruang</h5>
-              <p class="card-text"style="color: black">Pemanfaatan ruang adalah upaya untuk mewujudkan struktur ruang dan pola ruang sesuai dengan rencana tata ruang melalui penyusunan dan pelaksanaan program beserta pembiayaannya.</p>
-              <p class="card-text" style="color: black">Pemanfaatan ini dilakukan dengan cara melaksanakan program pemanfaatan ruang serta pembiayaannya.</p>
-              <p class="card-text" style="color: black">Melaksanakan program yaitu segala aktivitas pembangunan baik yang dilaksanakan oleh pemerintah maupun masyarakat - masyarakat agar dapat terwujud rencana tata ruang.</p>
-              {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}}
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">Pemanfaatan Tata Ruang</h5>
+            <p class="card-text">Pemanfaatan ruang adalah upaya untuk mewujudkan struktur ruang dan pola ruang sesuai dengan rencana tata ruang melalui penyusunan dan pelaksanaan program beserta pembiayaannya.</p>
+            <p class="card-text" >Pemanfaatan ini dilakukan dengan cara melaksanakan program pemanfaatan ruang serta pembiayaannya.</p>
+            <p class="card-text" >Melaksanakan program yaitu segala aktivitas pembangunan baik yang dilaksanakan oleh pemerintah maupun masyarakat - masyarakat agar dapat terwujud rencana tata ruang.</p>
+            <!-- {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}} -->
           </div>
-        </div>
-      </div>
-      <div class="col d-flex justify-content-center" >
-        <div class="col" id="horizontal">
-          <div class="card">
-            <img src="{{URL::asset('/assets/Main/images/artikel-4.png')}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pengendalian Tata Ruang</h5>
-              <p class="card-text" style="color: black">Pengendalian pemanfaatan ruang adalah upaya untuk mewujudkan tertib tata ruang. Pengendalian bisa dilakukan dengan cara menerapkan zonasi, perizinan, pemberian insentif dan disinsentif serta sanksi.</p>
-              {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}}
-            </div>
           </div>
         </div>
       </div>
