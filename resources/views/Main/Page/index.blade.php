@@ -172,9 +172,7 @@
       {!!$datas2->data()['deskripsiWeb']!!}
     </div>
     <div class="btn-about">
-      <form action="/mitra" method="GET">
-        <button class="button">Ketahui Lebih Lanjut</button>
-      </form>
+      <a  href="{{url('/mitra')}}"">Ketahui lebih lanjut</a>
     </div>
   </div>
 </section>
