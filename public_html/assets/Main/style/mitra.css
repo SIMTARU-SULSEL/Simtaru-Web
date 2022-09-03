@@ -333,14 +333,13 @@ nav .menu-toggle input:checked ~ span:last-child {
 @media screen and (max-width: 1084px){
   nav ul li a {
     font-size: 13px;
+    padding: 10px 15px 25px;
   }
 }
 @media screen and (max-width:1030px){
   nav ul li a {
-    font-size: 13px;
-  }
-  #hero{
-    background-size: contain;
+    font-size: 12px;
+    padding: 10px 15px 26px;
   }
 }
 

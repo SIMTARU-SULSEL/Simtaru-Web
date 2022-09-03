@@ -305,9 +305,9 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 14px;
     margin-left: 25px;
   }
-  nav ul li a.active{
+  /* nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
-  }
+  } */
   #filter h1{
     padding-top: 20px;
     
