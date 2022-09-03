@@ -531,7 +531,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 #card .card{
-  width: 300px;
+  width: 500px;
   /* height: 450px; */
   border-radius: 24px;
   padding: 15px 0 5px;
@@ -540,25 +540,38 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 260px;
-  background-size: cover;
-  height: 160px;
+  width: 425px;
+  object-fit: cover;
+  height: 300px;
 }
 
 #card h5{
-  font-size: 16px;
+  text-align: center;
+  font-size: 25px;
   font-weight: 700;
   line-height: 20px;
   color: var(--gray-primary-text-icons);
+  padding-bottom: 15px;
 }
 #card .card-body {
   padding: 25px;
 }
 #card .card-body p{
-  font-size: 15px;
-  padding-top: 4px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
-  color: var(--gray-secondary);
+  padding: 0 10px;
+  color: var(--gray-primary-text-icons);
+}
+#card .card-body ol li {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 10px;
+  color: var(--gray-primary-text-icons);
+
 }
 
 #card .card-body .button{
@@ -698,6 +711,24 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 
+@media screen and (max-width:1200px) {
+  #card .card{
+    width: 400px;
+  }
+  #card .card img{
+    width: 320px;
+    height: 230px;
+  }
+  #card h5{
+    font-size: 23px;
+  }
+  #card .card-body p{
+    font-size: 16px;
+  }
+  #card .card-body ol li{
+    font-size: 16px;
+  }
+}
 @media screen and (max-width:1030px){
   nav ul li a {
     font-size: 14px;
@@ -749,6 +780,26 @@ nav .menu-toggle input:checked ~ span:last-child {
   #berita .card-wrapper .card-body p{
     font-size: 14px;
     margin: -5px 0 7px;
+  }
+  #card .card{
+    width: 320px;
+  }
+  #card .card img{
+    width: 270px;
+    height: 200px;
+  }
+  #card h5{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  #card .card-body{
+    padding: 15px;
+  }
+  #card .card-body p{
+    font-size: 16px;
+  }
+  #card .card-body ol li{
+    font-size: 16px;
   }
   #mobile-apps {
     width: 100vw;
