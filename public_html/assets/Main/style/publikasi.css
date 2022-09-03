@@ -191,7 +191,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   padding:30px;
 } 
 .wrapper-undang2{
-  min-width: 900px;
+  /* min-width: 900px; */
   /* margin: 30px 0; */
   padding: 15px;
   border: solid var(--gray-secondary) 3px;
@@ -411,6 +411,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   .file-element{
     padding: 30px 0 10px;
+    text-align: center;
   }
   #footer p span{
     display: inline;
