@@ -1112,6 +1112,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   .about-content .profile .text-card{
     padding-top: 25px;
   }
+  #berita .container-card {
+    margin-left: 20px;
+}
   #mobile-apps .card{
     height: 100%;
   }
