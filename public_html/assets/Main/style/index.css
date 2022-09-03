@@ -133,6 +133,10 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin-top: 70px;
   width: 100vw;
 }
+.carousel .carousel-inner img{
+  object-fit: cover;
+  height: 100vh;
+}
 .carousel .carousel-control i{
   font-size: 35px;
 }
@@ -508,6 +512,18 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin: 70px 0 128px; 
   /* padding-bottom: 30px; */
 }
+
+#card h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--gray-primary-text-icons);
+  margin-bottom: 40px;
+}
+#card h1 span {
+  display: block;
+}
+
 #card .container-card {
   max-width: 700px;
   padding: 0 20px;
@@ -528,7 +544,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 #card .card{
-  width: 300px;
+  width: 500px;
   /* height: 450px; */
   border-radius: 24px;
   padding: 15px 0 5px;
@@ -537,9 +553,9 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 260px;
-  background-size: cover;
-  height: 160px;
+  width: 440px;
+  object-fit: cover;
+  height: 300px;
 }
 
 #card h5{

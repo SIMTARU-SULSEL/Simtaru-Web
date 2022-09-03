@@ -102,7 +102,7 @@
 
 <section id="about-homepage">
   <div class="about-content">
-    <h1>Mengenai SIMTARU</h1>
+    <h1>Mengenai <span>SIMTARU</span></h1>
     <div class="row">
       <div class="col-7">
         
@@ -219,6 +219,7 @@
 
 <!-- card -->
 <div class="container-card" id="card">
+  <h1 class="text-center">Kebijakan <span>Tata Ruang</span></h1>
   <div class="container" >
     <div class="row row-cols-1 row-cols-md-2 g-4" id="scroll-wrapper">
       <div class="col d-flex justify-content-center">

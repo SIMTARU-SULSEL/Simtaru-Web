@@ -7,7 +7,7 @@
             <div class="footer-title">
               <div class="footer-title-img">
                 <img src="{{URL::asset('assets/Main/images/Logo-Sulsel.png')}}" alt="">
-                <img src="{{URL::asset('assets/Main/images/Logo-PUPR2.png')}}" alt="">
+                <img src="{{URL::asset('assets/Main/images/Logo-PLN.png')}}" alt="">
               </div>
               <h1>SIMTARU</h1>
               <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
