@@ -758,7 +758,7 @@ nav .menu-toggle input:checked ~ span:last-child {
     list-style: none;
   }
   nav ul li a{
-    padding: 10px 15px 27;
+    padding: 10px 15px 26px;
   }
   nav ul li a.button {
     background-color: var(--blue-primary);
