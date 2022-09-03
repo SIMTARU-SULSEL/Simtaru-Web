@@ -51,7 +51,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 32px;
   padding: 10px 20px 24px;
@@ -729,10 +729,20 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 16px;
   }
 }
-@media screen and (max-width:1030px){
+@media screen and (max-width: 1110px){
   nav ul li a {
     font-size: 14px;
-    padding: 10px 20px 24px;
+    padding: 10px 17px 24px;
+  }
+}
+@media screen and (max-width: 1084px){
+  nav ul li a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:1030px){
+  nav ul li a {
+    font-size: 13px;
   }
   #hero{
     background-size: contain;
@@ -811,11 +821,18 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
 }
 
+@media screen and (max-width:840px){
+  nav ul li a {
+    padding: 10px 15px 24px;
+  }
+}
+
 @media screen and (max-width:820px){
   nav ul li a {
     padding: 10px 15px 24px;
   }
 }
+
 @media screen and (max-width:800px) {
   #hero {
     background-size: auto;

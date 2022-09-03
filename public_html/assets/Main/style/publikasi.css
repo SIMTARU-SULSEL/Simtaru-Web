@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* background-color: var(--gray-primary-bg); */
 }
 
 :root {
@@ -55,24 +55,12 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 32px;
   padding: 10px 20px 24px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
-
-nav ul li a.button {
-  background-color: var(--blue-primary);
-  color: var(--white-primary-text);
-  border: none;
-  border-radius: 8px;
-  padding: 11px 30px;
-  font-weight: 700;
-  font-size: 16px;
-  margin-left: 25px;
-} 
-
 nav ul li form .button {
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
@@ -83,7 +71,6 @@ nav ul li form .button {
   font-size: 16px;
   margin-left: 25px;
 } 
-
 nav ul li a.active{
   color: var(--blue-primary);
   border-bottom: 6px solid var(--blue-primary);
@@ -135,7 +122,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 /* ---- HERO ---- */
 #hero {
-  background: url(../images/hero-logo.png) var(--blue-secondary);
+  background: url('../images/hero-logo.png') var(--blue-secondary);
   height: 325px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,7 +130,7 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px 0  50px;
+  margin: 70px 0 0;
 }
 .hero-content h1 {
   font-size: 60px;
@@ -284,10 +271,20 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width: 1110px){
   nav ul li a {
     font-size: 14px;
-    padding: 10px 15px 24px;
+    padding: 10px 17px 24px;
+  }
+}
+@media screen and (max-width: 1084px){
+  nav ul li a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:1030px){
+  nav ul li a {
+    font-size: 13px;
   }
 }
 
@@ -298,18 +295,9 @@ nav .menu-toggle input:checked ~ span:last-child {
     margin-top: revert;
     list-style: none;
   }
-
-  nav ul li form.button {
-    background-color: var(--blue-primary);
-    color: var(--white-primary-text);
-    border: none;
-    border-radius: 8px;
-    padding: 11px 30px;
-    font-weight: 700;
+  nav ul li form .button {
     font-size: 14px;
-    margin-left: 25px;
   }
-
   nav ul li a.active{
     border-bottom: 4px solid var(--blue-primary);
   }
@@ -356,8 +344,8 @@ nav .menu-toggle input:checked ~ span:last-child {
     position: absolute;
     right: 0;
     top: 0;
-    height: 75vh;
-    width: 40%;
+    height: 100vh;
+    width: 300px;
     flex-direction: column;
     background-color: var(--white-primary-text);
     justify-content: space-evenly;
@@ -383,13 +371,11 @@ nav .menu-toggle input:checked ~ span:last-child {
   nav .menu-toggle {
     display: flex;
   }
-
   nav ul li form .button {
     margin-left: 0;
     display: block;
     padding: 8px 35px;
   }
-
   nav ul.slide{
     padding-top: 30px;
     opacity: 1;
@@ -408,6 +394,11 @@ nav .menu-toggle input:checked ~ span:last-child {
     width: 80px;
   }
 }
+@media screen and (max-width:840px){
+  nav ul li a {
+    padding: 10px 15px 24px;
+  }
+}
 @media screen and (max-width:768px) {
   .file-logo img {
     margin: 10px auto 0;
@@ -419,7 +410,9 @@ nav .menu-toggle input:checked ~ span:last-child {
     display: inline;
   }
   #footer .footer-container {
-    padding: 60px 50px;
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
   }
   #footer p{
     font-size: 14px;
