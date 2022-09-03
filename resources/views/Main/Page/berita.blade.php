@@ -43,32 +43,43 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <a href="./berita-detail.html">
-        <img src="/src/images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
       </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+      <div class="carousel-caption title-berita">
+        <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
       </div>
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="/src/images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="./../images/image 24.png" class="d-block w-100" alt="...">
       </a>
+      <div class="carousel-caption title-berita">
+        <h1>Pengembangan Jembatan Gowa-Malino</h1>
+      </div>
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="/src/images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
       </a>
+      <div class="carousel-caption title-berita">
+        <h1>Pengembangan Jembatan Gowa-Malino</h1>
+      </div>
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="/src/images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
       </a>
+      <div class="carousel-caption title-berita">
+        <h1>Pengembangan Jembatan Gowa-Malino</h1>
+      </div>
     </div>
     <div class="carousel-item">
       <a href="./berita-detail.html">
-        <img src="/src/images/slider-berita.png" class="d-block w-100" alt="...">
+        <img src="./../images/hero-bg-mitra.png" class="d-block w-100" alt="...">
       </a>
+      <div class="carousel-caption title-berita">
+      <h1>Pengembangan Jembatan Gowa-Malino</h1>
+      </div>
     </div>
   </div>
   <div class="carousel-control">
