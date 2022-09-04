@@ -141,7 +141,6 @@ nav .menu-toggle input:checked ~ span:last-child {
   text-overflow: ellipsis;
   height: 225px;
   margin-bottom: 70px;
-  background-color: #8F8E8E;
 }
 .carousel-caption h1{
   font-size: 40px;
