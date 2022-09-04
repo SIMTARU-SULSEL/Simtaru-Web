@@ -77,7 +77,7 @@
       <p>
         Semuanya lebih mudah dengan adanya aplikasi SIMTARU oleh Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Sulawesi Selatan.
       </p>
-      <button>Download</button>
+      <a href="https://play.google.com/store/apps/details?id=com.app.simtaru_android"><button>Download</button></a>
     </div>
     <div class="hero-map">
       <img src="{{URL::asset('/assets/Main/images/hero-map.png')}}" alt="">
