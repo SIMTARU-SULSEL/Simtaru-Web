@@ -51,23 +51,13 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 32px;
   padding: 10px 20px 24px;
   color: var(--gray-secondary);
   cursor: pointer;
 }
-nav ul li a .button {
-  background-color: var(--blue-primary);
-  color: var(--white-primary-text);
-  border: none;
-  border-radius: 8px;
-  padding: 11px 30px;
-  font-weight: 700;
-  font-size: 16px;
-  margin-left: 25px;
-} 
 nav ul li form .button {
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
@@ -149,14 +139,13 @@ nav .menu-toggle input:checked ~ span:last-child {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 200px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
+  height: 225px;
+  margin-bottom: 70px;
 }
 .carousel-caption h1{
-  font-size: 50px;
-  margin: 20px 0;
+  font-size: 40px;
+  margin: 10px 0;
+  text-align: center;
 }
 .carousel .carousel-inner img{
   object-fit: cover;
@@ -232,15 +221,20 @@ nav .menu-toggle input:checked ~ span:last-child {
 #card .card-body p span{
   color: var(--gray-secondary);
 }
-#card .card-body a{
-  text-decoration: none;
+#card .card-body form{
   margin-top: 10px;
+  background-color: var(--blue-primary);
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer; 
+}
+#card .card-body form .button{
   padding: 10px 27px;
   background-color: var(--blue-primary);
   color: var(--white-primary-text);
   border: none;
   border-radius: 8px;
-  display: block;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -301,10 +295,23 @@ nav .menu-toggle input:checked ~ span:last-child {
   display: block;
 }
 
-@media screen and (max-width:1030px){
+@media screen and (max-width: 1110px){
   nav ul li a {
     font-size: 14px;
-    padding: 10px 20px 24px;
+    padding: 10px 17px 25px;
+  }
+}
+@media screen and (max-width: 1084px){
+  nav ul li a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:1030px){
+  nav ul li a {
+    font-size: 13px;
+  }
+  #hero{
+    background-size: contain;
   }
 }
 
@@ -347,6 +354,11 @@ nav .menu-toggle input:checked ~ span:last-child {
   #card .card img{
     height: 220px;
     width: 250px;
+  }
+}
+@media screen and (max-width:840px){
+  nav ul li a {
+    padding: 10px 15px 24px;
   }
 }
 @media screen and (max-width:830px){

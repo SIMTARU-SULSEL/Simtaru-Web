@@ -729,20 +729,22 @@ nav .menu-toggle input:checked ~ span:last-child {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1160px){
   nav ul li a {
     font-size: 14px;
-    padding: 10px 17px 24px;
+    padding: 10px 15px 24px;
   }
 }
 @media screen and (max-width: 1084px){
   nav ul li a {
     font-size: 13px;
+    padding: 10px 15px 25px;
   }
 }
 @media screen and (max-width:1030px){
   nav ul li a {
     font-size: 13px;
+    padding: 10px 15px 26px;
   }
   #hero{
     background-size: contain;
@@ -755,6 +757,10 @@ nav .menu-toggle input:checked ~ span:last-child {
     padding: 10px 50px;
     margin-top: revert;
     list-style: none;
+  }
+  nav ul li a{
+    padding: 10px 12px 26px;
+    font-size: 11px;
   }
   nav ul li a.button {
     background-color: var(--blue-primary);
@@ -823,7 +829,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 
 @media screen and (max-width:840px){
   nav ul li a {
-    padding: 10px 15px 24px;
+    padding: 10px 13px 27px;
   }
 }
 @media screen and (max-width:800px) {

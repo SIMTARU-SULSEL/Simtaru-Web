@@ -220,9 +220,8 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin: auto;
 }
 #card .card{
-  background-color: #031D44;
-  width: 500px;
-  /* height: 450px; */
+  width: 300px;
+  height: 350px;
   border-radius: 24px;
   padding: 15px 0 5px;
 }
@@ -233,10 +232,13 @@ nav .menu-toggle input:checked ~ span:last-child {
   color: var(--gray-primary-text-icons);
   margin-bottom: 40px;
 }
+.card-img-top{
+  background-color: #D12828;
+}
 #card .card img{
   margin: auto;
   border-radius: 24px;
-  width: 200px;
+  width: 250px;
   height: 200px;
   padding: 10px;
   object-fit: contain;
@@ -309,12 +311,17 @@ nav .menu-toggle input:checked ~ span:last-child {
 @media screen and (max-width:1100px) {
   #card .container-card {
     max-width: 800px;
+    background-color: #0066FF;
+  }
+  #card .card{
+    height: 290px;
   }
   #card .card img{
-    width: 217px;
-    height: 245px;
+    width: 228px;
+    height: 160px;
   }
   #card h5{
+    margin-top: 10px;
     font-size: 17px;
   }
   #card .card-body p{
@@ -555,10 +562,11 @@ nav .menu-toggle input:checked ~ span:last-child {
   }
   #card .card{
     width: 170px;
+    height: 240px;
   }
   #card .card img{
-    width: 148px;
-    height: 155px;
+    width: 155px;
+    height: 110px;
   }
   #card h5 {
     font-size: 12px;
