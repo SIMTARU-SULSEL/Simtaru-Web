@@ -136,7 +136,9 @@
               </div>
             </div>
             @empty
-                
+            <div class="col justify-content-center" id="horizontal">
+              <h4>Maaf data yang anda cari tidak dapat kami temukan</h4>
+            </div>
             @endforelse
 
 
