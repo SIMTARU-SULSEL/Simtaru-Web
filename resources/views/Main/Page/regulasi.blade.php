@@ -132,13 +132,13 @@
               </div>
             </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif    
+            @endif     --}}
           </div>
         </div>
       </div>
@@ -175,13 +175,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
               <div class="wrapper-undang2 row">
                 <div class="col-lg-10 file-element">
                   <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
                 </div>
               </div>
-            @endif
+            @endif --}}
           </div>
         </div>
       </div>
@@ -216,13 +216,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif   
+            @endif    --}}
           </div>
         </div>
       </div>
@@ -257,13 +257,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif   
+            @endif    --}}
                     
           </div>
         </div>
@@ -299,13 +299,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif   
+            @endif    --}}
                     
           </div>
         </div>
@@ -341,13 +341,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif   
+            @endif    --}}
                     
           </div>
         </div>
@@ -383,13 +383,13 @@
                 </div>
               </div>
             @endforelse
-            @if ($empty = True)
+            {{-- @if ($empty = True)
             <div class="wrapper-undang2 row">
               <div class="col-lg-10 file-element">
                 <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
             </div>
-            @endif   
+            @endif    --}}
                     
           </div>
         </div>
