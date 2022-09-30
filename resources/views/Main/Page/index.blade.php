@@ -206,9 +206,6 @@
             <div class="card-body">
               <h5 class="card-title">{{$news->data()['judul'] }}</h5>
               <p class="card-text"><span>{{date('j F Y', strtotime($news->data()['tanggal']))}}</span></p>
-              <div class="min-content">
-                <p class="card-text">{!! Str::limit($news->data()['isi'], 50, '...') !!}</p>
-              </div>
               <form class="btn btn-primary button" action="{{url("/detail/{$news->data()['judul']}")}}">
                 <input type="hidden" name="date" value="{{$news->data()['tanggal']}}">
                 <button class="btn btn-primary button">Baca</button>
