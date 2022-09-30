@@ -8,7 +8,7 @@
     @include('Main.Include.Style')
     @stack('addonStyle')
     <title>SIMTARU</title>
-    
+    <link rel="icon" href="../../../../public_html/assets/Main/images/Logo-Sulsel.ico">
     <title>Document</title>
 </head>
 
