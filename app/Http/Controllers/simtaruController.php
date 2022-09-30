@@ -24,7 +24,7 @@ class simtaruController extends Controller
         $datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
         $datas2 = app('firebase.firestore')->database()->collection('InfoWeb')->document('v20AuOSihWKqv1KCZE9s')->snapshot();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(9);
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(5);
         $news_datas = $news_datas->documents();
         // return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas]);
 
