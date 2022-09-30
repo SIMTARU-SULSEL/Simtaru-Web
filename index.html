@@ -12,7 +12,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="src/style/index.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- SCRIPT -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <title>SIMTARU</title>
+
+    <!-- Favicons -->
+    <link href="./src/images/logo-40px.png" rel="icon" />
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"> -->
@@ -24,26 +36,70 @@
     <div id="app"></div> -->
 
     <nav>
-      <div class="col-md-9 nav-child-wrapper">
+      <div class="active-page">
+        <a class="active"href="#">Home</a>
+      </div>
+      <div class="nav-wrapper">
+
         <ul class="nav-menu ">
           <li class="links"><a class="active" href="#">Home</a></li>
-          <li class="links"><a  href="#">Tata Ruang</a></li>
+          <li class="links"><a  href="./maps.html">Tata Ruang</a></li>
           <li class="links"><a href="./src/page/regulasi.html">Regulasi</a></li>
-          <li class="links"><a href="#">Publikasi</a></li>
-          <li class="links"><a href="#">Tanggapan</a></li>
+          <li class="links"><a href="./src/page/publikasi.html">Publikasi</a></li>
+          <li class="links"><a href="./comment.html">Tanggapan</a></li>
+          <li class="links"><a href="./src/page/mitra.html">Mitra</a></li>
+          <li class="links"><a href="./src/page/berita.html">Berita</a></li>
+          <!-- <li class="button-pendaftaran"><a class="button" href="">Pendaftaran</a></li> -->
+          <li class="button-pendaftaran">
+            <form action="/pendaftaran" method="GET">
+              <!-- @csrf -->
+              <button class="button">Pendaftaran</button>
+            </form>
+          </li>
         </ul>
-      </div>
-      <div class="col-md-3 button">
-        <button>Pendaftaran</button>
+
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-
-
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./src/images/slider-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./src/images//artikel-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./src/images/slider-1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="carousel-control">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-arrow-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-arrow-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     <section id="hero">
       <div class="text-center">
-        <div class="hero-logo">
+        <!-- <div class="hero-logo">
           <img src="src/images/logo-simtaru.svg" alt="">
-        </div>
+        </div> -->
         <div class="hero-content">
           <h1>Jelajahi Tata Ruang Sulawesi Selatan</h1>
           <p>
@@ -65,32 +121,18 @@
     <section id="overview">
       <div class="text-center">
         <h1>Overview</h1>
-        <div class="row overwiew-wrapper">
-          <div class="col bordered">
-            <span>2</span>
-            Pengaduan Tata Ruang
-          </div>
-          <div class="col bordered">
-            <span>1</span>
-            Pertek Diterbitkan
-          </div>
-          <div class="col bordered">
-            <span>1</span>
-            Perda RTRW
-          </div>
-          <div class="col">
-            <span>1</span>
-            Perda RDTR
-          </div>
+        <div class="statistics-wrapper">
+          <span>2.324</span>
+          Total<br>Kunjungan
         </div>
       </div>
     </section>
 
     <section id="about-homepage">
       <div class="about-content">
+        <h1>Mengenai <span>SIMTARU</span></h1>
         <div class="row">
           <div class="col-7">
-            <h1>Mengenai SIMTARU</h1>
             <p>
               Perkembangan kota yang pesat membutuhkan perencanaan yang tepat, antisipatif, prospektif, dan didukung oleh semua pihak. 
             </p>
@@ -101,60 +143,295 @@
               Perencanaan tata ruang wilayah baik di tingkat nasional, provinsi, kabupaten, kota maupun kawasan <span>sangat penting untuk mengarahkan pembangunan, baik fisik maupun sosial dan ekonomi.</span>
             </p>
           </div>
-          <div class="col-5 profile">
-            <div class="image-card text-center">
-              <img src="src/images/profile.png" alt="">
-            </div>
-            <div class="text-card">
-              <h5>Ir. Hj. Astina Abbas, MT.</h5>
-              <p>Kepala Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi <span>Selatan</span></p>
+          <div class="col-5">
+            <div class="profile">
+              <div class="image-card text-center">
+                <img src="./src/images/profile-Astina-Abbas.png" alt="">
+              </div>
+              <div class="text-card">
+                <h5>Ir. Hj. Astina Abbas, MT.</h5>
+                <p>Kepala Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+            <p>
+              Dengan kemajuan teknologi informasi yang sangat pesat, maka mempengaruhi pola pikir dan pola kerja manusia dalam memperoleh informasi secara tepat dan akurat.  
+            </p>
+            <p>
+              Penyebarluasan informasi terkait tata ruang dapat dilaksanakan karena sejalan dengan Permen ATR/BPN Nomor 14 Tahun 2021 yang mengamanatkan bahwa basis data adalah sistem penyimpanan data spasial yang terstruktur dalam bentuk struktur dan format yang baku pada media digital untuk memudahkan pencarian, pengelolaan, dan penggunaan informasi data spasial pada Peta RTR. 
+            </p>
+            <p>
+              Maka dari itu, Pemerintah Provinsi Sulawesi Selatan melalui Dinas Pekerjaan Umum dan Tata Ruang menyediakan <span>Sistem Informasi Tata Ruang (SIMTARU) Sulsel berbasis website dan mobile application</span> untuk dimanfaatkan dengan mudah oleh masyarakat <span>untuk mekakses informasi seputar tata ruang seluruh wilayah di Sulawesi Selatan.</span>
+            </p>
+          </div>
+          <div class="col-5">
+            <div class="profile">
+              <div class="image-card text-center">
+                <img src="./src/images/profile-Andi-Yurnita.png" alt="">
+              </div>
+              <div class="text-card">
+                <h5>Dr. Andi Yurnita, ST., M.Si</h5>
+                <p>Kepala Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-about">
+          <a href="/src/page/mitra.html">Ketahui lebih lanjut</a>
         </div>
       </div>
     </section>
 
+    <section id="about-homepage-mobile">
+      <div class="about-content">
+        <h1>Mengenai <span>SIMTARU</span>
+        </h1>
+        <div class="profile">
+          <div class="image-card text-center">
+            <img src="./src/images/profile-Astina-Abbas.png" alt="">
+          </div>
+          <div class="text-card">
+            <h5>Ir. Hj. Astina Abbas, MT.</h5>
+            <p>Kepala Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+          </div>
+        </div>            
+        <div class="wrapper-content">
+          <p>
+            Perkembangan kota yang pesat membutuhkan perencanaan yang tepat, antisipatif, prospektif, dan didukung oleh semua pihak. 
+          </p>
+          <p>
+            Perkembangan kota dan daerah saat ini semakin dinamis, cepat dan membawa dampak yang besar bagi lingkungan, kuaitas pelayanan, kesehatan dan kesejah-teraan warga kota.
+          </p>
+          <p>
+            Perencanaan tata ruang wilayah baik di tingkat nasional, provinsi, kabupaten, kota maupun kawasan <span>sangat penting untuk mengarahkan pembangunan, baik fisik maupun sosial dan ekonomi.</span>
+          </p>
+        </div>
+        <div class="profile">
+          <div class="image-card text-center">
+            <img src="./src/images/Profile-Andi-Yurnita.png" alt="">
+          </div>
+          <div class="text-card">
+            <h5>Dr. Andi Yurnita, ST., M.Si</h5>
+            <p>Kepala Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+          </div>
+        </div>
+        <div class="wrapper-content">
+          <p>
+            Dengan kemajuan teknologi informasi yang sangat pesat, maka mempengaruhi pola pikir dan pola kerja manusia dalam memperoleh informasi secara tepat dan akurat.  
+          </p>
+          <p>
+            Penyebarluasan informasi terkait tata ruang dapat dilaksanakan karena sejalan dengan Permen ATR/BPN Nomor 14 Tahun 2021 yang mengamanatkan bahwa basis data adalah sistem penyimpanan data spasial yang terstruktur dalam bentuk struktur dan format yang baku pada media digital untuk memudahkan pencarian, pengelolaan, dan penggunaan informasi data spasial pada Peta RTR. 
+          </p>
+          <p>
+            Maka dari itu, Pemerintah Provinsi Sulawesi Selatan melalui Dinas Pekerjaan Umum dan Tata Ruang menyediakan <span>Sistem Informasi Tata Ruang (SIMTARU) Sulsel berbasis website dan mobile application</span> untuk dimanfaatkan dengan mudah oleh masyarakat <span>untuk mekakses informasi seputar tata ruang seluruh wilayah di Sulawesi Selatan.</span>
+          </p>
+        </div>
+        <div class="btn-about">
+          <a href="/src/page/mitra.html" >Ketahui lebih lanjut</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Berita Terkini -->
+    <div id="berita">
+      <div class="container-card">
+        <div class="title">
+          <ul>
+            <li>
+              <h1>Berita Terkini</h1>
+            </li>
+            <li>
+              <a href="/src/page/berita.html">Lihat Berita </a>
+            </li>
+          </ul>
+        </div>
+        <div class="title-mobile">
+          <ul>
+            <li>
+              <h1>Berita <span>Terkini</span></h1>
+            </li>
+            <li class="lihat">
+              <a href="/src/page/berita.html">Lihat Berita</a> <i class="fa-solid fa-angle-right"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="card-wrapper snaps-inline">
+
+          <div class="card">
+            <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+              <p class="card-text"><span>22 Agustus 2022</span></p>
+              <div class="min-content">
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+              </div>
+              <a class="btn btn-primary button" href="#" role="button">Baca</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+              <p class="card-text"><span>22 Agustus 2022</span></p>
+              <div class="min-content">
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+              </div>
+              <a class="btn btn-primary button" href="#" role="button">Baca</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+              <p class="card-text"><span>22 Agustus 2022</span></p>
+              <div class="min-content">
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+              </div>
+              <a class="btn btn-primary button" href="#" role="button">Baca</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+              <p class="card-text"><span>22 Agustus 2022</span></p>
+              <div class="min-content">
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+              </div>
+              <a class="btn btn-primary button" href="#" role="button">Baca</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+              <p class="card-text"><span>22 Agustus 2022</span></p>
+              <div class="min-content">
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+              </div>
+              <a class="btn btn-primary button" href="#" role="button">Baca</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <!-- card -->
+    <!-- <div id="card">
+      <div class="container-card" >
+        <h1 class="text-center">Kebijakan <span>Tata Ruang</span></h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="scroll-wrapper">
+
+          <div class="col" id="horizontal">
+            <div class="card">
+              <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="horizontal">
+            <div class="card">
+              <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="horizontal">
+            <div class="card">
+              <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="horizontal">
+            <div class="card">
+              <img src="src/images/artikel-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <div class="container-card" id="card">
+      <h1 class="text-center">Kebijakan <span>Tata Ruang</span></h1>
       <div class="container" >
         <div class="row row-cols-1 row-cols-md-2 g-4" id="scroll-wrapper">
-          <div class="col d-flex justify-content-center" id="horizontal">
-            <div class="card">
-              <img src="src/images/image 36(1).png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Penataan tata ruang</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is...</p>
-                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          <div class="col d-flex justify-content-center" >
+            <div class="col" id="horizontal">
+              <div class="card">
+                <img src="./src/images/artikel-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pengendalian Tata Ruang</h5>
+                  <p class="card-text" >Pengendalian pemanfaatan ruang adalah upaya untuk mewujudkan tertib tata ruang. Pengendalian bisa dilakukan dengan cara menerapkan zonasi, perizinan, pemberian insentif dan disinsentif serta sanksi.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center" id="horizontal">
-            <div class="card">
-              <img src="src/images/image 35.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Penataan tata ruang</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is...</p>
-                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+          <div class="col d-flex justify-content-center">
+            <div class="col" id="horizontal">
+              <div class="card">
+                <img src="./src/images/artikel-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Penataan tata ruang</h5>
+                  <p class="card-text" >Berdasarkan pada UU No. 26 Tahun 2007, Penataan ruang adalah suatu sistem proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
+                  <p class="card-text" >Pelaksanaan penataan ruang meliputi perencanaan tata ruang, pemanfaatan ruang serta pengendalian pemanfaatan ruang.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center" id="horizontal">
+          <div class="col d-flex justify-content-center">
+            <div class="col" id="horizontal">
             <div class="card">
-              <img src="src/images/image 24.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Penataan tata ruang</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              <img src="./src/images/artikel-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Perencanaan Tata Ruang</h5>
+                  <p class="card-text">Perencanaan tata ruang adalah suatu proses untuk menentukan struktur dan pola ruang yang meliputi penyusunan dan penetapan rencana tata ruang.</p>
+                  <p class="card-text" >Rencana umum tata ruang dibedakan berdasarkan wilayah administrasi pemerintah, sebab kewenangan dalam mengatur pemanfaatan ruang dibagi menjadi:</p>
+                  <ol>
+                    <li>
+                      Rencana Tata Ruang Wilayah Nasional
+                    </li>
+                    <li>Rencana Tata Ruang Provinsi</li>
+                    <li>Rencana Tata Ruang Wilayah Kabupaten/Kota</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center" id="horizontal">
+          <div class="col d-flex justify-content-center" >
+            <div class="col" id="horizontal">
             <div class="card">
-              <img src="src/images/unsplash_KmRfFNUio5w.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Penataan tata ruang</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is..</p>
-                <a class="btn btn-primary button" href="#" role="button">Baca</a>
+              <img src="./src/images/artikel-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pemanfaatan Tata Ruang</h5>
+                  <p class="card-text">Pemanfaatan ruang adalah upaya untuk mewujudkan struktur ruang dan pola ruang sesuai dengan rencana tata ruang melalui penyusunan dan pelaksanaan program beserta pembiayaannya.</p>
+                  <p class="card-text" >Pemanfaatan ini dilakukan dengan cara melaksanakan program pemanfaatan ruang serta pembiayaannya.</p>
+                  <p class="card-text" >Melaksanakan program yaitu segala aktivitas pembangunan baik yang dilaksanakan oleh pemerintah maupun masyarakat - masyarakat agar dapat terwujud rencana tata ruang.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -162,69 +439,83 @@
       </div>
     </div>
 
+
     <!-- Mobile Apps Ads -->
     <div class="mobile-apps" id="mobile-apps">
-      <div class="container ">
-        <div class="card" >
-          <div class="card-information">
-            
-            <div class="card-body">
-              <h1 class="card-title"><b>Ayo <i>download</i> aplikasinya!</b></h1>
-              <p class="card-text">Sistem Informasi Perencanaan, Pemanfaatan, dan Pengendalian Tata Ruang Sulawesi Selatan</p>
-            </div>
-            
-            <div class="card-image" >
-              <div class="card-phone">
-                <img src="src/images/Front 1.png" alt="">
+      <div class="mobile-apps-bg">
+        <div class="container">
+          <div class="card" >
+            <div class="card-information">
+              
+              <div class="card-body">
+                <h1 class="">Ayo <i>download</i> aplikasinya!</h1>
+                <p class="">Sistem Informasi Perencanaan, Pemanfaatan, dan Pengendalian Tata Ruang Sulawesi Selatan</p>
               </div>
-              <div class="card-badge">
-                <img src="src/images/google-play-badge 1.svg" alt="">
+              
+              <div class="card-image text-center" >
+                <div class="card-phone">
+                  <img src="src/images/Front 1.png" alt="">
+                </div>
+                <div class="card-badge">
+                  <a href="" target="_blank">
+                    <button class="btn-download google-play"></button>
+                  </a>
+                </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
     </div>
 
     <!-- footer -->
-    <div class="footer" id="footer">
-      <!-- <div class="row "> -->
-        <div class="col d-flex justify-content-center footer-information">
-          <div class="footer-title">
-            <div class="footer-title-img">
-              <img src="src/images/Logo-Sulsel.png" alt="">
-              <img src="src/images/Logo-PLN.png" alt="">
+    <div id="footer">
+          <div class="footer-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-title">
+                  <div class="footer-title-img">
+                    <img src="/src/images/Logo-Sulsel.png" alt="">
+                    <img src="/src/images/Logo-PLN.png" alt="">
+                  </div>
+                  <h1>SIMTARU</h1>
+                  <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="footer-contact">
+                  <div class="alamat">
+                    <i class="uil uil-comments"></i>
+                    <h4 class="title">Alamat</h4>
+                    <p>Jalan A. Pangerang Pettarani <span>No. 88-90 Makassar</span></p>
+                  </div>
+                  <div class="kontak">
+                    <i class="uil uil-comments"></i>
+                    <h4 class="title">Hubungi Kami</h4>
+                    <p>Jalan A. Pangerang Pettarani <span>No. 88-90 Makassar</span></p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="footer-license">
+                  <h4 class="title">Made Possible by</h4>
+                  <p>ABRIADYR 2022</p>
+                  <h4 class="copyright" >Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan Tata Ruang Provinsi Sulawesi Selatan </h4>
+                </div>
+              </div>
             </div>
-            <h1>SIMTARU</h1>
-            <h3>Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</h3>
+  
           </div>
-          <div class="footer-contact">
-            <div class="alamat">
-              <i class="uil uil-comments"></i>
-              <h4><b>Alamat</b></h4>
-              <p>Jalan A. Pangerang Pettarani <br> No. 88-90 Makassar</p>
-            </div>
-            <div class="kontak">
-              <i class="uil uil-comments"></i>
-              <h4><b>Hubungi Kami</b></h4>
-              <p>Jalan A. Pangerang Pettarani <br> No. 88-90 Makassar</p>
-            </div>
-            
-          </div>
-          <div class="footer-license">
-            <h4><b>Made Possible by</b></h4>
-            <p>ABRIADR 2022</p>
-            <h4><B>Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan Tata Ruang Provinsi Sulawesi Selatan </B></h4>
-          </div>
-        <!-- </div> -->
-      </div>
+        <!-- built files will be auto injected -->
+  
     </div>
-    <!-- built files will be auto injected -->
 
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="nav.js"></script>
   </body>
 </html>

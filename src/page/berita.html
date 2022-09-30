@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- BOOTSRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/berita.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- SCRIPT -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <title>SIMTARU</title>
+
+    <!-- Favicons -->
+    <link href="../images/logo-40px.png" rel="icon" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"> -->
+  </head>
+  <body>
+    <!-- <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div> -->
+
+    <nav>
+      <div class="active-page">
+        <a class="active"href="#">Berita</a>
+      </div>
+      <div class="nav-wrapper">
+
+        <ul class="nav-menu ">
+          <li class="links"><a href="../../index.html">Home</a></li>
+          <li class="links"><a  href="./../../maps.html">Tata Ruang</a></li>
+          <li class="links"><a href="./regulasi.html">Regulasi</a></li>
+          <li class="links"><a href="./publikasi.html">Publikasi</a></li>
+          <li class="links"><a href="#">Tanggapan</a></li>
+          <li class="links"><a href="#">mitra</a></li>
+          <li class="links"><a class="active"  href="./berita.html">Berita</a></li>
+          <li class="button-pendaftaran">
+            <form action="/pendaftaran" method="GET">
+              <!-- @csrf -->
+              <button class="button">Pendaftaran</button>
+            </form>
+          </li>
+        </ul>
+
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./berita-detail.html">
+            <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption title-berita">
+            <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./berita-detail.html">
+            <img src="./../images/image 24.png" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption title-berita">
+            <h1>Pengembangan Jembatan Gowa-Malino</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./berita-detail.html">
+            <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption title-berita">
+            <h1>Pengembangan Jembatan Gowa-Malino</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./berita-detail.html">
+            <img src="./../images/slider-berita.png" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption title-berita">
+            <h1>Pengembangan Jembatan Gowa-Malino</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./berita-detail.html">
+            <img src="./../images/hero-bg-mitra.png" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption title-berita">
+            <h1>Pengembangan Jembatan Gowa-Malino</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-control">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-arrow-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-arrow-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section id="berita">
+      <div class="container-berita">
+        <h1>Baca Juga <br> Berita Lainnya</h1>
+        <div class="berita-wrapper-card">
+          <div id="card">
+            <div class="container-card" >
+              <div class="row row-cols-2 row-cols-md-3  g-4" id="scroll-wrapper">
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <form action="/pendaftaran" method="GET">
+                        <!-- @csrf -->
+                        <button class="button">Pendaftaran</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col justify-content-center" id="horizontal">
+                  <div class="card">
+                    <img src="../images/artikel-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="min-content">
+                        <h5 class="card-title">Pengembangan Jembatan Gowa-Malino ds sdsdsdjn jhjdsbhbiushdfdssdsdf fsd sd dsfnds b</h5>
+                      </div>
+                      <p class="card-text"><span>22 Agustus 2022</span></p>
+                      <div class="min-content">
+                        <p class="card-text">Dibawah koordinasi pihak PUPR dan pemerintah daerah gowa, jembatan legendaris gowa-mali..</p>
+                      </div>
+                      <a href="./berita-detail.html">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="end-of-berita">
+      <p>Akhir Laman</p>
+    </div>
+    
+    <!-- footer -->
+    <div id="footer">
+          <div class="footer-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-title">
+                  <div class="footer-title-img">
+                    <img src="/src/images/Logo-Sulsel.png" alt="">
+                    <img src="/src/images/Logo-PLN.png" alt="">
+                  </div>
+                  <h1>SIMTARU</h1>
+                  <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="footer-contact">
+                  <div class="alamat">
+                    <i class="uil uil-comments"></i>
+                    <h4 class="title">Alamat</h4>
+                    <p>Jalan A. Pangerang Pettarani <span>No. 88-90 Makassar</span></p>
+                  </div>
+                  <div class="kontak">
+                    <i class="uil uil-comments"></i>
+                    <h4 class="title">Hubungi Kami</h4>
+                    <p>Jalan A. Pangerang Pettarani <span>No. 88-90 Makassar</span></p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="footer-license">
+                  <h4 class="title">Made Possible by</h4>
+                  <p>ABRIADYR 2022</p>
+                  <h4 class="copyright" >Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan Tata Ruang Provinsi Sulawesi Selatan </h4>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        <!-- built files will be auto injected -->
+  
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="nav.js"></script>
+  </body>
+</html>
