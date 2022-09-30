@@ -126,23 +126,19 @@
                 <?php $empty = True ?>
               @endif
             @empty
-                Maaf, sepertinya data yang anda cari tidak ada
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
             @endforelse
-
-            {{-- <div class="wrapper-undang2 row">
-              <div class="col-lg-2 col-md-2 file-logo">
-                <img src="{{URL::asset('assets/Main/images/pdf.png')}}" alt="">
-                
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
               </div>
-              <div class="col-lg-10 col-md-10 file-element">
-                <h5>UU Nomor 45 Tahun 2009</h5>
-                <p>TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN</p>
-                <div class="button">
-                  <button type="button">Download</button>
-                </div>
-              </div>
-            </div> --}}
-                    
+            </div>
+            @endif     --}}
           </div>
         </div>
       </div>
@@ -167,7 +163,10 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+                <?php $empty = True ?>
               @endif
+
 
             @empty
               <div class="wrapper-undang2 row">
@@ -176,7 +175,13 @@
                 </div>
               </div>
             @endforelse
-                    
+            {{-- @if ($empty = True)
+              <div class="wrapper-undang2 row">
+                <div class="col-lg-10 file-element">
+                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+                </div>
+              </div>
+            @endif --}}
           </div>
         </div>
       </div>
@@ -201,6 +206,8 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+                <?php $empty = True ?>
               @endif
             @empty
               <div class="wrapper-undang2 row">
@@ -209,7 +216,13 @@
                 </div>
               </div>
             @endforelse
-                    
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
+            @endif    --}}
           </div>
         </div>
       </div>
@@ -234,6 +247,8 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+              <?php $empty = True ?>
               @endif
             @empty
               <div class="wrapper-undang2 row">
@@ -242,6 +257,13 @@
                 </div>
               </div>
             @endforelse
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
+            @endif    --}}
                     
           </div>
         </div>
@@ -267,6 +289,8 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+              <?php $empty = True ?>
               @endif
             @empty
               <div class="wrapper-undang2 row">
@@ -275,6 +299,13 @@
                 </div>
               </div>
             @endforelse
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
+            @endif    --}}
                     
           </div>
         </div>
@@ -300,6 +331,8 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+              <?php $empty = True ?>
               @endif
             @empty
               <div class="wrapper-undang2 row">
@@ -308,6 +341,13 @@
                 </div>
               </div>
             @endforelse
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
+            @endif    --}}
                     
           </div>
         </div>
@@ -333,6 +373,8 @@
               </div>
               <!-- divider between two cards-->
               <br>
+              @else
+                <?php $empty = True ?>
               @endif
             @empty
               <div class="wrapper-undang2 row">
@@ -341,6 +383,13 @@
                 </div>
               </div>
             @endforelse
+            {{-- @if ($empty = True)
+            <div class="wrapper-undang2 row">
+              <div class="col-lg-10 file-element">
+                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+              </div>
+            </div>
+            @endif    --}}
                     
           </div>
         </div>
