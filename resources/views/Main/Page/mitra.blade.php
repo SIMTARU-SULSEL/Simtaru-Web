@@ -57,17 +57,17 @@
           <div class="intro-wrapper">
             <ul>
               <li>
-                <img src="../../assets/Main/images/profile-Astina-Abbas.jpeg" alt="">
+                <img src="{{$kadis_datas->data()['imageUrl']}}" alt="">
                 <div class="text text-center">
-                  <h5>Ir. Hj. Astina Abbas, MT.</h5>
-                  <p>Kepala Dinas PUPR Provinsi Sulawesi Selatan</p>
+                  <h5>{{$kadis_datas->data()['nama']}}</h5>
+                  <p>{{$kadis_datas->data()['jabatan']}}</p>
                 </div>
               </li>
               <li>
-                <img src="../../assets/Main/images/profile-Andi-Yurnita.png" alt="">
+                <img src="{{$khabid_datas->data()['imageUrl']}}" alt="">
                 <div class="text">
-                  <h5>Dr. Andi Yurnita, ST., M.Si</h5>
-                  <p>Kepala Bidang Tata Ruang Dinas PUPR Provinsi Sulawesi Selatan</p>
+                  <h5>{{$khabid_datas->data()['nama']}}</h5>
+                  <p>{{$khabid_datas->data()['jabatan']}}</p>
                 </div>
               </li>
             </ul>

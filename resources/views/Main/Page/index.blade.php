@@ -77,7 +77,7 @@
       <p>
         Semuanya lebih mudah dengan adanya aplikasi SIMTARU oleh Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Sulawesi Selatan.
       </p>
-      <button>Download</button>
+      <a href="https://play.google.com/store/apps/details?id=com.app.simtaru_android"><button>Download</button></a>
     </div>
     <div class="hero-map">
       <img src="{{URL::asset('/assets/Main/images/hero-map.png')}}" alt="">
@@ -206,9 +206,6 @@
             <div class="card-body">
               <h5 class="card-title">{{$news->data()['judul'] }}</h5>
               <p class="card-text"><span>{{date('j F Y', strtotime($news->data()['tanggal']))}}</span></p>
-              <div class="min-content">
-                <p class="card-text">{!! Str::limit($news->data()['isi'], 50, '...') !!}</p>
-              </div>
               <form class="btn btn-primary button" action="{{url("/detail/{$news->data()['judul']}")}}">
                 <input type="hidden" name="date" value="{{$news->data()['tanggal']}}">
                 <button class="btn btn-primary button">Baca</button>

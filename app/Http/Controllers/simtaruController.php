@@ -24,7 +24,7 @@ class simtaruController extends Controller
         $datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
         $datas2 = app('firebase.firestore')->database()->collection('InfoWeb')->document('v20AuOSihWKqv1KCZE9s')->snapshot();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(9);
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(5);
         $news_datas = $news_datas->documents();
         // return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas]);
 
@@ -40,9 +40,17 @@ class simtaruController extends Controller
     public function detailBerita(Request $request, $berita)
     {
         $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
+        // foreach ($datas as $item) {
+        //     if ($berita == $item->data()['judul'] && $request->date == $item->data()['tanggal']) {
+        //         $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
+        //         break;
+        //     } else {
+        //         $news_detail = null;
+        //     }
+        // }
         foreach ($datas as $item) {
-            if ($berita == $item->data()['judul'] && $request->date == $item->data()['tanggal']) {
-                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
+            if ($berita == $item->data()['judul']) {
+                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('judul', '=', $item->data()['judul'])->documents();
                 break;
             } else {
                 $news_detail = null;
@@ -61,7 +69,7 @@ class simtaruController extends Controller
     {
         // $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC');
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(5);
         $news_datas = $news_datas->documents();
         return view('Main.Page.berita', ['datas' => $news_datas]);
     }
@@ -69,7 +77,9 @@ class simtaruController extends Controller
     public function mitraIndex()
     {
         $datas = app('firebase.firestore')->database()->collection('Mitra')->documents();
-        return view('Main.Page.mitra', ['datas' => $datas]);
+        $khabid_datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('v20AuOSihWKqv1KCZE9s')->snapshot();
+        $kadis_datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
+        return view('Main.Page.mitra', ['datas' => $datas, 'khabid_datas' => $khabid_datas, 'kadis_datas' => $kadis_datas]);
     }
 
     public function regulasiIndex()
