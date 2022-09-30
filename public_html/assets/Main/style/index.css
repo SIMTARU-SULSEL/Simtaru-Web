@@ -143,9 +143,20 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin-right: 14px !important;
   margin-left: 14px !important;
 }
-.carousel .carousel-inner img{
-  object-fit: cover;
-  height: 100vh;
+.carousel .carousel-inner .logo-sulsel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  height: 100%;
+  align-items: center;
+}
+.carousel .carousel-inner .logo-sulsel img{
+  /* width: 10%; */
+  height: 60%;
 }
 #hero {
   display: flex;

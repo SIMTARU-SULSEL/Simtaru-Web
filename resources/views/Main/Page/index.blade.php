@@ -43,7 +43,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
+      <img src="{{URL::asset('/assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="d-block w-100" alt="...">
+      <div class="logo-sulsel">
+        <img src="{{URL::asset('/assets/Main/images/Logo-simtaru.svg')}}" alt="">
+      </div>
     </div>
     @foreach ($news_datas as $news)
     <div class="carousel-item">
