@@ -207,7 +207,9 @@
           <div class="card">
             <img src="{{$news->data()['urlGambar'] }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{$news->data()['judul'] }}</h5>
+              <div class="min-content">
+                <h5 class="card-title">{{$news->data()['judul'] }}</h5>
+              </div>
               <p class="card-text"><span>{{date('j F Y', strtotime($news->data()['tanggal']))}}</span></p>
               <form class="btn btn-primary button" action="{{url("/detail/{$news->data()['judul']}")}}">
                 <input type="hidden" name="date" value="{{$news->data()['tanggal']}}">
