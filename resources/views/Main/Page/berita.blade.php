@@ -41,14 +41,20 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-item active">
+      <img src="{{URL::asset('assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="d-block w-100" alt="...">
+      <div class="logo-sulsel">
+        <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
+      </div>
+    </div>
+    <!-- <div class="carousel-item active">
       {{-- <a href="./berita-detail.html"> --}}
         <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       {{-- </a> --}}
       {{-- <div class="carousel-caption title-berita">
         <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
       </div> --}}
-    </div>
+    </div> -->
     @foreach ($datas as $item)
     <div class="carousel-item">
       <a href="{{url("/detail/{$item->data()['judul']}")}}">
@@ -66,7 +72,7 @@
       <a href="./berita-detail.html">
         <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       </a>
-      <div class="carousel-caption title-berita">
+      <div class="carousel-caption title-berita .min-content">
         <h1>Pengembangan Jembatan Gowa-Malino</h1>
       </div>
     </div>
