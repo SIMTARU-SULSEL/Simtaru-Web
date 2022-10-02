@@ -55,6 +55,12 @@
         <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
       </div> --}}
     </div> -->
+    <div class="carousel-item active">
+      <img src="{{URL::asset('assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="d-block w-100" alt="...">
+      <div class="logo-sulsel">
+        <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
+      </div>
+    </div> 
     @foreach ($datas as $item)
     <div class="carousel-item">
       <a href="{{url("/detail/{$item->data()['judul']}")}}">
@@ -67,6 +73,10 @@
       </a>
     </div>
     @endforeach
+
+    <div class="carousel">
+      <div class="container"><h1>Apaoa ya yang debug_print_backtrace</h1></div>
+    </div>
 
     {{-- <div class="carousel-item">
       <a href="./berita-detail.html">
