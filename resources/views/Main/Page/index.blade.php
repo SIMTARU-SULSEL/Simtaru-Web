@@ -40,13 +40,14 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{URL::asset('assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="d-block w-100" alt="...">
-      <div class="logo-sulsel">
+      <img src="{{URL::asset('assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
+      {{-- <div class="logo-sulsel">
         <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
-      </div>
+      </div> --}}
     </div>
     @foreach ($news_datas as $news)
     <div class="carousel-item">
