@@ -237,7 +237,7 @@
     <div class="col d-flex justify-content-center" >
         <div class="col" id="horizontal">
           <div class="card">
-            <img src="{{URL::asset('assets/Main/images/artikel-4.png')}}" class="card-img-top" alt="...">
+            <img src="{{URL::asset('assets/Main/images/artikel6.jpeg')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pengendalian Tata Ruang</h5>
               <p class="card-text" >Pengendalian pemanfaatan ruang adalah upaya untuk mewujudkan tertib tata ruang. Pengendalian bisa dilakukan dengan cara menerapkan zonasi, perizinan, pemberian insentif dan disinsentif serta sanksi.</p>
