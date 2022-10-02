@@ -237,7 +237,7 @@
     <div class="col d-flex justify-content-center" >
         <div class="col" id="horizontal">
           <div class="card">
-            <img src="{{URL::asset('assets/Main/images/artikel-6.png')}}" class="card-img-top" alt="...">
+            <img src="{{URL::asset('assets/Main/images/artikel-1.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pengendalian Tata Ruang</h5>
               <p class="card-text" >Pengendalian pemanfaatan ruang adalah upaya untuk mewujudkan tertib tata ruang. Pengendalian bisa dilakukan dengan cara menerapkan zonasi, perizinan, pemberian insentif dan disinsentif serta sanksi.</p>
@@ -249,7 +249,7 @@
       <div class="col d-flex justify-content-center">
         <div class="col" id="horizontal">
           <div class="card">
-            <img src="{{URL::asset('assets/Main/images/artikel-1.png')}}" class="card-img-top" alt="...">
+            <img src="{{URL::asset('assets/Main/images/artikel-2.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Penataan tata ruang</h5>
               <p class="card-text" >Berdasarkan pada UU No. 26 Tahun 2007, Penataan ruang adalah suatu sistem proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
@@ -262,7 +262,7 @@
       <div class="col d-flex justify-content-center">
         <div class="col" id="horizontal">
         <div class="card">
-          <img src="{{URL::asset('assets/Main/images/artikel-5.png')}}" class="card-img-top" alt="...">
+          <img src="{{URL::asset('assets/Main/images/artikel-3.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Perencanaan Tata Ruang</h5>
             <p class="card-text">Perencanaan tata ruang adalah suatu proses untuk menentukan struktur dan pola ruang yang meliputi penyusunan dan penetapan rencana tata ruang.</p>
@@ -280,7 +280,7 @@
       <div class="col d-flex justify-content-center" >
         <div class="col" id="horizontal">
         <div class="card">
-          <img src="{{URL::asset('assets/Main/images/artikel-7.png')}}" class="card-img-top" alt="...">
+          <img src="{{URL::asset('assets/Main/images/artikel-4.png')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Pemanfaatan Tata Ruang</h5>
             <p class="card-text">Pemanfaatan ruang adalah upaya untuk mewujudkan struktur ruang dan pola ruang sesuai dengan rencana tata ruang melalui penyusunan dan pelaksanaan program beserta pembiayaannya.</p>
