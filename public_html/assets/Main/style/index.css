@@ -849,6 +849,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   nav ul li a {
     padding: 10px 13px 27px; 
   }
+  .carousel .carousel-inner .logo-sulsel img{
+    height: 50%;
+  }
 }
 @media screen and (max-width:800px) {
   #hero {
