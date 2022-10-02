@@ -75,9 +75,6 @@
     </div>
     @endforeach
 
-    <div class="carousel">
-      <div class="container"><h1>Apaoa ya yang debug_print_backtrace</h1></div>
-    </div>
 
     {{-- <div class="carousel-item">
       <a href="./berita-detail.html">
