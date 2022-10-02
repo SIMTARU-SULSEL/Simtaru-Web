@@ -69,9 +69,10 @@ class simtaruController extends Controller
     {
         // $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(5);
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC');
+        $carousel = $news_datas->limit(5)->documents();
         $news_datas = $news_datas->documents();
-        return view('Main.Page.berita', ['datas' => $news_datas]);
+        return view('Main.Page.berita', ['datas' => $news_datas, 'carousel' => $carousel]);
     }
 
     public function mitraIndex()
