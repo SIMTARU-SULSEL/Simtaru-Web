@@ -152,7 +152,25 @@ nav .menu-toggle input:checked ~ span:last-child {
   height: 100vh;
   opacity: 0.5;
 }
+.carousel .carousel-inner .logo-sulsel img{
+  opacity: 1;
 
+}
+.carousel .carousel-inner .logo-sulsel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  height: 100%;
+  align-items: center;
+}
+.carousel .carousel-inner .logo-sulsel img{
+  /* width: 10%; */
+  height: 60%;
+}
 
 #berita{
 }
@@ -474,6 +492,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   } 
   .carousel-caption h1{
     font-size: 30px;
+  }
+  .carousel .carousel-inner .logo-sulsel img{
+    height: 30%;
   }
 } 
 @media screen and (max-width:490px){
