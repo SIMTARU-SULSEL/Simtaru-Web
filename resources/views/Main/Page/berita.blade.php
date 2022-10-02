@@ -42,12 +42,12 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
   </div>
   <div class="carousel-inner">
-  <div class="carousel-item active">
+  <!-- <div class="carousel-item active">
       <img src="{{URL::asset('assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
       {{-- <div class="logo-sulsel">
         <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
       </div> --}}
-    </div>
+    </div> -->
     <!-- <div class="carousel-item active">
       {{-- <a href="./berita-detail.html"> --}}
         <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
