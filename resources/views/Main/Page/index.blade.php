@@ -251,7 +251,7 @@
           <div class="card">
             <img src="{{URL::asset('assets/Main/images/artikel-5.jpeg')}}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Penataan tata ruang</h5>
+              <h5 class="card-title">Penataan Ruang</h5>
               <p class="card-text" >Berdasarkan pada UU No. 26 Tahun 2007, Penataan ruang adalah suatu sistem proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
               <p class="card-text" >Pelaksanaan penataan ruang meliputi perencanaan tata ruang, pemanfaatan ruang serta pengendalian pemanfaatan ruang.</p>
               <!-- {{-- <a class="btn btn-primary button" href="#" role="button">Baca</a> --}} -->
