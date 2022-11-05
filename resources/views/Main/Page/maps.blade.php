@@ -101,6 +101,7 @@
                           <option disabled selected value="">Pilih RTR</option>
                           <option value="RTR Kawasan Strategis">RTR Kawasan Strategis</option> 
                         <option value="RTR Maminasata">RTR Maminasata</option> 
+                        <option value="RTRW Provinsi">RTRW Provinsi</option> 
                         <option value="RTRW Kab/Kota">RTRW Kab/Kota</option> 
                         <option value="RDTR Kab/Kota">RDTR Kab/Kota</option> 
                         <option value="Izin Pemanfaatan Ruang">Izin Pemanfaatan Ruang</option> 
@@ -113,7 +114,7 @@
                         <select class="btn btn-secondary" required name="jenis_peta" id="jenis_peta">
                           <option disabled selected value="">Jenis Peta</option>
                           <option value="Peta Kawasan Maminasata">Peta Kawasan Maminasata</option> 
-                          <option value="Peta Administratif">Peta Administratif</option> 
+                          <option value="Peta Administrasi">Peta Administrasi</option> 
                           <option value="Peta Pola Ruang">Peta Pola Ruang</option> 
                           <option value="Peta Struktur Ruang">Peta Struktur Ruang</option> 
                         </select>
