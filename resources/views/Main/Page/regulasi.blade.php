@@ -165,18 +165,14 @@
 
 
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endif --}}
           </div>
         </div>
@@ -206,17 +202,13 @@
                 <?php $empty = True ?>
               @endif
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-10 file-element">
-                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-              </div>
+              <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif    --}}
           </div>
@@ -247,17 +239,13 @@
               <?php $empty = True ?>
               @endif
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-10 file-element">
-                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-              </div>
+              <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif    --}}
                     
@@ -289,17 +277,13 @@
               <?php $empty = True ?>
               @endif
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-10 file-element">
-                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-              </div>
+              <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif    --}}
                     
@@ -331,17 +315,13 @@
               <?php $empty = True ?>
               @endif
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-10 file-element">
-                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-              </div>
+              <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif    --}}
                     
@@ -373,17 +353,13 @@
                 <?php $empty = True ?>
               @endif
             @empty
-              <div class="wrapper-undang2 row">
-                <div class="col-lg-10 file-element">
-                  <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-                </div>
-              </div>
+            <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
+            </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
-              <div class="col-lg-10 file-element">
-                <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
-              </div>
+              <div class="wrapper-undang2 row not-found">
+              <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif    --}}
                     
