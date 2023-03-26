@@ -723,7 +723,7 @@ nav .menu-toggle input:checked ~ span:last-child {
 }
 @media (min-width: 1220px){
   #hero {
-    background-position: initial;
+    /* background-position: initial; */
     width: 100vw;
   }
 

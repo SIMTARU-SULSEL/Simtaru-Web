@@ -357,6 +357,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   margin-bottom: 10px;
   word-spacing: 0.1em;
 }
+.about-content p strong{
+  color: var(--white-primary-text);
+}
 .about-content p span{
   color: var(--white-primary-text);
   font-weight: 500;
