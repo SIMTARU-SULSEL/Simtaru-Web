@@ -126,12 +126,12 @@
                 <?php $empty = True ?>
               @endif
             @empty
-            <div class="wrapper-undang2 row">
+            <div class="wrapper-undang2 row not-found">
               <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endforelse
             {{-- @if ($empty = True)
-            <div class="wrapper-undang2 row">
+            <div class="wrapper-undang2 row not-found">
               <h5> Maaf, sepertinya data yang anda cari tidak ada</h5>
             </div>
             @endif     --}}
