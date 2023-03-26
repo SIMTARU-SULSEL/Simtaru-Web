@@ -1,7 +1,9 @@
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
+	SetEnv PHP_INI_SCAN_DIR /etc/conf.d
     </IfModule>
+
 
     RewriteEngine On
 
