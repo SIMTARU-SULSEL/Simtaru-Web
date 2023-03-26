@@ -94,8 +94,8 @@
                           <h6 class="card-desc">{!! Str::limit($item->data()['isi'], 50, '...') !!}</h6>
                           {{-- <a class="btn btn-primary button" href="src\page\berita.html" role="button">Baca Selengkapnya</a> --}}
                           <form class="btn btn-primary button" action="{{url("/detail/{$item->data()['judul']}")}}">
-                            <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
-                            <button class="btn btn-primary button">Baca Selengkapnya</button>
+                            <!-- <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
+                            <button class="btn btn-primary button">Baca Selengkapnya</button> -->
                           </form>
                         </div>
                       </div>
