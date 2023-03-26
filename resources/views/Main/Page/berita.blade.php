@@ -46,10 +46,10 @@
       @foreach ($datas as $item)
         @if ($loop->first)
           {{-- <div class="carousel-item"> --}}
-            <a href="{{url("/detail/{$item->data()['judul']}")}}">
+            <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
               <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
             </a>
-            <a href="{{url("/detail/{$item->data()['judul']}")}}">
+            <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
               <div class="carousel-caption title-berita">
                 <h1>{{$item->data()['judul']}}</h1>
               </div>
@@ -65,10 +65,10 @@
           @continue
       @endif
       <div class="carousel-item">
-        <a href="{{url("/detail/{$item->data()['judul']}")}}">
+        <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
           <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
         </a>
-        <a href="{{url("/detail/{$item->data()['judul']}")}}">
+        <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
           <div class="carousel-caption title-berita">
             <h1>{{$item->data()['judul']}}</h1>
           </div>
