@@ -123,6 +123,9 @@ nav .menu-toggle input:checked ~ span:last-child {
   width: 100vw;
   background: #000;
 }
+.carousel .carousel-item{
+  height: 100vh;
+}
 .carousel .carousel-control i{
   font-size: 35px;
 }
