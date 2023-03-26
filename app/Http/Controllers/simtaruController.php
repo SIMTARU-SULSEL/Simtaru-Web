@@ -24,7 +24,7 @@ class simtaruController extends Controller
         $datas = app('firebase.firestore')->database()->collection('InfoWeb')->document('rgYeQRniohc4Ptg62ujU')->snapshot();
         $datas2 = app('firebase.firestore')->database()->collection('InfoWeb')->document('v20AuOSihWKqv1KCZE9s')->snapshot();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC')->limit(5);
+        $news_datas = $news_datas->orderBy('tanggal', 'ASC')->limit(5);
         $news_datas = $news_datas->documents();
         // return view('Main.Page.index', ['datas' => $datas, 'datas2' => $datas2, 'news_datas' => $news_datas]);
 
@@ -40,17 +40,10 @@ class simtaruController extends Controller
     public function detailBerita(Request $request, $berita)
     {
         $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
-        // foreach ($datas as $item) {
-        //     if ($berita == $item->data()['judul'] && $request->date == $item->data()['tanggal']) {
-        //         $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
-        //         break;
-        //     } else {
-        //         $news_detail = null;
-        //     }
-        // }
         foreach ($datas as $item) {
-            if ($berita == $item->data()['judul']) {
-                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('judul', '=', $item->data()['judul'])->documents();
+
+            if ($berita == $item->data()['tanggal']) {
+                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
                 break;
             } else {
                 $news_detail = null;
@@ -58,18 +51,17 @@ class simtaruController extends Controller
         }
 
         $other_news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $other_news_datas = $other_news_datas->limit(3);
+        $other_news_datas = $other_news_datas->orderBy('tanggal', 'ASC')->limit(3);
         $other_news_datas = $other_news_datas->documents();
 
         return view('Main.Page.detailBerita', ['datas' => $news_detail, 'news_datas' => $other_news_datas]);
-        // return dd($news_detail);
     }
 
     public function beritaIndex()
     {
         // $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'DESC');
+        $news_datas = $news_datas->orderBy('tanggal', 'ASC');
         $carousel = $news_datas->limit(5)->documents();
         $news_datas = $news_datas->documents();
         return view('Main.Page.berita', ['datas' => $news_datas, 'carousel' => $carousel]);

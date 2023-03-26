@@ -39,75 +39,42 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    {{-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button> --}}
   </div>
   <div class="carousel-inner">
-  <!-- <div class="carousel-item active">
-      <img src="{{URL::asset('assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      {{-- <div class="logo-sulsel">
-        <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
-      </div> --}}
-    </div> -->
-    <!-- <div class="carousel-item active">
-      {{-- <a href="./berita-detail.html"> --}}
-        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      {{-- </a> --}}
-      {{-- <div class="carousel-caption title-berita">
-        <h1>Pengembancscs ddddddddddddddddgan xxxxxxxxxxxxxxxxxxxxxx djsifhds Jembatan Gowa-Malino</h1>
-      </div> --}}
-    </div> -->
     <div class="carousel-item active "style="height: 100vh;">
-      <img src="{{URL::asset('assets/Main/images/unsplash_KmRfFNUio5w.png')}}" class="d-block w-100" alt="...">
-      <div class="logo-sulsel">
-        <img src="{{URL::asset('assets/Main/images/Logo-simtaru.svg')}}" alt="">
-      </div>
+      @foreach ($datas as $item)
+        @if ($loop->first)
+          {{-- <div class="carousel-item"> --}}
+            <a href="{{url("/detail/{$item->data()['judul']}")}}">
+              <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
+            </a>
+            <a href="{{url("/detail/{$item->data()['judul']}")}}">
+              <div class="carousel-caption title-berita">
+                <h1>{{$item->data()['judul']}}</h1>
+              </div>
+            </a>
+          {{-- </div> --}}
+        @else
+          @break
+        @endif
+      @endforeach
     </div> 
     @foreach ($datas as $item)
-    <div class="carousel-item">
-      <a href="{{url("/detail/{$item->data()['judul']}")}}">
-        <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
-      </a>
-      <a href="{{url("/detail/{$item->data()['judul']}")}}">
-        <div class="carousel-caption title-berita">
-          <h1>{{$item->data()['judul']}}</h1>
-        </div>
-      </a>
-    </div>
+      @if ($loop->first)
+          @continue
+      @endif
+      <div class="carousel-item">
+        <a href="{{url("/detail/{$item->data()['judul']}")}}">
+          <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
+        </a>
+        <a href="{{url("/detail/{$item->data()['judul']}")}}">
+          <div class="carousel-caption title-berita">
+            <h1>{{$item->data()['judul']}}</h1>
+          </div>
+        </a>
+      </div>
     @endforeach
-
-
-    {{-- <div class="carousel-item">
-      <a href="./berita-detail.html">
-        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      </a>
-      <div class="carousel-caption title-berita .min-content">
-        <h1>Pengembangan Jembatan Gowa-Malino</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a href="./berita-detail.html">
-        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      </a>
-      <div class="carousel-caption title-berita">
-        <h1>Pengembangan Jembatan Gowa-Malino</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a href="./berita-detail.html">
-        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      </a>
-      <div class="carousel-caption title-berita">
-        <h1>Pengembangan Jembatan Gowa-Malino</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a href="./berita-detail.html">
-        <img src="{{URL::asset('/assets/Main/images/slider-1.png')}}" class="d-block w-100" alt="...">
-      </a>
-      <div class="carousel-caption title-berita">
-      <h1>Pengembangan Jembatan Gowa-Malino</h1>
-      </div>
-    </div> --}}
     
   </div>
   <div class="carousel-control">
@@ -142,7 +109,7 @@
                   {{-- <div class="min-content">
                     <p class="card-text">{!! Str::limit($item->data()['isi'], 50, '...') !!}</p>
                   </div> --}}
-                  <form  action="{{url("/detail/{$item->data()['judul']}")}}">
+                  <form  action="{{url("/detail/{$item->data()['tanggal']}")}}">
                     <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
                     <button class="button">Baca</button>
                   </form>
