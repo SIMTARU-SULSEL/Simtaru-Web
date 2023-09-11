@@ -45,7 +45,7 @@
       <div class="judul">
         <h1>{{$item->data()['judul'] }}</h1>
       </div>
-      
+
       <div class="wrapper-pagination mt-5">
         <ul>
           <p>
@@ -93,8 +93,8 @@
                           <p class="card-text">{{date('j F Y', strtotime($item->data()['tanggal']))}}</p>
                           <!-- <h6 class="card-desc">{!! Str::limit($item->data()['isi'], 50, '...') !!}</h6> -->
                           {{-- <a class="btn btn-primary button" href="src\page\berita.html" role="button">Baca Selengkapnya</a> --}}
-                          <form class="btn btn-primary button" action="{{url("/detail/{$item->data()['judul']}")}}">
-                            <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
+                          <form class="btn btn-primary button" action="{{url("/detail/{$item->data()['id']}")}}">
+                            <input type="hidden" name="id" value="{{$item->data()['id']}}">
                             <button class="btn btn-primary button">Baca Selengkapnya</button>
                           </form>
                         </div>

@@ -42,8 +42,8 @@ class simtaruController extends Controller
         $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
         foreach ($datas as $item) {
 
-            if ($berita == $item->data()['tanggal']) {
-                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('tanggal', '=', $item->data()['tanggal'])->documents();
+            if ($berita == $item->data()['id']) {
+                $news_detail = app('firebase.firestore')->database()->collection('Berita')->where('id', '=', $item->data()['id'])->documents();
                 break;
             } else {
                 $news_detail = null;
@@ -51,7 +51,7 @@ class simtaruController extends Controller
         }
 
         $other_news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $other_news_datas = $other_news_datas->orderBy('tanggal', 'ASC')->limit(3);
+        $other_news_datas = $other_news_datas->orderBy('tanggal', 'DESC')->limit(3);
         $other_news_datas = $other_news_datas->documents();
 
         return view('Main.Page.detailBerita', ['datas' => $news_detail, 'news_datas' => $other_news_datas]);
@@ -61,7 +61,7 @@ class simtaruController extends Controller
     {
         // $datas = app('firebase.firestore')->database()->collection('Berita')->documents();
         $news_datas = app('firebase.firestore')->database()->collection('Berita');
-        $news_datas = $news_datas->orderBy('tanggal', 'ASC');
+        $news_datas = $news_datas->orderBy('tanggal', 'DESC');
         $carousel = $news_datas->limit(5)->documents();
         $news_datas = $news_datas->documents();
         return view('Main.Page.berita', ['datas' => $news_datas, 'carousel' => $carousel]);
@@ -170,7 +170,7 @@ class simtaruController extends Controller
         $request->KotaKabupaten = $KotaKabupaten[0]['name'];
         $request->Kecamatan = $Kecamatan[0]['name'];
 
-        $image = $request->file('SHP'); //image file from frontend  
+        $image = $request->file('SHP'); //image file from frontend
         $firebase_storage_path = 'SHP/';
         $name = $image->getClientOriginalName();
         $localfolder = public_path('firebase-temp-uploads') . '/';
@@ -191,7 +191,7 @@ class simtaruController extends Controller
                 ]],
                 ['firebaseStorageDownloadTokens' => $uuid]
             );
-            //will remove from local laravel folder  
+            //will remove from local laravel folder
             unlink($localfolder . $file);
         }
 
