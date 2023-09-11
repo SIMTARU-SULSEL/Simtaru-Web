@@ -2,7 +2,7 @@
     <div id="footer">
       <div class="footer-container">
         <div class="row">
-          
+
           <div class="col-lg-4">
             <div class="footer-title">
               <div class="footer-title-img">
@@ -10,7 +10,7 @@
                 <img src="{{URL::asset('assets/Main/images/Logo-PLN.png')}}" alt="">
               </div>
               <h1>SIMTARU</h1>
-              <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Pekerjaan Umum dan Tata Ruang Provinsi Sulawesi Selatan</p>
+              <p class="intro-web">Website Resmi Bidang Tata Ruang Dinas Dinas Sumber Daya Air, Cipta Karya dan Tata Ruang Provinsi Sulawesi Selatan</p>
             </div>
           </div>
 
@@ -33,7 +33,7 @@
             <div class="footer-license">
               <h4 class="title">Made Possible by</h4>
               <p>ABRIADYR 2022</p>
-              <h4 class="copyright" >Hak Cipta 2022 @ Bidang Tata Ruang Dinas Pekerjaan Umum Dan Tata Ruang Provinsi Sulawesi Selatan </h4>
+              <h4 class="copyright" >Hak Cipta 2022 @ Bidang Tata Ruang Dinas Sumber Daya Air, Cipta Karya dan Tata Ruang Provinsi Sulawesi Selatan </h4>
             </div>
           </div>
         </div>
