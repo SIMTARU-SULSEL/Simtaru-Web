@@ -46,10 +46,10 @@
       @foreach ($datas as $item)
         @if ($loop->first)
           {{-- <div class="carousel-item"> --}}
-            <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
+            <a href="{{url("/detail/{$item->data()['id']}")}}">
               <img src="{{$item->data()['urlGambar']}}" class="d-block w-100" alt="...">
             </a>
-            <a href="{{url("/detail/{$item->data()['tanggal']}")}}">
+            <a href="{{url("/detail/{$item->data()['id']}")}}">
               <div class="carousel-caption title-berita">
                 <h1>{{$item->data()['judul']}}</h1>
               </div>
@@ -59,7 +59,7 @@
           @break
         @endif
       @endforeach
-    </div> 
+    </div>
     @foreach ($datas as $item)
       @if ($loop->first)
           @continue
@@ -75,7 +75,7 @@
         </a>
       </div>
     @endforeach
-    
+
   </div>
   <div class="carousel-control">
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -109,8 +109,8 @@
                   {{-- <div class="min-content">
                     <p class="card-text">{!! Str::limit($item->data()['isi'], 50, '...') !!}</p>
                   </div> --}}
-                  <form  action="{{url("/detail/{$item->data()['tanggal']}")}}">
-                    <input type="hidden" name="date" value="{{$item->data()['tanggal']}}">
+                  <form action="{{url("/detail/{$item->data()['id']}")}}">
+                    <input type="hidden" name="id" value="{{$item->data()['id']}}">
                     <button class="button">Baca</button>
                   </form>
                 </div>
@@ -131,7 +131,7 @@
 </section>
 
 <div class="end-of-berita">
-  <p>Akhir Laman</p>
+  <p></p>
 </div>
 @endsection
 
@@ -144,6 +144,6 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-  
+
 @endpush
 
